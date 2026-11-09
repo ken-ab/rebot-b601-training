@@ -1,0 +1,11 @@
+/datasets/
+/runs/
+/incoming/
+/recordings/
+*.tar.gz
+*.mp4
+*.parquet
+*.safetensors
+telemetry-*.csv
+.env
+__pycache__/
