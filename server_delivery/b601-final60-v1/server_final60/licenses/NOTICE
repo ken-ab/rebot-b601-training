@@ -1,0 +1,26 @@
+Gemma is provided under and subject to the Gemma Terms of Use found at ai.google.dev/gemma/terms.
+
+This B601-RS release derives from OpenPI pi05_base and its Gemma/PaliGemma
+components. The complete Gemma Terms of Use shipped with the pinned OpenPI
+source are included in LICENSE_GEMMA.txt. Gemma components and derivatives
+remain subject to those terms, including Section 3.2 use restrictions and
+the incorporated Gemma Prohibited Use Policy:
+https://ai.google.dev/gemma/prohibited_use_policy
+
+MODIFICATION NOTICE — B601 final-60 fine-tuning, November 2026
+
+The serialized model parameter files under checkpoint/params/ and any
+alternatives/*/checkpoint/params/ represent the B601-trained model, with
+trained LoRA language/action branches and dense vision parameters. They
+are not the unmodified pi05_base checkpoint. Each checkpoint's accompanying
+B601_MODIFICATIONS.md identifies its training source and update count.
+Original upstream source provenance, this run's method, normalization,
+selection protocol and file hashes are retained in the release receipts.
+The B601 transform, evaluation, serving and client integration code was
+added or adapted for this task. These changes do not modify Google's terms.
+
+OpenPI code is distributed under its accompanying Apache License 2.0
+(LICENSE). That code license does not replace the Gemma terms governing
+the corresponding model components and derivatives. Keep both licenses,
+this notice, the checkpoint modification notices and component attributions
+when redistributing this release.
