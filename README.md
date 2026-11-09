@@ -4,7 +4,28 @@
 
 数据是 LeRobot v3.0，标称 25 fps。俯视和腕部相机都是 640×480。每帧有 7 维状态和动作，顺序是底座、肩、肘、腕俯仰、腕偏航、腕滚转、夹爪。状态是从臂电机侧实测角度，动作是采集适配器输入坐标中的绝对目标。真机推理通过同一个适配器下发动作，由适配器完成关节方向和夹爪比例转换。
 
-## 在服务器下载并验包
+## 在服务器微调 OpenPI π₀.₅ Base + JAX LoRA
+
+用能读取本私有仓库和 Release 的 GitHub 账号，在 Linux NVIDIA GPU 服务器上运行。
+
+~~~bash
+gh auth status
+gh repo clone ken-ab/rebot-b601-training
+cd rebot-b601-training
+bash openpi_b601/run_pi05.sh smoke
+~~~
+
+已克隆仓库时，在现有目录执行 `git pull --ff-only`，再跑短测。脚本会从 [final-60 Release](https://github.com/ken-ab/rebot-b601-training/releases/tag/final-60) 下载原始数据，核对 SHA-256，按 50/10 划分转换为 OpenPI 所需格式。短测用官方 `pi05_base` 权重，以 batch 1 训练 20 步。
+
+确认短测 loss 和 checkpoint 正常后启动正式训练。
+
+~~~bash
+bash openpi_b601/run_pi05.sh train --exp-name b601-final60-v1
+~~~
+
+环境、相机与动作映射、显存参数和输出目录见 [OpenPI 训练说明](openpi_b601/README.md)。
+
+## 单独验收 LeRobot v3 数据
 
 请使用有权读取这个私有仓库的 GitHub 账号。在服务器上首次接手时克隆仓库；已经克隆的，进入现有目录执行 `git pull --ff-only`，再运行下面的目录设置。
 
@@ -47,7 +68,7 @@ python -m pip show lerobot torch
 
 本机使用 LeRobot 0.6.2 和 PyAV 验证。服务器如需重建环境，先确认其 Python、CUDA 和 Torch，再参考官方安装指引安装所选模型需要的依赖。[LeRobot 安装指引](https://huggingface.co/docs/lerobot/installation)
 
-## 划分和微调
+## LeRobot 备选训练
 
 验证集来自两个完整录制批次，新补录的 7 条均留作验证。条号写在 [splits.json](splits.json) 中，使用从 0 开始的训练版索引。用 LeRobot 的拆分工具生成独立的训练和验证目录，分别重建各自的统计。
 
@@ -60,8 +81,6 @@ lerobot-edit-dataset \
   --operation.splits="$(cat splits.json)" \
   --push_to_hub=false
 ~~~
-
-前文提到的 π0.6 先在服务器上确认具体 checkpoint、来源和配套训练代码。Physical Intelligence 发表了 π*0.6 的研究，其官方 openpi 仓库的基础权重清单列出了 π0、π0-FAST 和 π0.5。若服务器已有可用的 π0.6 权重，先按它的加载与相机映射说明验跑。[π*0.6 研究](https://www.pi.website/blog/pistar06) · [openpi 权重清单](https://github.com/Physical-Intelligence/openpi#model-checkpoints)
 
 如果选用官方 LeRobot π0.5，可先跑下面的 20 步，检查双路图像输入、损失、显存和 checkpoint 写入。服务器需有 CUDA、支持 bfloat16 的 GPU 和 PaliGemma tokenizer 的访问权限。
 

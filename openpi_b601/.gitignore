@@ -1,0 +1,6 @@
+/prepared/
+/.openpi/
+/.data/
+/.setup.lock
+/runs/
+__pycache__/
