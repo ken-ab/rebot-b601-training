@@ -4,24 +4,45 @@
 
 数据是 LeRobot v3.0，标称 25 fps。俯视和腕部相机都是 640×480。每帧有 7 维状态和动作，顺序是底座、肩、肘、腕俯仰、腕偏航、腕滚转、夹爪。状态是从臂电机侧实测角度，动作是采集适配器输入坐标中的绝对目标。真机推理通过同一个适配器下发动作，由适配器完成关节方向和夹爪比例转换。
 
-## 在服务器验包
+## 在服务器下载并验包
 
-用服务器已有的 GitHub 登录克隆本仓库。已有工作目录可先执行 `git pull --ff-only`。通过 QDS 环境允许的文件传输方式，把 [校验清单](DATASET.sha256) 中列出的数据包放进服务器的传输入口。下面以 `~/incoming` 为例。
+请使用有权读取这个私有仓库的 GitHub 账号。在服务器上首次接手时克隆仓库；已经克隆的，进入现有目录执行 `git pull --ff-only`，再运行下面的目录设置。
 
 ~~~bash
 git clone https://github.com/ken-ab/rebot-b601-training.git
 cd rebot-b601-training
+~~~
+
+~~~bash
 repo="$PWD"
 archive="blue-tissue-center-20261109-final-60.tar.gz"
 inbox="$HOME/incoming"
 root="$repo/datasets/blue-tissue-center-20261109-final-60"
-mkdir -p "$repo/datasets"
+mkdir -p "$inbox" "$repo/datasets"
+~~~
+
+如果服务器已登录 GitHub CLI（`gh auth status`），运行：
+
+~~~bash
+gh release download final-60 --repo ken-ab/rebot-b601-training --pattern "$archive" --dir "$inbox"
+~~~
+
+也可以在 ToDesk 连入的服务器浏览器里打开 [final-60 Release](https://github.com/ken-ab/rebot-b601-training/releases/tag/final-60)，在 Assets 中下载 `blue-tissue-center-20261109-final-60.tar.gz`，保存到 `~/incoming`。
+
+用仓库的 [SHA-256 清单](DATASET.sha256) 核对压缩包。校验通过才会解压，随后检查数据集：
+
+~~~bash
 (cd "$inbox" && sha256sum -c "$repo/DATASET.sha256") &&
-  tar -xzf "$inbox/$archive" -C "$repo/datasets"
+  tar -xzf "$inbox/$archive" -C "$repo/datasets" &&
+  python scripts/check_dataset.py "$root"
+~~~
+
+查看服务器环境：
+
+~~~bash
 nvidia-smi
 python -V
 python -m pip show lerobot torch
-python scripts/check_dataset.py "$root"
 ~~~
 
 本机使用 LeRobot 0.6.2 和 PyAV 验证。服务器如需重建环境，先确认其 Python、CUDA 和 Torch，再参考官方安装指引安装所选模型需要的依赖。[LeRobot 安装指引](https://huggingface.co/docs/lerobot/installation)
