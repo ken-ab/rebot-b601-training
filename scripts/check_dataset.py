@@ -19,9 +19,9 @@ def require(condition, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("root", type=Path)
-    parser.add_argument("--repo-id", default="local/blue-tissue-center-20261109-final-53")
-    parser.add_argument("--episodes", type=int, default=53)
-    parser.add_argument("--frames", type=int, default=30915)
+    parser.add_argument("--repo-id", default="local/blue-tissue-center-20261109-final-60")
+    parser.add_argument("--episodes", type=int, default=60)
+    parser.add_argument("--frames", type=int, default=33847)
     args = parser.parse_args()
     require((args.root / "meta/info.json").is_file(), f"数据目录缺少 meta/info.json，{args.root}")
     dataset = LeRobotDataset(

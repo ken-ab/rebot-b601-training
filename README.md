@@ -1,20 +1,20 @@
 # B601-RS 抓放训练交接
 
-任务是「拿起蓝色餐巾纸，把它放进黑色框里」。示教用 reBot Arm 102 控制 B601-RS。当前数据版为 `blue-tissue-center-20261109-final-53`，包含 **53 条 episode、30,915 帧**。推荐按整批划分为 50 条训练和 3 条验证。筛选理由和原始条号见 [episodes.csv](episodes.csv)，两端进度记在 [STATUS.md](STATUS.md)。
+任务是「拿起蓝色餐巾纸，把它放进黑色框里」。示教用 reBot Arm 102 控制 B601-RS。当前数据版为 `blue-tissue-center-20261109-final-60`，包含 **60 条 episode、33,847 帧**。推荐按整批划分为 50 条训练和 10 条验证。筛选理由和原始条号见 [episodes.csv](episodes.csv)，两端进度记在 [STATUS.md](STATUS.md)。
 
 数据是 LeRobot v3.0，标称 25 fps。俯视和腕部相机都是 640×480。每帧有 7 维状态和动作，顺序是底座、肩、肘、腕俯仰、腕偏航、腕滚转、夹爪。状态是从臂电机侧实测角度，动作是采集适配器输入坐标中的绝对目标。真机推理通过同一个适配器下发动作，由适配器完成关节方向和夹爪比例转换。
 
 ## 在服务器验包
 
-用服务器已有的 GitHub 登录克隆本仓库。通过 QDS 环境允许的文件传输方式，把 [校验清单](DATASET.sha256) 中列出的数据包放进服务器的传输入口。下面以 `~/incoming` 为例。
+用服务器已有的 GitHub 登录克隆本仓库。已有工作目录可先执行 `git pull --ff-only`。通过 QDS 环境允许的文件传输方式，把 [校验清单](DATASET.sha256) 中列出的数据包放进服务器的传输入口。下面以 `~/incoming` 为例。
 
 ~~~bash
 git clone https://github.com/ken-ab/rebot-b601-training.git
 cd rebot-b601-training
 repo="$PWD"
-archive="blue-tissue-center-20261109-final-53.tar.gz"
+archive="blue-tissue-center-20261109-final-60.tar.gz"
 inbox="$HOME/incoming"
-root="$repo/datasets/blue-tissue-center-20261109-final-53"
+root="$repo/datasets/blue-tissue-center-20261109-final-60"
 mkdir -p "$repo/datasets"
 (cd "$inbox" && sha256sum -c "$repo/DATASET.sha256") &&
   tar -xzf "$inbox/$archive" -C "$repo/datasets"
@@ -28,13 +28,13 @@ python scripts/check_dataset.py "$root"
 
 ## 划分和微调
 
-验证集来自同一次完整录制批次，条号写在 [splits.json](splits.json) 中，使用从 0 开始的训练版索引。用 LeRobot 的拆分工具生成独立的训练和验证目录，分别重建各自的统计。
+验证集来自两个完整录制批次，新补录的 7 条均留作验证。条号写在 [splits.json](splits.json) 中，使用从 0 开始的训练版索引。用 LeRobot 的拆分工具生成独立的训练和验证目录，分别重建各自的统计。
 
 ~~~bash
 lerobot-edit-dataset \
-  --repo_id=local/blue-tissue-center-20261109-final-53 \
+  --repo_id=local/blue-tissue-center-20261109-final-60 \
   --root="$root" \
-  --new_root="$repo/datasets/splits-final-53" \
+  --new_root="$repo/datasets/splits-final-60" \
   --operation.type=split \
   --operation.splits="$(cat splits.json)" \
   --push_to_hub=false
@@ -46,8 +46,8 @@ lerobot-edit-dataset \
 
 ~~~bash
 lerobot-train \
-  --dataset.repo_id=local/blue-tissue-center-20261109-final-53_train \
-  --dataset.root="$repo/datasets/splits-final-53/train" \
+  --dataset.repo_id=local/blue-tissue-center-20261109-final-60_train \
+  --dataset.root="$repo/datasets/splits-final-60/train" \
   --dataset.video_backend=pyav \
   --policy.type=pi05 \
   --policy.pretrained_path=lerobot/pi05_base \
