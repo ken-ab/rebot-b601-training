@@ -1,0 +1,13 @@
+{
+  "status": "remote_revision_tree_and_draft_pr_verified",
+  "at": "2026-11-10T01:58:38.592032+08:00",
+  "repository": "ken-ab/rebot-b601-training",
+  "revision": "679b5dc40c07ac441341e719b8b6e39edf2a4689",
+  "pull_request": "https://github.com/ken-ab/rebot-b601-training/pull/2",
+  "draft": true,
+  "remote_delivery_files": 61,
+  "all_blob_hashes_match_local_verified_commit": true,
+  "main_revision_unchanged": "bd7f604a2fadf3ddaf6617f6a25e474d3ceda2bd",
+  "model_weights_or_credentials_committed": false,
+  "read_only_verification_transport": "one process Go HTTP/1.1 after transient HTTP EOF; no duplicate mutation"
+}

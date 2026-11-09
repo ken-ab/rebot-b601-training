@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-09T22:37:12.959840+08:00",
+  "scope": "Additional read-only finalacceptance tools; training and original inferenceprotocol locks remain separate",
+  "files": {
+    "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/verify_optimizer_checkpoint.py": "92be88d8e36de0b12d074ec15cd9fbc94ef22af9c8fdb65bd91407d3e47a9489",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/audit_final_delivery.py": "d64031829a66ec15f5161740bb7e411fe034061a6b06e4a7606e67c59ecee070",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/finalize_acceptance.py": "61d632bff3e159a601e6ccb80ab332c614df9ce6a09ecd183825f5a95d11a1d0",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/profile_inference_memory.py": "a356c3ba575b6264371d16caba86e40df6e4524b4ea332c98db4f290300c31d5"
+  },
+  "optimizer_cpu_rehearsal": "receipts/optimizer-readback-rehearsal26000-v2.json",
+  "final_audit_not_executed_yet": true,
+  "diagnostic_review_passed": true,
+  "review_notes": [
+    "Terminal state re-read resolves systemd-exit race",
+    "Pinned JAX cuda backend name verified",
+    "Pure-memory tar hardlink streaming behavior verified",
+    "Final delivery hardware and physicalrobot limits explicitly retained"
+  ],
+  "latest_change": "CompactWindowsclient pixel/wire/actualRPC proof; explicitdirectRPC+timeout invalidation afterdiagnosedproxyissue; optionalstandaloneclientZIP copiedandverifiedatfinaldelivery"
+}

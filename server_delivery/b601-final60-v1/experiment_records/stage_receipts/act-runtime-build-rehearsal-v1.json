@@ -1,0 +1,22 @@
+{
+  "label": "act-runtime-build-rehearsal-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/build_runtime.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_002000",
+    "--bundle",
+    "/data2/yujiegao/b601-act-final60/validation/runtime_rehearsal_v1",
+    "--scope",
+    "interim"
+  ],
+  "started_at": "2026-11-09T20:16:48.816869+08:00",
+  "start_unix": 1794226608.8166623,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-runtime-build-rehearsal-v1.log",
+  "runner_pid": 422082,
+  "status": "passed",
+  "child_pid": 422223,
+  "returncode": 0,
+  "elapsed_seconds": 3.267606258392334,
+  "finished_at": "2026-11-09T20:16:52.084281+08:00"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "deployment-export-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/export_delivery.py"
+  ],
+  "started_at": "2026-11-10T01:39:52.270135+08:00",
+  "start_unix": 1794245992.2699597,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/deployment-export-v1.log",
+  "runner_pid": 2321659,
+  "status": "passed",
+  "child_pid": 2321664,
+  "returncode": 0,
+  "elapsed_seconds": 167.67968034744263,
+  "finished_at": "2026-11-10T01:42:39.949650+08:00"
+}

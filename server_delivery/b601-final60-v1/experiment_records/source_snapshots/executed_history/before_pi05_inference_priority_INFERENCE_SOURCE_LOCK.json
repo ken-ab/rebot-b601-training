@@ -1,0 +1,17 @@
+{
+  "at": "2026-11-09T20:09:33.612963+08:00",
+  "scope": "Deterministic inference and bounded model-selection sources; executed formaltraining retains originalTRAINING_SOURCE_LOCK",
+  "inference_flags": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true",
+  "files": {
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/b601_policy.py": "e5028fddfff21803c4c944b1248ef88c13c71f319f3724cea39cab0ea45d96fd",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py": "2a4d6ec43e93027190084e2d3cc63346a6ab2e14fc6464482a26da1d7cdc4d56",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/serve_b601.py": "595645597b1645a5e6595d793c08e7846d6dc9743c5c5979102f28347a0b311f",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/b601_data.py": "974680fa22688d25ecce955738bc02253b0002527b176edba952d3225e245927",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/train_pi05.py": "49c383e08c5a123e56fee39aec1f7af4c29e6735b261e3b5a544a034c8ad130d",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/deployment_selection.py": "1e9c286b5e44c38d1fa89849dad2882ec704fca5c09abc522f606bf7dae1c65b",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/deployment_self_test.py": "ef25ecd28139cffcb139b8137685174835a7d9e8b6d587f7c4018ed9ee07bd15",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/export_delivery.py": "9751dd603f2daa9ad62de4d3ed8d0afd9dbc38e8415c42d4eb8e35fbbbb73f97",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_websocket_deployment.py": "6d18c4d107db1f2d0563efd4b48902a354816f0b3e3154c41f61d5f6f14faa91",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/windows_client/client_smoke.py": "413c87feb7bf9d107213d6a155733cc560cd172fee61441e5d8121da181c7cbd"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "jax": "0.5.3",
+  "jaxlib": "0.5.3",
+  "devices": [
+    "cuda:0",
+    "cuda:1"
+  ],
+  "kinds": [
+    "NVIDIA RTX A4500",
+    "NVIDIA RTX A4500"
+  ],
+  "all_reduce": [
+    2.0,
+    2.0
+  ],
+  "bfloat16_matmul_finite": true
+}

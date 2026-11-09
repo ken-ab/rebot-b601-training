@@ -1,0 +1,57 @@
+{
+  "at": "2026-11-09T22:19:02.298238+08:00",
+  "user_confirmed_platform": "Windows + NVIDIA GPU",
+  "gpu_model": "NVIDIA GeForce RTX4070Laptop GPU",
+  "vram_gib": 7.99609375,
+  "wsl2_available": true,
+  "pending_questions": [],
+  "canonical_training": "Unchanged LinuxNVIDIA JAX0.5.3 pi05 LoRA,physicalGPU2/3",
+  "deployment_plan": "Use the user-data fine-tuned pi05 for inference. Two retained paths: serverGPU inference + nativeWindows camera/feedback/USB bridge; or purelocal pi05 inference in WSL2 on4070Laptop8GB afteractualacceptance. ACT is optionalcomparison, not replacement.",
+  "verified_on_current_host": "LinuxA4500 only; directinference+portablelayout+loopbackWebSocket passed. ClientWindows/WSLnotyetexecuted.",
+  "sources": [
+    {
+      "title": "JAX supportedplatforms",
+      "url": "https://docs.jax.dev/en/latest/installation.html#supported-platforms",
+      "finding": "WindowsNVIDIAGPU unsupported; WSL2GPUexperimental"
+    },
+    {
+      "title": "NVIDIA CUDAonWSL",
+      "url": "https://docs.nvidia.com/cuda/wsl-user-guide/index.html",
+      "finding": "CUDArequiresWSL2,WindowsNVIDIAdriver mappedintoWSL; no Linuxdisplaydriver installinsideWSL"
+    },
+    {
+      "title": "Microsoft WSLnetworking",
+      "url": "https://learn.microsoft.com/en-us/windows/wsl/networking",
+      "finding": "WindowsapplicationscanaccessLinuxWSLservers vialocalhost"
+    }
+  ],
+  "computer": "LenovoLegionY7000P IRX9 (83DG)",
+  "vram_mib_reported_by_user": 8188,
+  "vram_nominal_gib": 8,
+  "method_flexible": true,
+  "method_steering": "User says JAXLoRA is a borrowed recipe and explicitly requests a method/inference/deployment route suited to their hardware; preserve existingpi05 run while evaluating ACT+PyTorch alternative",
+  "preferred_local_candidate_under_test": "Fine-tuned pi05 via WSL2, low-memory platform allocator; actual4070 acceptance pending",
+  "language_conditioned_alternative": "SmolVLA450M iflanguage/multitask needed; requiresseparateenvironment",
+  "pi05_canonical_role": "Primarytrainedmodel for both server-assisted and localWSL2 inference; ongoing12.25h train/eval/delivery continues",
+  "pi05_memory_evidence": {
+    "host": "LinuxRTXA4500,notuserlaptop",
+    "platform_sampled_peak_mib": 6902,
+    "platform_steady_mib": 6714,
+    "host_peak_rss_mib": 10697.66015625,
+    "strict_golden_ten_calls": "passed",
+    "minimumVRAM_proven": false
+  },
+  "host_ram_gib_user_report": "32GB or more",
+  "host_ram_at_least_gib": 32,
+  "wsl_memory_guidance": "CheckactualWSLfreeRAM;16GiBWSLbudgetisreasonableon>=32GBhostforobserved~10.45GiBloadpeak;notmeasuredonactualWindows",
+  "user_clarification": "Laptop deployment means inference only, not fine-tuning. User wants pi05 as robotbrain and asks about server-inference relay because robot USB is attached to Windows.",
+  "primary_model": "User-data fine-tuned OpenPI pi05",
+  "act_role": "Alreadytrained lightweight independent comparison, no automatic replacementofpi05",
+  "remote_requirements": {
+    "windows_reads_cameras_and_joint_feedback": true,
+    "windows_executes_actions_via_original_b601_adapter": true,
+    "server_produces_action_chunks": true,
+    "windows_to_server_network_measured": false,
+    "real_robot_closed_loop_tested": false
+  }
+}

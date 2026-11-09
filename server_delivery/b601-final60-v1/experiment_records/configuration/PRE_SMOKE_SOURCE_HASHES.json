@@ -1,0 +1,22 @@
+{
+  "files": {
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/serve_b601.py": "595645597b1645a5e6595d793c08e7846d6dc9743c5c5979102f28347a0b311f",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py": "3722277fb91a67656f7d256f0897538e5881292ad7152ba8061fb7a0ffa7a847",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/b601_data.py": "974680fa22688d25ecce955738bc02253b0002527b176edba952d3225e245927",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/longrun_monitor.py": "03b19fbfededf43740f4dd2c07ba47b3fbbae2c0addfb1fc4249e239d2f41830",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/prepare_dataset.py": "a886982ea168301277eb5fd3d4b99f6afc800141cea93d064ff68e34e961c326",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/train_pi05.py": "49c383e08c5a123e56fee39aec1f7af4c29e6735b261e3b5a544a034c8ad130d",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/b601_policy.py": "cf62e41712a14d7833dd216dc048bea6576e504a15888c1b952b23c5f251aada",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/run_pi05.sh": "0c9f2e82607b1dfa3efb3d22e66ea0b4e969dcc4ace2fd613fc8ff092855f1b1",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_SERVER_ASSESSMENT_20261109/run_on_server.sh": "9463cd19db7d3187aff65f98adcbefbaf9b57f10fd8c51836524b2ba0e11350e"
+  },
+  "source_lock_stage": "before smoke; refresh after any necessary repair",
+  "subagent_reviewed": [
+    "action_sequence_keys",
+    "FSDP",
+    "logging",
+    "download CRC32C/generation",
+    "longrun hook",
+    "policy/evaluation mapping"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-09T21:17:35.876066+08:00",
+  "latest": {
+    "at": "2026-11-09T21:16:27.455158+08:00",
+    "step_label": 28000,
+    "optimizer_step": 28001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/28000",
+    "validation_flow_loss": 0.00932877257000655,
+    "evaluation_seconds": 6.320907551038545,
+    "validation_status": "passed",
+    "active_seconds": 28786.963432573015,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 28001,
+    "evaluation_seconds_this_session": 193.5959933490376,
+    "checkpoint_seconds_this_session": 280.4761526331422
+  },
+  "final_acceptance": {
+    "at": "2026-11-09T20:59:51.100036+08:00",
+    "stage": "waiting_actual_main_pipeline_completion"
+  },
+  "services": "MainPID=3811258\nId=b601-pipeline-20261109.service\nActiveState=active\n\nMainPID=2930749\nId=b601-final-acceptance-20261109.service\nActiveState=active\n",
+  "training_process": "    PID     ELAPSED %CPU   RSS\n4009515    08:03:51  197 13589572\n"
+}

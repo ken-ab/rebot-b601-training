@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-09T16:45:49.841167+08:00",
+  "status": "passed",
+  "scope": "Native/portable layout two freshprocesses on identical GPU1,3fixednoise calls each; no training change",
+  "effective_inputs_hashes_equal": true,
+  "cross_process_max_abs_difference": 0.0,
+  "within_process_max_abs_difference": 0.0,
+  "inference_xla_flags": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true",
+  "old_default_autotune_golden_max_difference": 0.252401980945411,
+  "threshold_relaxed": false,
+  "canonical_protocol": "Re-evaluate ALL bounded action candidates/base with this inference configuration; generate new golden from canonical predictions; verify in another freshprocess",
+  "source_reference": "https://openxla.org/xla/determinism",
+  "training_flags_changed": false
+}

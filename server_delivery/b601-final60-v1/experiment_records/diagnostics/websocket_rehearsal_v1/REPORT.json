@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "bundle": "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2",
+  "model_metadata": {
+    "robot_type": "seeed_b601_rs_follower",
+    "fps": 25,
+    "action_names": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_yaw.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ],
+    "action_space": "absolute_adapter_input"
+  },
+  "shape": [
+    3,
+    25,
+    7
+  ],
+  "all_finite": true,
+  "max_abs_network_vs_direct": 0.0,
+  "roundtrip_wall_seconds": [
+    13.858475614979398,
+    0.4785401350236498,
+    0.45937272999435663
+  ],
+  "synchronous_server_infer_ms": [
+    13742.966798017733,
+    374.31227194610983,
+    369.9591979966499
+  ],
+  "first_call_includes_jit": true,
+  "rng": "Three matching default-policy PRNG key0 calls in separate freshserver/directprocesses",
+  "host": "127.0.0.1",
+  "port": 49105,
+  "own_test_server_stopped": true,
+  "robot_connected_or_actuated": false,
+  "scope": "Interim production-protocol acceptance; final12h training stillcontinues"
+}

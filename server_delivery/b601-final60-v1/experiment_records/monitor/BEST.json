@@ -1,0 +1,16 @@
+{
+  "at": "2026-11-09T14:42:25.070327+08:00",
+  "step_label": 5000,
+  "optimizer_step": 5001,
+  "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/5000",
+  "validation_flow_loss": 0.005921505595324561,
+  "evaluation_seconds": 6.459847864054609,
+  "validation_status": "passed",
+  "active_seconds": 5144.5786328910035,
+  "target_active_seconds": 44100.0,
+  "dispatches_this_session": 5001,
+  "evaluation_seconds_this_session": 45.30782696901588,
+  "checkpoint_seconds_this_session": 50.69621408398962,
+  "preserved_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+  "selection_metric": "fixed-80-observation validation flow loss"
+}

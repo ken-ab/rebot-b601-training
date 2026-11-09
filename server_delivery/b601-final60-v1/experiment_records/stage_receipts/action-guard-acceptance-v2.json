@@ -1,0 +1,18 @@
+{
+  "label": "action-guard-acceptance-v2",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/windows_client/guard_self_test.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/ACTION_GUARD_ACCEPTANCE_v2.json"
+  ],
+  "started_at": "2026-11-10T00:25:43.557563+08:00",
+  "start_unix": 1794241543.557404,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/action-guard-acceptance-v2.log",
+  "runner_pid": 2430138,
+  "status": "passed",
+  "child_pid": 2430361,
+  "returncode": 0,
+  "elapsed_seconds": 0.35578465461730957,
+  "finished_at": "2026-11-10T00:25:43.913202+08:00"
+}

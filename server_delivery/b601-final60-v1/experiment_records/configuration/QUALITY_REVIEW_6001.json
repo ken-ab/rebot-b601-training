@@ -1,0 +1,28 @@
+{
+  "reviewed_by": "/root/b601_diagnostics",
+  "trigger": "single validation increase at6001 updates",
+  "values": {
+    "1001": 0.009289226471446454,
+    "2001": 0.006911062973085791,
+    "3001": 0.006378518766723573,
+    "4001": 0.006423390354029834,
+    "5001": 0.005921505595324561,
+    "6001": 0.0064430418715346605
+  },
+  "increase_from_best_percent": 8.807494442323737,
+  "increase_from_3001_percent": 1.0115687853377686,
+  "increase_from_4001_percent": 0.3059368405424312,
+  "decision": "continue fixed12.25h protocol, preserve best; no hyperparameter change",
+  "qualification": [
+    "Fixed observations and RNG mean this is not simply resampling evaluation noise.",
+    "Finite correlated validation subset and stochastic AdamW trajectory can produce checkpoint fluctuations.",
+    "Training loss uses augmentation/random noise and4dp console means; do not treat train-val difference as an exact generalization gap.",
+    "One increase does not establish overfitting or justify changing the protocol."
+  ],
+  "heuristic_review_triggers": {
+    "hard_failure": "nonfinite metrics, CUDA/NCCL failure, unreadable checkpoint, verified data/stats drift; stop only own task and diagnose",
+    "quality_review": "3 consecutive validation checkpoints >best*1.15 and rising while train improves, or persistent degradation after LR floor; review without automatic protocol change",
+    "severe_quality_review": "3 checkpoints >=best*2 or sustained order-of-magnitude loss/gradient jumps; diagnose at a safe checkpoint",
+    "qualification": "Operational heuristics, not significance thresholds; no current trigger met."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-smoke-v2/step_000020",
+  "device": "cpu",
+  "all_parameters_and_buffers_finite": true,
+  "state_arrays": 244,
+  "max_abs_difference_from_gpu": 4.57763671875e-05,
+  "real_observation_shape": [
+    25,
+    7
+  ],
+  "target_free_zero_latent": true,
+  "scope": "Actualsmokecheckpoint restore/readback; nottrainedtasksuccess"
+}

@@ -1,0 +1,19 @@
+{
+  "label": "smoke-b2-v1-readback",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_checkpoint.py",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/receipts/smoke-b2-v1-orbax-readback.json"
+  ],
+  "started_at": "2026-11-09T13:03:01.859839+08:00",
+  "start_unix": 1794200581.8596509,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/smoke-b2-v1-readback.log",
+  "runner_pid": 3897836,
+  "status": "passed",
+  "child_pid": 3897842,
+  "returncode": 0,
+  "elapsed_seconds": 21.930052995681763,
+  "finished_at": "2026-11-09T13:03:23.789719+08:00"
+}

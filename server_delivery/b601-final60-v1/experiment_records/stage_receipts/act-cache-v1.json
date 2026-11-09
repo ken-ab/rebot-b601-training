@@ -1,0 +1,16 @@
+{
+  "label": "act-cache-v1",
+  "command": [
+    "/home/yujiegao/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/bin/python3.11",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/prepare_cache.py"
+  ],
+  "started_at": "2026-11-09T19:53:17.531000+08:00",
+  "start_unix": 1794225197.5308042,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-cache-v1.log",
+  "runner_pid": 2231073,
+  "status": "failed",
+  "child_pid": 2231143,
+  "returncode": 1,
+  "elapsed_seconds": 0.09251856803894043,
+  "finished_at": "2026-11-09T19:53:17.623334+08:00"
+}

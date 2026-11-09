@@ -1,0 +1,22 @@
+{
+  "label": "websocket-final-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_websocket_deployment.py",
+    "--bundle",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/websocket_final_v1",
+    "--scope",
+    "final"
+  ],
+  "started_at": "2026-11-10T01:43:46.069967+08:00",
+  "start_unix": 1794246226.0697954,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/websocket-final-v1.log",
+  "runner_pid": 2334889,
+  "status": "passed",
+  "child_pid": 2334895,
+  "returncode": 0,
+  "elapsed_seconds": 67.79393029212952,
+  "finished_at": "2026-11-10T01:44:53.863739+08:00"
+}

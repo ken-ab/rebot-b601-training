@@ -1,0 +1,83 @@
+提示：使用 'master' 作为初始分支的名称。这个默认分支名称可能会更改。要在新仓库中
+提示：配置使用初始分支名，并消除这条警告，请执行：
+提示：
+提示：	git config --global init.defaultBranch <名称>
+提示：
+提示：除了 'master' 之外，通常选定的名字有 'main'、'trunk' 和 'development'。
+提示：可以通过以下命令重命名刚创建的分支：
+提示：
+提示：	git branch -m <name>
+已初始化空的 Git 仓库于 /home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.git/
+来自 https://github.com/Physical-Intelligence/openpi
+ * branch            215abfb217dbac7d5f1273282331b9b1866c0479 -> FETCH_HEAD
+HEAD 目前位于 215abfb docs(droid): fix config search instruction (#1023)
+子模组 'third_party/aloha'（https://github.com/Physical-Intelligence/aloha.git）已对路径 'third_party/aloha' 注册
+子模组 'third_party/libero'（https://github.com/Lifelong-Robot-Learning/LIBERO.git）已对路径 'third_party/libero' 注册
+正克隆到 '/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/third_party/aloha'...
+正克隆到 '/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/third_party/libero'...
+子模组路径 'third_party/aloha'：检出 'd1dc83afd89ded4379851257fe5d85632d31d5ec'
+子模组路径 'third_party/libero'：检出 'f78abd68ee283de9f9be3c8f7e2a9ad60246e95c'
+Using CPython 3.11.15 interpreter at: /home/yujiegao/.local/bin/python3.11
+Creating virtual environment at: .venv
+   Updating https://github.com/huggingface/lerobot (0cf864870cf29f4738d3ade893e6fd13fbd7cdb5)
+   Building openpi-client @ file:///home/yujiegao/%E6%A1%8C%E9%9D%A2/zzk/rebot-b601-training/openpi_b601/.openpi/packages/openpi-client
+   Building openpi @ file:///home/yujiegao/%E6%A1%8C%E9%9D%A2/zzk/rebot-b601-training/openpi_b601/.openpi
+Downloading sympy (6.0MiB)
+Downloading numpy (17.4MiB)
+Downloading pillow (4.4MiB)
+Downloading hf-xet (4.9MiB)
+Downloading torch (783.1MiB)
+Downloading fonttools (4.7MiB)
+Downloading torchvision (7.1MiB)
+Downloading jax-cuda12-plugin (15.9MiB)
+Downloading transformers (10.3MiB)
+Downloading matplotlib (8.2MiB)
+Downloading ruff (11.0MiB)
+Downloading pyarrow (40.3MiB)
+Downloading nvidia-cuda-cupti-cu12 (8.5MiB)
+Downloading opencv-python-headless (47.7MiB)
+Downloading mujoco (4.4MiB)
+Downloading polars (34.6MiB)
+Downloading jaxlib (100.2MiB)
+Downloading nvidia-nvjitlink-cu12 (18.8MiB)
+Downloading nvidia-cuda-nvcc-cu12 (38.7MiB)
+Downloading lxml (4.7MiB)
+Downloading numcodecs (8.4MiB)
+Downloading cmake (26.6MiB)
+Downloading dm-control (37.5MiB)
+Downloading imageio-ffmpeg (28.1MiB)
+Downloading wandb (20.4MiB)
+Downloading jax-cuda12-pjrt (99.8MiB)
+Downloading nvidia-cuda-nvrtc-cu12 (22.6MiB)
+Downloading nvidia-cufft-cu12 (190.9MiB)
+Downloading opencv-python (60.1MiB)
+Downloading nvidia-cublas-cu12 (374.9MiB)
+Downloading nvidia-cusolver-cu12 (150.9MiB)
+Downloading nvidia-cudnn-cu12 (544.5MiB)
+Downloading labmaze (4.7MiB)
+Downloading rerun-sdk (68.1MiB)
+Downloading av (34.7MiB)
+Downloading tensorstore (17.5MiB)
+Downloading nvidia-cusparse-cu12 (206.5MiB)
+Downloading llvmlite (40.4MiB)
+Downloading scipy (35.9MiB)
+Downloading triton (148.5MiB)
+Downloading nvidia-cusparselt-cu12 (149.5MiB)
+Downloading nvidia-nccl-cu12 (192.0MiB)
+Downloading virtualenv (5.8MiB)
+Downloading nvidia-curand-cu12 (53.7MiB)
+Downloading pandas (12.5MiB)
+Downloading h5py (4.3MiB)
+Downloading hf-transfer (3.4MiB)
+Downloading numba (3.7MiB)
+Downloading diffusers (3.4MiB)
+Downloading pyopengl (3.0MiB)
+error: Failed to download and build `lerobot @ git+https://github.com/huggingface/lerobot@0cf864870cf29f4738d3ade893e6fd13fbd7cdb5`
+  cause: Git operation failed
+  cause: failed to clone into: /data2/yujiegao/b601-pi05/cache/uv/git-v1/db/b2400a7a62d6a7cf
+  cause: failed to fetch commit `0cf864870cf29f4738d3ade893e6fd13fbd7cdb5`
+  cause: process didn't exit successfully: `/usr/bin/git fetch --force --update-head-ok 'https://github.com/huggingface/lerobot' '+0cf864870cf29f4738d3ade893e6fd13fbd7cdb5:refs/commit/0cf864870cf29f4738d3ade893e6fd13fbd7cdb5'` (exit status: 128)
+         --- stderr
+         fatal: 无法访问 'https://github.com/huggingface/lerobot/'：gnutls_handshake() failed: The TLS connection was non-properly terminated.
+
+hint: `lerobot` was included because `openpi` (v0.1.0) depends on `lerobot`

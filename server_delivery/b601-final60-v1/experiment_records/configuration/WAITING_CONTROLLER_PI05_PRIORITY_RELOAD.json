@@ -1,0 +1,10 @@
+{
+  "at": "2026-11-09T22:20:46.248308+08:00",
+  "reason": "Reload waiting finalacceptance process so future report respects userpi05 inference priority",
+  "old_waiter_pid": 2930749,
+  "new_waiter_pid": 3489784,
+  "stage_before": "waiting_actual_main_pipeline_completion",
+  "original_training_pid": 4009515,
+  "original_training_process_still_live": true,
+  "only_waiter_reloaded_no_model_or_optimizer_change": true
+}

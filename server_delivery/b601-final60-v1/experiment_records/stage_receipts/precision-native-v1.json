@@ -1,0 +1,20 @@
+{
+  "label": "precision-native-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/probe_inference_precision.py",
+    "--layout",
+    "native",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/precision_native_v1"
+  ],
+  "started_at": "2026-11-09T16:39:22.945655+08:00",
+  "start_unix": 1794213562.9454656,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/precision-native-v1.log",
+  "runner_pid": 3413426,
+  "status": "passed",
+  "child_pid": 3413516,
+  "returncode": 0,
+  "elapsed_seconds": 44.75300121307373,
+  "finished_at": "2026-11-09T16:40:07.698480+08:00"
+}

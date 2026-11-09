@@ -1,0 +1,16 @@
+{
+  "label": "act-cache-v2",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/prepare_cache.py"
+  ],
+  "started_at": "2026-11-09T19:55:18.447016+08:00",
+  "start_unix": 1794225318.4468355,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-cache-v2.log",
+  "runner_pid": 2348787,
+  "status": "passed",
+  "child_pid": 2348789,
+  "returncode": 0,
+  "elapsed_seconds": 213.76268649101257,
+  "finished_at": "2026-11-09T19:58:52.209537+08:00"
+}

@@ -1,0 +1,330 @@
+Checked 240 packages in 6ms
+Visible devices: [CudaDevice(id=0), CudaDevice(id=1)]; FSDP devices: 2; CUDA_VISIBLE_DEVICES=GPU-a2df82e1-ad48-ea47-fa69-5ee02ec32b0e,GPU-8d91782a-1f41-2aa0-ef48-585ded17365d
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+train: 28729 frames, images/prompt and [25, 32] actions OK
+val: 5118 frames, images/prompt and [25, 32] actions OK
+pi05_b601_lora: 20 steps, batch 2, 25 Hz
+Checkpoints: /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2
+13:00:04.360 [I] Running on: lenovo-05                                                            (3875484:train.py:196)
+13:00:05.552 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x74926c3e9f50> (3875484:base_pytree_checkpoint_handler.py:334)
+13:00:05.553 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x74926c3e9f50> (3875484:base_pytree_checkpoint_handler.py:334)
+13:00:05.553 [I] [thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID. (3875484:multihost.py:390)
+13:00:05.553 [I] [process=0][thread=MainThread] CheckpointManager init: checkpointers=None, item_names=None, item_handlers={'assets': <openpi.training.checkpoints.CallbackHandler object at 0x748ff8334490>, 'train_state': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a3090>, 'params': <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a2e50>}, handler_registry=None (3875484:checkpoint_manager.py:620)
+13:00:05.554 [I] Deferred registration for item: "assets". Adding handler `<openpi.training.checkpoints.CallbackHandler object at 0x748ff8334490>` for item "assets" and save args `<class 'openpi.training.checkpoints.CallbackSave'>` and restore args `<class 'openpi.training.checkpoints.CallbackRestore'>` to `_handler_registry`. (3875484:composite_checkpoint_handler.py:234)
+13:00:05.554 [I] Deferred registration for item: "train_state". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a3090>` for item "train_state" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (3875484:composite_checkpoint_handler.py:234)
+13:00:05.554 [I] Deferred registration for item: "params". Adding handler `<orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a2e50>` for item "params" and save args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>` to `_handler_registry`. (3875484:composite_checkpoint_handler.py:234)
+13:00:05.554 [I] Deferred registration for item: "metrics". Adding handler `<orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x748ff83a1790>` for item "metrics" and save args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>` and restore args `<class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>` to `_handler_registry`. (3875484:composite_checkpoint_handler.py:234)
+13:00:05.555 [I] Initialized registry DefaultCheckpointHandlerRegistry({('assets', <class 'openpi.training.checkpoints.CallbackSave'>): <openpi.training.checkpoints.CallbackHandler object at 0x748ff8334490>, ('assets', <class 'openpi.training.checkpoints.CallbackRestore'>): <openpi.training.checkpoints.CallbackHandler object at 0x748ff8334490>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a3090>, ('train_state', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a3090>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeSaveArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a2e50>, ('params', <class 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeRestoreArgs'>): <orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler object at 0x748ff83a2e50>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonSaveArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x748ff83a1790>, ('metrics', <class 'orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonRestoreArgs'>): <orbax.checkpoint._src.handlers.json_checkpoint_handler.JsonCheckpointHandler object at 0x748ff83a1790>}). (3875484:composite_checkpoint_handler.py:502)
+13:00:05.555 [I] orbax-checkpoint version: 0.11.13                                                (3875484:abstract_checkpointer.py:35)
+13:00:05.556 [I] [process=0][thread=MainThread] Using barrier_sync_fn: <function get_barrier_sync_fn.<locals>.<lambda> at 0x748ff8369b20> timeout: 7200 secs and primary_host=0 for async checkpoint writes (3875484:async_checkpointer.py:170)
+13:00:05.556 [I] Found 0 checkpoint steps in /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2 (3875484:checkpoint_manager.py:1701)
+13:00:05.557 [I] [process=0][thread=MainThread] CheckpointManager created,  primary_host=0, CheckpointManagerOptions=CheckpointManagerOptions(save_interval_steps=1, max_to_keep=1, keep_time_interval=None, keep_period=5000, should_keep_fn=None, best_fn=None, best_mode='max', keep_checkpoints_without_metrics=True, step_prefix=None, step_format_fixed_length=None, step_name_format=None, create=False, cleanup_tmp_directories=False, save_on_steps=frozenset(), single_host_load_and_broadcast=False, todelete_subdir=None, enable_background_delete=False, read_only=False, enable_async_checkpointing=True, async_options=AsyncOptions(timeout_secs=7200, barrier_sync_fn=None, post_finalization_callback=None, create_directories_asynchronously=True), multiprocessing_options=MultiprocessingOptions(primary_host=0, active_processes=None, barrier_sync_key_prefix=None), should_save_fn=None, file_options=FileOptions(path_permission_mode=None), save_root_metadata=True, temporary_path_class=None, save_decision_policy=None, prevent_write_metrics=False), root_directory=/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2: <orbax.checkpoint.checkpoint_manager.CheckpointManager object at 0x74905c2c3ad0> (3875484:checkpoint_manager.py:801)
+13:00:05.583 [I] Loaded norm stats from /home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/prepared/assets/rebot-b601-train (3875484:config.py:196)
+13:00:05.712 [I] data_config: DataConfig(repo_id='rebot-b601-train', asset_id='rebot-b601-train', norm_stats={'state': NormStats(mean=array([-12.37482195,  83.91024769,  59.8679431 , -27.37243322,
+        -5.37346637,  -6.23115599, 108.02798696]), std=array([ 9.24210007, 38.71931721, 30.31708487, 19.12183298,  7.12702189,
+       12.10451782, 89.96447204]), q01=array([-27.26273041,  -0.08789062,   0.43945315, -70.16083527,
+       -21.74742203, -29.42580452,   0.17578125]), q99=array([  8.06422234, 133.9432843 , 117.88075928,  16.2163353 ,
+        19.38048363,  20.69269066, 270.20599365])), 'actions': NormStats(mean=array([-12.3473433 ,  82.2841397 , -62.86119542,  26.0761579 ,
+         5.53505913,  -6.24182371,  18.25288134]), std=array([ 9.15594961, 36.08147774, 29.80853567, 19.69916847,  7.30850512,
+       12.17826714, 15.76120123]), q01=array([ -27.36835861,    0.        , -119.60498047,  -20.00649452,
+        -19.55566406,  -29.51449966,    0.        ]), q99=array([  8.28466797, 129.22969055,  -0.43457004,  69.59902191,
+        22.31635857,  21.04531288,  45.        ]))}, repack_transforms=Group(inputs=(), outputs=()), data_transforms=Group(inputs=[B601Inputs()], outputs=[B601Outputs()]), model_transforms=Group(inputs=[InjectDefaultPrompt(prompt=None), ResizeImages(height=224, width=224), TokenizePrompt(tokenizer=<openpi.models.tokenizer.PaligemmaTokenizer object at 0x74904457fdd0>, discrete_state_input=True), PadStatesAndActions(model_action_dim=32)], outputs=()), use_quantile_norm=True, action_sequence_keys=('action',), prompt_from_task=True, rlds_data_dir=None, action_space=None, datasets=()) (3875484:data_loader.py:243)
+13:00:06.487 [I] local_batch_size: 2                                                              (3875484:data_loader.py:324)
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+13:00:07.761 [I] Initialized data loader:
+[0].images['base_0_rgb']: (2, 224, 224, 3)@float32
+[0].images['left_wrist_0_rgb']: (2, 224, 224, 3)@float32
+[0].images['right_wrist_0_rgb']: (2, 224, 224, 3)@float32
+[0].image_masks['base_0_rgb']: (2,)@bool
+[0].image_masks['left_wrist_0_rgb']: (2,)@bool
+[0].image_masks['right_wrist_0_rgb']: (2,)@bool
+[0].state: (2, 32)@float32
+[0].tokenized_prompt: (2, 200)@int32
+[0].tokenized_prompt_mask: (2, 200)@bool
+[1]: (2, 25, 32)@float32 (3875484:train.py:227)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.870 [I] Sharding .params['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['embedder']['input_embedding'].value of shape (257152, 2048) (1004.50 MiB) along axis 0 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value of shape (1024, 3072) (6.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value of shape (18, 8, 16, 2048) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value of shape (18, 8, 256, 2048) (144.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value of shape (18, 8, 256, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value of shape (18, 8, 32, 1024) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value of shape (18, 8, 256, 1024) (72.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value of shape (18, 2, 1, 2048, 16) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value of shape (18, 2, 1, 2048, 256) (36.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value of shape (18, 2, 1, 1024, 32) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.871 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value of shape (18, 2, 1, 1024, 256) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value of shape (18, 8, 2048, 16) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value of shape (18, 8, 2048, 256) (144.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value of shape (18, 8, 1024, 32) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value of shape (18, 8, 32, 256) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value of shape (18, 8, 1024, 256) (72.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value of shape (18, 2, 2048, 16384) (2304.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value of shape (18, 2, 2048, 16) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value of shape (18, 2, 16, 16384) (36.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp']['linear'].value of shape (18, 16384, 2048) (1152.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value of shape (18, 16384, 16) (18.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value of shape (18, 2, 1024, 4096) (288.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.872 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value of shape (18, 2, 1024, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value of shape (18, 2, 32, 4096) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['linear'].value of shape (18, 4096, 1024) (144.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value of shape (18, 4096, 32) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (108.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value of shape (18, 1024, 3072) (108.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .params['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.873 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value of shape (18, 8, 16, 2048) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value of shape (18, 8, 256, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value of shape (18, 8, 32, 1024) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value of shape (18, 2, 1, 2048, 16) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.874 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value of shape (18, 2, 1, 1024, 32) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value of shape (18, 8, 2048, 16) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value of shape (18, 8, 1024, 32) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value of shape (18, 8, 32, 256) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value of shape (18, 2, 2048, 16) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value of shape (18, 2, 16, 16384) (36.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value of shape (18, 16384, 16) (18.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value of shape (18, 2, 1024, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value of shape (18, 2, 32, 4096) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value of shape (18, 4096, 32) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.875 [I] Sharding .opt_state[1][0].mu['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value of shape (27, 1152, 4304) (510.68 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value of shape (27, 4304, 1152) (510.68 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value of shape (27, 16, 72, 1152) (136.69 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value of shape (27, 1152, 16, 72) (136.69 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['img']['head']['kernel'].value of shape (1152, 2048) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.876 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value of shape (18, 8, 16, 2048) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value of shape (18, 8, 256, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value of shape (18, 8, 32, 1024) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value of shape (18, 2, 1, 2048, 16) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value of shape (18, 2, 1, 1024, 32) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value of shape (18, 8, 2048, 16) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value of shape (18, 8, 1024, 32) (18.00 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value of shape (18, 8, 32, 256) (4.50 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value of shape (18, 2, 2048, 16) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value of shape (18, 2, 16, 16384) (36.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value of shape (18, 16384, 16) (18.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value of shape (18, 2, 1024, 32) (4.50 MiB) along axis 2 (3875484:sharding.py:89)
+13:00:09.877 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value of shape (18, 2, 32, 4096) (18.00 MiB) along axis 3 (3875484:sharding.py:89)
+13:00:09.878 [I] Sharding .opt_state[1][0].nu['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value of shape (18, 4096, 32) (9.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.878 [I] Sharding .opt_state[1][0].nu['time_mlp_in']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.878 [I] Sharding .opt_state[1][0].nu['time_mlp_out']['kernel'].value of shape (1024, 1024) (4.00 MiB) along axis 1 (3875484:sharding.py:89)
+13:00:09.879 [I] Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x74926c3e9f50> (3875484:base_pytree_checkpoint_handler.py:334)
+13:00:09.917 [I] Restoring checkpoint from /data2/yujiegao/b601-pi05/models/pi05_base/params.     (3875484:checkpointer.py:298)
+13:00:20.339 [I] [process=0] /jax/checkpoint/read/bytes_per_sec: 1.2 GiB/s (total bytes: 12.5 GiB) (time elapsed: 10 seconds) (per-host) (3875484:base_pytree_checkpoint_handler.py:114)
+13:00:20.339 [I] Finished restoring checkpoint in 10.42 seconds from /data2/yujiegao/b601-pi05/models/pi05_base/params. (3875484:checkpointer.py:309)
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/jax/_src/interpreters/mlir.py:1178: UserWarning: Some donated buffers were not usable: ShapedArray(float32[27,1152,4304]), ShapedArray(float32[27,4304,1152]), ShapedArray(float32[27,1152,16,72]), ShapedArray(float32[27,16,72,1152]), ShapedArray(float32[27,1152,16,72]), ShapedArray(float32[27,1152,16,72]), ShapedArray(float32[1152,2048]), ShapedArray(bfloat16[257152,2048]), ShapedArray(bfloat16[1024,3072]), ShapedArray(bfloat16[18,8,256,2048]), ShapedArray(bfloat16[18,2,1,2048,256]), ShapedArray(bfloat16[18,8,2048,256]), ShapedArray(bfloat16[18,2,2048,16384]), ShapedArray(bfloat16[18,16384,2048]), ShapedArray(bfloat16[18,2,1024,4096]), ShapedArray(bfloat16[18,4096,1024]), ShapedArray(bfloat16[18,1024,3072]), ShapedArray(bfloat16[18,1024,3072]), ShapedArray(float32[1024,1024]), ShapedArray(float32[1024,1024]).
+See an explanation at https://jax.readthedocs.io/en/latest/faq.html#buffer-donation.
+  warnings.warn("Some donated buffers were not usable:"
+2026-11-09 13:00:41.360285: W external/xla/xla/hlo/transforms/simplifiers/hlo_rematerialization.cc:3021] Can't reduce memory use below 5.12GiB (5496925206 bytes) by rematerialization; only reduced to 5.44GiB (5839360592 bytes), down from 5.44GiB (5839360592 bytes) originally
+13:00:51.152 [I] Initialized train state:
+['PaliGemma']['img']['Transformer']['encoder_norm']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoder_norm']['scale'].value: (1152,)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_0']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['LayerNorm_1']['scale'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['bias'].value: (27, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_0']['kernel'].value: (27, 1152, 4304)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MlpBlock_0']['Dense_1']['kernel'].value: (27, 4304, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['key']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['bias'].value: (27, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['out']['kernel'].value: (27, 16, 72, 1152)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['query']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['bias'].value: (27, 16, 72)@float32
+['PaliGemma']['img']['Transformer']['encoderblock']['MultiHeadDotProductAttention_0']['value']['kernel'].value: (27, 1152, 16, 72)@float32
+['PaliGemma']['img']['embedding']['bias'].value: (1152,)@float32
+['PaliGemma']['img']['embedding']['kernel'].value: (14, 14, 3, 1152)@float32
+['PaliGemma']['img']['head']['bias'].value: (2048,)@float32
+['PaliGemma']['img']['head']['kernel'].value: (1152, 2048)@float32
+['PaliGemma']['img']['pos_embedding'].value: (1, 256, 1152)@float32
+['PaliGemma']['llm']['embedder']['input_embedding'].value: (257152, 2048)@bfloat16
+['PaliGemma']['llm']['final_norm']['scale'].value: (2048,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['bias'].value: (3072,)@bfloat16
+['PaliGemma']['llm']['final_norm_1']['Dense_0']['kernel'].value: (1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_a'].value: (18, 8, 256, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['lora_b'].value: (18, 8, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum']['w'].value: (18, 8, 256, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_a'].value: (18, 8, 256, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['lora_b'].value: (18, 8, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['attn']['attn_vec_einsum_1']['w'].value: (18, 8, 256, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_a'].value: (18, 2, 1, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['lora_b'].value: (18, 2, 1, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum']['w'].value: (18, 2, 1, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_a'].value: (18, 2, 1, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['lora_b'].value: (18, 2, 1, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['kv_einsum_1']['w'].value: (18, 2, 1, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_a'].value: (18, 8, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['lora_b'].value: (18, 8, 16, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum']['w'].value: (18, 8, 2048, 256)@bfloat16
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_a'].value: (18, 8, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['lora_b'].value: (18, 8, 32, 256)@float32
+['PaliGemma']['llm']['layers']['attn']['q_einsum_1']['w'].value: (18, 8, 1024, 256)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum'].value: (18, 2, 2048, 16384)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_a'].value: (18, 2, 2048, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['gating_einsum_lora_b'].value: (18, 2, 16, 16384)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear'].value: (18, 16384, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_a'].value: (18, 16384, 16)@float32
+['PaliGemma']['llm']['layers']['mlp']['linear_lora_b'].value: (18, 16, 2048)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum'].value: (18, 2, 1024, 4096)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_a'].value: (18, 2, 1024, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['gating_einsum_lora_b'].value: (18, 2, 32, 4096)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear'].value: (18, 4096, 1024)@bfloat16
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_a'].value: (18, 4096, 32)@float32
+['PaliGemma']['llm']['layers']['mlp_1']['linear_lora_b'].value: (18, 32, 1024)@float32
+['PaliGemma']['llm']['layers']['pre_attention_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_attention_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm']['scale'].value: (18, 2048)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['bias'].value: (18, 3072)@bfloat16
+['PaliGemma']['llm']['layers']['pre_ffw_norm_1']['Dense_0']['kernel'].value: (18, 1024, 3072)@bfloat16
+['action_in_proj']['bias'].value: (1024,)@float32
+['action_in_proj']['kernel'].value: (32, 1024)@float32
+['action_out_proj']['bias'].value: (32,)@float32
+['action_out_proj']['kernel'].value: (1024, 32)@float32
+['time_mlp_in']['bias'].value: (1024,)@float32
+['time_mlp_in']['kernel'].value: (1024, 1024)@float32
+['time_mlp_out']['bias'].value: (1024,)@float32
+['time_mlp_out']['kernel'].value: (1024, 1024)@float32 (3875484:train.py:238)
+13:00:51.169 [I] Progress on: -/20 rate:- remaining:? elapsed:00:00 postfix:-                     (3875484:tqdm_logging.py:145)
+2026-11-09 13:00:57.942306: E external/xla/xla/service/slow_operation_alarm.cc:73] Constant folding an instruction is taking > 1s:
+
+  %reduce-window.15 = s32[2,993]{1,0} reduce-window(%broadcast.5911, %constant.3392), window={size=1x993 pad=0_0x992_0}, to_apply=%region_45.13173, metadata={op_name="jit(<unnamed wrapped function>)/jit(main)/jvp(jit(cumsum))/reduce_window_sum" source_file="/home/yujiegao/\346\241\214\351\235\242/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/pi0.py" source_line=41}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+2026-11-09 13:00:58.888899: E external/xla/xla/service/slow_operation_alarm.cc:140] The operation took 1.946849186s
+Constant folding an instruction is taking > 1s:
+
+  %reduce-window.15 = s32[2,993]{1,0} reduce-window(%broadcast.5911, %constant.3392), window={size=1x993 pad=0_0x992_0}, to_apply=%region_45.13173, metadata={op_name="jit(<unnamed wrapped function>)/jit(main)/jvp(jit(cumsum))/reduce_window_sum" source_file="/home/yujiegao/\346\241\214\351\235\242/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/pi0.py" source_line=41}
+
+This isn't necessarily a bug; constant-folding is inherently a trade-off between compilation time and speed at runtime. XLA has some guards that attempt to keep constant folding from taking too long, but fundamentally you'll always be able to come up with an input program that takes a long time.
+
+If you'd like to file a bug, run with envvar XLA_FLAGS=--xla_dump_to=/tmp/foo and attach the results.
+13:02:22.413 [I] Progress on: -/20 rate:- remaining:? elapsed:01:31 postfix:-                     (3875484:tqdm_logging.py:145)
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+13:02:32.872 [I] Progress on: 10.0it/20.0it rate:2.2s/it remaining:00:22 elapsed:01:41 postfix:-  (3875484:tqdm_logging.py:145)
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+13:02:43.140 [I] Progress on: 19.0it/20.0it rate:1.2s/it remaining:00:01 elapsed:01:51 postfix:-  (3875484:tqdm_logging.py:145)
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+13:02:43.734 [I] [process=0][thread=MainThread][wait_until_finished] No Save Finalize thread to wait for. Returning. (3875484:checkpoint_manager.py:1987)
+13:02:43.736 [I] [process=0] Saving checkpoint at step 19                                         (3875484:checkpoint_manager.py:1408)
+13:02:43.738 [I] [process=0] Started async saving checkpoint to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19. (3875484:async_checkpointer.py:439)
+13:02:43.740 [I] Using ThreadSafeKeyValueSignalingClient                                          (3875484:signaling_client.py:332)
+13:02:43.744 [I] Creating tmp directory /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0 (3875484:atomicity.py:144)
+13:02:43.789 [I] Wrote Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1794200563773835289, 'commit_timestamp_nsecs': None, 'custom_metadata': {}}, json={"item_handlers": null, "metrics": {}, "performance_metrics": {}, "init_timestamp_nsecs": 1794200563773835289, "commit_timestamp_nsecs": null, "custom_metadata": {}} to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (3875484:checkpoint.py:186)
+13:02:43.798 [I] Creating tmp directory /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/assets.orbax-checkpoint-tmp-1 (3875484:atomicity.py:144)
+13:02:43.799 [I] Creating tmp directory /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2 (3875484:atomicity.py:144)
+13:02:43.800 [I] Creating tmp directory /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3 (3875484:atomicity.py:144)
+13:02:43.863 [I] Transferring arrays to host memory with options: use_replica_parallel=True, enable_pinned_host_transfer=False (3875484:replica_slices.py:341)
+13:02:50.376 [I] Transferring arrays to host memory with options: use_replica_parallel=True, enable_pinned_host_transfer=False (3875484:replica_slices.py:341)
+13:02:50.550 [I] [process=0][thread=array_type_handler] Wrote 71 array_metadata.ArrayMetadata to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2/array_metadatas/process_0 (3875484:array_metadata_store.py:198)
+13:02:51.718 [I] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 926.1 MiB/s (total bytes: 7.2 GiB) (time elapsed: 7 seconds) (per-host) (3875484:base_pytree_checkpoint_handler.py:114)
+13:02:51.726 [I] [process=0] /jax/checkpoint/write/blocking_bytes_per_sec: 448.3 MiB/s (total bytes: 3.5 GiB) (time elapsed: 7 seconds) (per-host) (3875484:base_pytree_checkpoint_handler.py:114)
+13:02:51.747 [I] [process=0][thread=async_save] Background save thread started.                   (3875484:async_checkpointer.py:77)
+13:02:51.774 [I] Finished blocking save in 8.04 seconds. Continuing to save asynchronously to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19. (3875484:async_checkpointer.py:548)
+13:02:51.775 [I] [process=0][thread=MainThread][step=19] Starting CheckpointManager Save Finalize thread=save_finalize (3875484:checkpoint_manager.py:1453)
+13:02:51.782 [I] [process=0][thread=save_finalize] Waiting for background save thread=async_save. (3875484:async_checkpointer.py:258)
+13:02:51.786 [I] {'step': 19, 'event_type': 'save', 'directory': '/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2', 'reached_preemption': False, 'preemption_received_at': None, 'synchronous': False, 'wait_for_prev_start_time': 1794200563.734483, 'wait_for_prev_duration_secs': 0.000400543212890625, 'checkpointer_blocking_start_time': 1794200563.7363887, 'checkpointer_blocking_duration_secs': 8.038652896881104, 'get_old_steps_start_time': 1794200571.7751539, 'get_old_steps_duration_secs': 2.3126602172851562e-05, 'checkpoint_manager_blocking_start_time': 1794200563.7338474, 'checkpoint_manager_blocking_duration_secs': 8.052068948745728} (3875484:standard_logger.py:34)
+13:02:51.787 [I] Progress on: 20.0it/20.0it rate:3.6s/it remaining:00:00 elapsed:02:00 postfix:-  (3875484:tqdm_logging.py:145)
+13:02:51.802 [I] Waiting for checkpoint manager to finish                                         (3875484:train.py:275)
+13:02:51.802 [I] [process=0][thread=MainThread][step=19][wait_until_finished] Waiting for Save Finalize thread (save_finalize) to complete. (3875484:checkpoint_manager.py:1998)
+13:02:51.928 [I] [process=0][thread=array_type_handler] Wrote 105 array_metadata.ArrayMetadata to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3/array_metadatas/process_0 (3875484:array_metadata_store.py:198)
+13:02:57.383 [I] [process=0] /jax/checkpoint/write/bytes_per_sec: 541.4 MiB/s (total bytes: 7.2 GiB) (time elapsed: 13 seconds) (per-host) (3875484:base_pytree_checkpoint_handler.py:114)
+13:02:57.383 [I] [process=0] /jax/checkpoint/write/bytes_per_sec: 261.9 MiB/s (total bytes: 3.5 GiB) (time elapsed: 13 seconds) (per-host) (3875484:base_pytree_checkpoint_handler.py:114)
+13:02:57.384 [I] [process=0][thread=async_save] 5 Handler Commit operations completed.            (3875484:async_checkpointer.py:87)
+13:02:57.384 [I] Read Metadata={'item_handlers': None, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1794200563773835289, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} from /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (3875484:checkpoint.py:226)
+13:02:57.385 [I] Renaming /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/assets.orbax-checkpoint-tmp-1 to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/assets (3875484:atomicity.py:289)
+13:02:57.392 [I] [process=0][thread=async_save] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0. (3875484:array_metadata_store.py:362)
+13:02:57.394 [I] Updated Metadata={'item_handlers': {'assets': 'openpi.training.checkpoints.CallbackHandler', 'params': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler', 'train_state': 'orbax.checkpoint._src.handlers.pytree_checkpoint_handler.PyTreeCheckpointHandler'}, 'metrics': {}, 'performance_metrics': {}, 'init_timestamp_nsecs': 1794200563773835289, 'commit_timestamp_nsecs': None, 'custom_metadata': {}} to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/_CHECKPOINT_METADATA (3875484:checkpoint.py:245)
+13:02:57.406 [I] Renaming /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/train_state.orbax-checkpoint-tmp-3 to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/train_state (3875484:atomicity.py:289)
+13:02:57.411 [I] [process=0][thread=async_save] Skipped cross-host ArrayMetadata validation because only one process is found: process_index=0. (3875484:array_metadata_store.py:362)
+13:02:57.421 [I] Renaming /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/params.orbax-checkpoint-tmp-2 to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0/params (3875484:atomicity.py:289)
+13:02:57.422 [I] Renaming /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19.orbax-checkpoint-tmp-0 to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19 (3875484:atomicity.py:289)
+13:02:57.424 [I] [process=0][thread=async_save] Finished saving checkpoint (finalized tmp dir) to `/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19`. (3875484:atomicity.py:573)
+13:02:57.424 [I] Finished asynchronous save (blocking + background) in 13.69 seconds to /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b2/19 (3875484:async_checkpointer.py:412)
+13:02:57.425 [I] [process=0][thread=async_save] Background save thread done.                      (3875484:async_checkpointer.py:143)
+13:02:57.425 [I] [process=0][thread=save_finalize] Done with waiting for background save thread=async_save. (3875484:async_checkpointer.py:266)
+13:02:57.426 [I] [process=0][thread=save_finalize] No errors found in background save thread=async_save. (3875484:async_checkpointer.py:276)
+13:02:57.426 [I] [process=0][thread=save_finalize][step=19] CheckpointManager Save Finalize is syncing with other hosts... (3875484:checkpoint_manager.py:2095)
+13:02:57.426 [I] [process=0][thread=save_finalize][step=19] CheckpointManager Save Finalize is done on all hosts. (3875484:checkpoint_manager.py:2110)
+13:02:57.426 [I] [process=0][thread=MainThread][step=19][wait_until_finished] Done waiting for Save Finalize thread (save_finalize) running at step=19. (3875484:checkpoint_manager.py:2010)
+Step 0: grad_norm=0.4141, loss=0.0350, param_norm=1803.7705
+Step 1: grad_norm=0.6831, loss=0.0494, param_norm=1803.7705
+Step 2: grad_norm=0.6277, loss=0.0433, param_norm=1803.7705
+Step 3: grad_norm=1.0407, loss=0.0616, param_norm=1803.7706
+Step 4: grad_norm=0.3273, loss=0.0316, param_norm=1803.7706
+Step 5: grad_norm=0.6207, loss=0.0279, param_norm=1803.7708
+Step 6: grad_norm=0.5443, loss=0.0413, param_norm=1803.7708
+Step 7: grad_norm=0.3189, loss=0.0424, param_norm=1803.7709
+Step 8: grad_norm=0.3994, loss=0.0313, param_norm=1803.7710
+Step 9: grad_norm=2.4163, loss=0.1082, param_norm=1803.7710
+Step 10: grad_norm=0.7411, loss=0.0480, param_norm=1803.7711
+Step 11: grad_norm=0.6313, loss=0.0385, param_norm=1803.7711
+Step 12: grad_norm=0.4012, loss=0.0231, param_norm=1803.7712
+Step 13: grad_norm=0.6325, loss=0.0428, param_norm=1803.7712
+Step 14: grad_norm=0.5437, loss=0.0324, param_norm=1803.7712
+Step 15: grad_norm=0.3190, loss=0.0298, param_norm=1803.7712
+Step 16: grad_norm=1.2141, loss=0.0991, param_norm=1803.7712
+Step 17: grad_norm=1.5426, loss=0.1970, param_norm=1803.7712
+Step 18: grad_norm=0.2933, loss=0.0213, param_norm=1803.7712
+Step 19: grad_norm=0.3371, loss=0.0312, param_norm=1803.7712

@@ -1,0 +1,18 @@
+{
+  "label": "act-final-selftest-cpu-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT/self_test.py",
+    "--device",
+    "cpu"
+  ],
+  "started_at": "2026-11-09T20:46:17.494547+08:00",
+  "start_unix": 1794228377.4944093,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-final-selftest-cpu-v1.log",
+  "runner_pid": 2143796,
+  "status": "passed",
+  "child_pid": 2143798,
+  "returncode": 0,
+  "elapsed_seconds": 6.59100079536438,
+  "finished_at": "2026-11-09T20:46:24.085425+08:00"
+}

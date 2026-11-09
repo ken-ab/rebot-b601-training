@@ -1,0 +1,4 @@
+  File "/data2/yujiegao/b601-act-final60/validation/runtime_rehearsal_v1/self_test.py", line 47
+    'robot_commands_sent': False}), ensure_ascii=False))
+                                                       ^
+SyntaxError: unmatched ')'

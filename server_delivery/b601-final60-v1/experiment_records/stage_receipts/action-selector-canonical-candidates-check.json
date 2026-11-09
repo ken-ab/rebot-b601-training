@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-09T16:52:44.779683+08:00",
+  "status": "passed",
+  "scope": "Temporaryreal5k/10k canonicalinference selectorcheck; not final12h/baseevaluation",
+  "primary": "checkpoint10000",
+  "recomputed_float64_micro_and_macro": true,
+  "strictnormshapehashes_verified": true,
+  "distinct_candidates": 2
+}

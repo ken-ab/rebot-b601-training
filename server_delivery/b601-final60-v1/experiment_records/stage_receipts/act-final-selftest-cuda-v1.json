@@ -1,0 +1,18 @@
+{
+  "label": "act-final-selftest-cuda-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT/self_test.py",
+    "--device",
+    "cuda"
+  ],
+  "started_at": "2026-11-09T20:46:36.266178+08:00",
+  "start_unix": 1794228396.265999,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-final-selftest-cuda-v1.log",
+  "runner_pid": 2160494,
+  "status": "passed",
+  "child_pid": 2160502,
+  "returncode": 0,
+  "elapsed_seconds": 7.351026296615601,
+  "finished_at": "2026-11-09T20:46:43.617041+08:00"
+}

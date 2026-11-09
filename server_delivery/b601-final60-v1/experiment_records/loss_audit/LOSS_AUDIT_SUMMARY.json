@@ -1,0 +1,161 @@
+{
+  "training_log_records": 431,
+  "validation_records": 43,
+  "raw_stdout_reparsed_exactly_matches_collector": true,
+  "training_log_precision": "4 decimals; step0 single update, subsequent records100-update means; not every-step loss",
+  "min_recorded_training_interval_mean": 0.0011,
+  "min_recorded_at_steps": [
+    25500,
+    29400,
+    32900,
+    37800,
+    41100
+  ],
+  "last_recorded_training_interval_mean": 0.0015,
+  "adjacent_record_changes": {
+    "up": 179,
+    "down": 206,
+    "equal_at4dp": 45
+  },
+  "phase_training_means": [
+    {
+      "after_step": 0,
+      "through_step": 1000,
+      "logged100update_intervals": 10,
+      "mean_of_rounded_interval_means": 0.018619999999999998,
+      "min_recorded_interval_mean": 0.0087,
+      "max_recorded_interval_mean": 0.0447
+    },
+    {
+      "after_step": 1000,
+      "through_step": 5000,
+      "logged100update_intervals": 40,
+      "mean_of_rounded_interval_means": 0.0058874999999999995,
+      "min_recorded_interval_mean": 0.0042,
+      "max_recorded_interval_mean": 0.0094
+    },
+    {
+      "after_step": 5000,
+      "through_step": 10000,
+      "logged100update_intervals": 50,
+      "mean_of_rounded_interval_means": 0.0032619999999999997,
+      "min_recorded_interval_mean": 0.0023,
+      "max_recorded_interval_mean": 0.0046
+    },
+    {
+      "after_step": 10000,
+      "through_step": 20000,
+      "logged100update_intervals": 100,
+      "mean_of_rounded_interval_means": 0.002274,
+      "min_recorded_interval_mean": 0.0015,
+      "max_recorded_interval_mean": 0.003
+    },
+    {
+      "after_step": 20000,
+      "through_step": 30000,
+      "logged100update_intervals": 100,
+      "mean_of_rounded_interval_means": 0.0018390000000000001,
+      "min_recorded_interval_mean": 0.0011,
+      "max_recorded_interval_mean": 0.0026
+    },
+    {
+      "after_step": 30000,
+      "through_step": 40000,
+      "logged100update_intervals": 100,
+      "mean_of_rounded_interval_means": 0.0016160000000000002,
+      "min_recorded_interval_mean": 0.0011,
+      "max_recorded_interval_mean": 0.0024
+    },
+    {
+      "after_step": 40000,
+      "through_step": 43000,
+      "logged100update_intervals": 30,
+      "mean_of_rounded_interval_means": 0.0016200000000000001,
+      "min_recorded_interval_mean": 0.0011,
+      "max_recorded_interval_mean": 0.0022
+    }
+  ],
+  "candidate_metrics": [
+    {
+      "step_label": 5000,
+      "optimizer_updates": 5001,
+      "active_hours": 1.429049620247501,
+      "training_recorded100step_mean": 0.0043,
+      "validation_flow_loss": 0.005921505595324561,
+      "joint6_mean_mae_float64": 2.35630110522308,
+      "gripper_mae_float64": 2.1050163893179765
+    },
+    {
+      "step_label": 10000,
+      "optimizer_updates": 10001,
+      "active_hours": 2.860022904606109,
+      "training_recorded100step_mean": 0.0023,
+      "validation_flow_loss": 0.006995136965997517,
+      "joint6_mean_mae_float64": 2.0634291634539053,
+      "gripper_mae_float64": 1.8465448473640231
+    },
+    {
+      "step_label": 43000,
+      "optimizer_updates": 43001,
+      "active_hours": 12.273248344435835,
+      "training_recorded100step_mean": 0.0015,
+      "validation_flow_loss": 0.009592428291216492,
+      "joint6_mean_mae_float64": 1.9146436686622053,
+      "gripper_mae_float64": 1.820183409435435
+    }
+  ],
+  "10k_to43k_improvement_percent": {
+    "joint6_mean_mae_float64": 7.210593774038399,
+    "gripper_mae_float64": 1.4276088645352791
+  },
+  "10k_to43k_episodes_improved_of10": {
+    "joint6_mean_mae": 10,
+    "gripper_mae": 5
+  },
+  "extra_active_hours_10k_to43k": 9.413225439829727,
+  "validation_flow_min": {
+    "at": "2026-11-09T14:42:25.070327+08:00",
+    "step_label": 5000,
+    "optimizer_step": 5001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/5000",
+    "validation_flow_loss": 0.005921505595324561,
+    "evaluation_seconds": 6.459847864054609,
+    "validation_status": "passed",
+    "active_seconds": 5144.5786328910035,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 5001,
+    "evaluation_seconds_this_session": 45.30782696901588,
+    "checkpoint_seconds_this_session": 50.69621408398962
+  },
+  "validation_flow_5k_to43k_increase_percent": 61.99306302759182,
+  "flow_proxy_scope": {
+    "observations": 80,
+    "dimension_count": 32,
+    "real_dimensions": 7,
+    "padded_dimensions": 25,
+    "window_rows_including_terminal_repetition": 2000,
+    "artificial_terminal_repeated_rows": 240,
+    "terminal_padding_fraction": 0.12,
+    "rng_fixed_across_checkpoints": true
+  },
+  "action_metric_scope": {
+    "chunks": 211,
+    "valid_rows": 5118,
+    "padded_rows_excluded": 157,
+    "dimensions": 7,
+    "sampling_steps": 10,
+    "distinct_trained_checkpoints": 3,
+    "validation_reused_for_selection": true,
+    "physical_grasp_success_measured": false
+  },
+  "source_sha256": {
+    "console_metrics": "91dd76879594c475499ae8352a3ced308f8948294e6e1c8959898729ea8728a5",
+    "formal_stdout": "9c5f7b992bb7f00b0bb3c1dd50587f370631cc62dfa398c5976263195dda242b",
+    "validation_metrics": "d4541ef0528a178c4391c054018ec956d6c6ca60129e6fcda57fa08bd752c88d",
+    "evaluation_predictions": {
+      "5000": "8e0a63e364f3299274e37e90d480ae9d5ea6cfc2485e85dfc8a9d8f937c232ee",
+      "10000": "1165c00188f55dcdec4cc90638bfb94b431dec5d3f9dfbdf1f3ea9c0ce0424d8",
+      "43000": "b2e64119e27170f6b71e7cb99d8f4f7671854a768c95e7f34a9015c5e45bdb27"
+    }
+  }
+}

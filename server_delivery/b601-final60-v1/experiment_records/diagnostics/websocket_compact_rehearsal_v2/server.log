@@ -1,0 +1,21 @@
+INFO:datasets:PyTorch version 2.7.1 available.
+INFO:datasets:Polars version 1.30.0 available.
+INFO:datasets:JAX version 0.5.3 available.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2/checkpoint/assets/rebot-b601-train
+INFO:root:Loading model...
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x790ffb804a50>
+INFO:absl:Restoring checkpoint from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2/checkpoint/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 866.9 MiB/s (total bytes: 6.3 GiB) (time elapsed: 7 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 7.49 seconds from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2/checkpoint/params.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2/checkpoint/assets/rebot-b601-train
+INFO:websockets.server:server listening on 127.0.0.1:41455
+INFO:websockets.server:connection rejected (200 OK)
+INFO:websockets.server:connection open
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 33930) opened
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 33930) closed
+INFO:websockets.server:connection rejected (200 OK)
+INFO:websockets.server:connection open
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 52558) opened
+INFO:openpi.serving.websocket_policy_server:Connection from ('127.0.0.1', 52558) closed

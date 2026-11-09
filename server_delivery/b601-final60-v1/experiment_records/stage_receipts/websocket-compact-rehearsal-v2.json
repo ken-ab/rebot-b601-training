@@ -1,0 +1,24 @@
+{
+  "label": "websocket-compact-rehearsal-v2",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_websocket_deployment.py",
+    "--bundle",
+    "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2",
+    "--client-dir",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/windows_client",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/websocket_compact_rehearsal_v2",
+    "--scope",
+    "interim"
+  ],
+  "started_at": "2026-11-09T22:30:09.965415+08:00",
+  "start_unix": 1794234609.965264,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/websocket-compact-rehearsal-v2.log",
+  "runner_pid": 4073237,
+  "status": "passed",
+  "child_pid": 4073369,
+  "returncode": 0,
+  "elapsed_seconds": 69.15515375137329,
+  "finished_at": "2026-11-09T22:31:19.120432+08:00"
+}

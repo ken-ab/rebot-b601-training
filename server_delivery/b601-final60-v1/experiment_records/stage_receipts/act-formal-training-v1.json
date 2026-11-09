@@ -1,0 +1,22 @@
+{
+  "label": "act-formal-training-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/train_act.py",
+    "--name",
+    "act-b601-final60-v1",
+    "--steps",
+    "20000",
+    "--batch-size",
+    "8"
+  ],
+  "started_at": "2026-11-09T20:06:18.160902+08:00",
+  "start_unix": 1794225978.16072,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-formal-training-v1.log",
+  "runner_pid": 4014946,
+  "status": "passed",
+  "child_pid": 4015038,
+  "returncode": 0,
+  "elapsed_seconds": 2391.7645692825317,
+  "finished_at": "2026-11-09T20:46:09.925308+08:00"
+}

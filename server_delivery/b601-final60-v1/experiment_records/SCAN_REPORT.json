@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-11-10T04:19:39.040232+08:00",
+  "stage_logs": 67,
+  "stage_receipts": 73,
+  "actual_program_stages_in_timeline": 66,
+  "training_metric_rows": 431,
+  "validation_checkpoint_rows": 43,
+  "gpu_rows": 168944,
+  "final_active_hours": 12.273248344435835,
+  "optimizer_updates": 43001,
+  "text_files_scanned": 382,
+  "credential_findings_after_redaction": [],
+  "redactions": [],
+  "excluded_record_candidates": [
+    {
+      "source_path": "/home/yujiegao/桌面/zzk/B601_SERVER_ASSESSMENT_20261109/upstream_source/.python-version",
+      "bytes": 4,
+      "reason": "not a supported record file or exceeds journal file-size limit"
+    }
+  ],
+  "scope": "All retained B601 stage logs/receipts, protocol/resources, canonical+rejected evaluations, source history and post-run audit; no credentials or model binaries"
+}

@@ -1,0 +1,18 @@
+{
+  "label": "client-direct-timeout-acceptance-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_client_transport.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/CLIENT_TRANSPORT_ACCEPTANCE.json"
+  ],
+  "started_at": "2026-11-09T22:30:54.044841+08:00",
+  "start_unix": 1794234654.0446782,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/client-direct-timeout-acceptance-v1.log",
+  "runner_pid": 4117474,
+  "status": "passed",
+  "child_pid": 4117521,
+  "returncode": 0,
+  "elapsed_seconds": 0.5184266567230225,
+  "finished_at": "2026-11-09T22:30:54.563118+08:00"
+}

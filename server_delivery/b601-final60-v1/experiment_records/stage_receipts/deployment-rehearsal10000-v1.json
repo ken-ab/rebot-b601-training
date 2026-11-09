@@ -1,0 +1,16 @@
+{
+  "label": "deployment-rehearsal10000-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/rehearse_deployment.py"
+  ],
+  "started_at": "2026-11-09T16:35:33.985545+08:00",
+  "start_unix": 1794213333.9853466,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/deployment-rehearsal10000-v1.log",
+  "runner_pid": 3183649,
+  "status": "failed",
+  "child_pid": 3183807,
+  "returncode": 1,
+  "elapsed_seconds": 65.7556791305542,
+  "finished_at": "2026-11-09T16:36:39.741042+08:00"
+}

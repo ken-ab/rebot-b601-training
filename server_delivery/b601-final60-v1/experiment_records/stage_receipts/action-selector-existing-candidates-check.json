@@ -1,0 +1,12 @@
+{
+  "at": "2026-11-09T16:34:07.716107+08:00",
+  "status": "passed",
+  "scope": "Selector exercised against already-produced real5000/10000 predictions/checkpoints in a temporary fixture; not final evaluation or training completion",
+  "deduplicated_candidates": 2,
+  "selected_label": "checkpoint10000",
+  "selected_optimizer_step": 10001,
+  "all_targets_masks_norm_verified": true,
+  "recomputed_float64": true,
+  "prepared_norm_sha256": "a797ea56c0a79384655bd2453d51624ec70882795e507f16880961ea15eca8c1",
+  "canonical_norm_sha256": "46940ae00d00fa4b1aded7d2f24f352fbca3d53ac7a21f2a30840b113697d233"
+}

@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-09T19:54:10.988527+08:00",
+  "scope": "CPUconfigurationcheckonly; no pretrainedweightsdownloaded,no trainedaccuracyclaim",
+  "parameter_count": 51560839,
+  "state_dict_mib": 196.81496810913086,
+  "input_shapes": {
+    "overhead": [
+      3,
+      224,
+      224
+    ],
+    "wrist": [
+      3,
+      224,
+      224
+    ],
+    "state": [
+      7
+    ]
+  },
+  "action_shape": [
+    25,
+    7
+  ],
+  "baseline_training_status": "preparingactualdatasetcache"
+}

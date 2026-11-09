@@ -1,0 +1,22 @@
+{
+  "label": "final-low-memory-profile-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/profile_inference_memory.py",
+    "--bundle",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/inference_platform_final_v1",
+    "--scope",
+    "final"
+  ],
+  "started_at": "2026-11-10T01:44:53.950297+08:00",
+  "start_unix": 1794246293.9501202,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/final-low-memory-profile-v1.log",
+  "runner_pid": 2339911,
+  "status": "passed",
+  "child_pid": 2339918,
+  "returncode": 0,
+  "elapsed_seconds": 38.25299072265625,
+  "finished_at": "2026-11-10T01:45:32.203128+08:00"
+}

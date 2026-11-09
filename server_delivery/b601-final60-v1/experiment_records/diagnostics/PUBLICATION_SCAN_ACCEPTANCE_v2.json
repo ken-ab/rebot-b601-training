@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "at": "2026-11-10T00:42:24.688361+08:00",
+  "case_count": 7,
+  "checks": [
+    {
+      "case": "huggingface_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_fine_grained_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "private_key",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "credential_url",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "ordinary_text_allowed",
+      "status": "passed"
+    },
+    {
+      "case": "credential_file_path_rejected",
+      "status": "passed"
+    }
+  ],
+  "actual_token_used_or_read": false,
+  "source_sha256": "263f934a1bd660178ca11dfeea5431cfcd595f6e8b34b50cbd61abf0fa2638a0",
+  "revision_reason": "Source binding after final model card, license copies and publisher inclusion"
+}

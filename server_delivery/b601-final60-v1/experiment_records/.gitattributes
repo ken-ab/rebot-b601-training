@@ -1,0 +1,22 @@
+# Preserve source bytes in the evidence archive; curated Markdown remains normal text.
+raw_logs/** -text -whitespace
+stage_receipts/** -text -whitespace
+monitor/** -text -whitespace
+resources/** -text -whitespace
+configuration/** -text -whitespace
+audit_receipts/** -text -whitespace
+publication_evidence/** -text -whitespace
+hardware_and_plan/** -text -whitespace
+data_and_base/** -text -whitespace
+diagnostics/** -text -whitespace
+evaluation/** -text -whitespace
+early_evaluation/** -text -whitespace
+source_snapshots/** -text -whitespace
+auxiliary_act/** -text -whitespace
+TIMELINE.csv -text -whitespace
+FORMAL_LOG_READABLE.txt -text -whitespace
+loss_audit/*.csv -text -whitespace
+loss_audit/*.json -text -whitespace
+loss_audit/*.svg -text -whitespace
+loss_audit/*.pdf -text
+loss_audit/*.png -text

@@ -1,0 +1,12 @@
+diff --git a/src/openpi/shared/download.py b/src/openpi/shared/download.py
+index 582f839..1ff2994 100644
+--- a/src/openpi/shared/download.py
++++ b/src/openpi/shared/download.py
+@@ -136,6 +136,7 @@ def _download_fsspec(url: str, local_path: pathlib.Path, **kwargs) -> None:
+             current_size = sum(f.stat().st_size for f in [*local_path.rglob("*"), local_path] if f.is_file())
+             pbar.update(current_size - pbar.n)
+             time.sleep(1)
++        future.result()  # Propagate transfer errors instead of publishing an incomplete cache entry.
+         pbar.update(total_size - pbar.n)
+ 
+ 

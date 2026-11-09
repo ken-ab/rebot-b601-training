@@ -1,0 +1,16 @@
+{
+  "label": "github-model-link-v1",
+  "command": [
+    "/usr/bin/python3",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/PUBLICATION_PREP/link_verified_model.py"
+  ],
+  "started_at": "2026-11-10T02:17:04.778607+08:00",
+  "start_unix": 1794248224.7784076,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/github-model-link-v1.log",
+  "runner_pid": 2440424,
+  "status": "passed",
+  "child_pid": 2440433,
+  "returncode": 0,
+  "elapsed_seconds": 8.182425260543823,
+  "finished_at": "2026-11-10T02:17:12.960846+08:00"
+}

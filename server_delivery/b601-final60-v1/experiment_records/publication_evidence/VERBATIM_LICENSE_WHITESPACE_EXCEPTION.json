@@ -1,0 +1,10 @@
+{
+  "status": "single_verbatim_upstream_license_exception",
+  "at": "2026-11-10T01:53:35.779729+08:00",
+  "git_info_attribute_file": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/PUBLICATION_PREP/github_checkout/.git/info/attributes",
+  "exact_path": "server_delivery/b601-final60-v1/server_final60/licenses/LICENSE_GEMMA.txt",
+  "source_sha256": "3e2c24001f9ef57bf7ec959a3658fbb49cdad113cdf394c264da9d16f9bdd132",
+  "other_files_keep_default_whitespace_check": true,
+  "license_content_or_prepared_manifest_modified": false,
+  "reason": "Pinned upstream license first line includes one trailing space; preserve source bytes and accepted package"
+}

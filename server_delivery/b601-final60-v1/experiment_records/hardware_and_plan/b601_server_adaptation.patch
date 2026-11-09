@@ -1,0 +1,51 @@
+--- a/openpi_b601/train_pi05.py
++++ b/openpi_b601/train_pi05.py
+@@ -39,14 +39,14 @@
+         data=config.SimpleDataConfig(
+             repo_id=TRAIN_ID,
+             assets=config.AssetsConfig(assets_dir=str(prepared / "assets"), asset_id=TRAIN_ID),
+-            base_config=config.DataConfig(prompt_from_task=True),
++            base_config=config.DataConfig(prompt_from_task=True, action_sequence_keys=("action",)),
+             data_transforms=lambda _: transforms.Group(inputs=[B601Inputs()], outputs=[B601Outputs()]),
+         ),
+         lr_schedule=optimizer.CosineDecaySchedule(
+             warmup_steps=min(500, max(1, steps // 10)), peak_lr=2.5e-5,
+             decay_steps=max(steps, 2), decay_lr=2.5e-6,
+         ),
+-        batch_size=batch, num_train_steps=steps, num_workers=workers,
++        batch_size=batch, num_train_steps=steps, num_workers=workers, fsdp_devices=args.fsdp_devices,
+         log_interval=1 if smoke else 100, save_interval=steps if smoke else 1000,
+         checkpoint_base_dir=str(ROOT / "runs"), wandb_enabled=False, resume=args.resume,
+         policy_metadata={"robot_type": "seeed_b601_rs_follower", "fps": FPS, "action_names": list(JOINTS),
+@@ -89,12 +89,14 @@
+     parser.add_argument("--batch-size", type=int)
+     parser.add_argument("--steps", type=int)
+     parser.add_argument("--workers", type=int)
++    parser.add_argument("--fsdp-devices", type=int, default=1,
++                        help="Number of visible GPUs across which OpenPI shards model parameters")
+     parser.add_argument("--resume", action="store_true")
+     args = parser.parse_args()
+     if (args.batch_size is not None and args.batch_size < 1 or
+             args.steps is not None and args.steps < 1 or
+-            args.workers is not None and args.workers < 0):
+-        parser.error("batch size and steps must be positive, workers must be nonnegative")
++            args.workers is not None and args.workers < 0 or args.fsdp_devices < 1):
++        parser.error("batch size, steps and fsdp devices must be positive; workers must be nonnegative")
+     if args.resume and not args.exp_name:
+         parser.error("--resume requires --exp-name")
+     if args.exp_name and (Path(args.exp_name).name != args.exp_name or args.exp_name in (".", "..")):
+@@ -123,6 +125,14 @@
+         parser.error("OpenPI JAX cannot see an NVIDIA GPU. Check nvidia-smi and CUDA before training.")
+ 
+     config = build_config(args, prepared)
++    if args.mode != "check":
++        devices = jax.devices()
++        if len(devices) % args.fsdp_devices:
++            parser.error("visible GPU count must be divisible by --fsdp-devices")
++        if config.batch_size % len(devices):
++            parser.error("global batch size must be divisible by visible GPU count")
++        print(f"Visible devices: {devices}; FSDP devices: {config.fsdp_devices}; "
++              f"CUDA_VISIBLE_DEVICES={os.environ.get('CUDA_VISIBLE_DEVICES', 'unset')}", flush=True)
+     # OpenPI calls the legacy loader without a video_backend argument. Pick PyAV
+     # here so Linux does not default to a TorchCodec build needing system FFmpeg.
+     with patch.object(lerobot_dataset, "get_safe_default_codec", return_value="pyav"):

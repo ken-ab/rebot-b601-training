@@ -1,0 +1,4 @@
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+Rehearsal bundle ready; code directory intentionally has no prepared/ dataset or repository checkout
+{"model": "primary", "optimizer_step": 10001, "manifest_files_verified": 31, "shape": [25, 7], "all_finite": true, "golden_matches": true, "atol": 0.0001, "rtol": 1e-05, "max_abs_difference_from_server": 4.7671603198296e-07, "first_call_wall_seconds_including_jit": 13.172614266979508}

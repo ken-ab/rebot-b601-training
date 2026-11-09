@@ -1,0 +1,22 @@
+{
+  "label": "early-eval-checkpoint10000-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000",
+    "--normalization-checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/early_evaluation/checkpoint10000"
+  ],
+  "started_at": "2026-11-09T16:28:08.893932+08:00",
+  "start_unix": 1794212888.8937495,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/early-eval-checkpoint10000-v1.log",
+  "runner_pid": 2701842,
+  "status": "passed",
+  "child_pid": 2701954,
+  "returncode": 0,
+  "elapsed_seconds": 118.654212474823,
+  "finished_at": "2026-11-09T16:30:07.547977+08:00"
+}

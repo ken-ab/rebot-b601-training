@@ -1,0 +1,31 @@
+{
+  "authorized_at": "2026-11-09T12:31:46.964286+08:00",
+  "objective": "at least 12 hours of long-run training and evaluation after real-data smoke acceptance; preserve best deployment checkpoint",
+  "repo": "/home/yujiegao/桌面/zzk/rebot-b601-training",
+  "base_commit": "bd7f604a2fadf3ddaf6617f6a25e474d3ceda2bd",
+  "gpus": [
+    "GPU-a2df82e1-ad48-ea47-fa69-5ee02ec32b0e",
+    "GPU-8d91782a-1f41-2aa0-ef48-585ded17365d"
+  ],
+  "default_config_sha256": {
+    "/home/yujiegao/.gitconfig": "79c4382c72a3267f2d5ce9da5c29db40f18dec0221504c79d78b9d3e477f2f09",
+    "/home/yujiegao/.config/gh/hosts.yml": "673e6d3c2756f3c331e5e1ade0e77c9f8efdd419e80d3928688a936a1e88fa01"
+  },
+  "data_split_file_sha256": "60a943c9db68cb086f219a4cc56a9472d54772760ed1502d79b0b6ecae35226b",
+  "initial_stage": "environment_setup",
+  "training_wall_seconds_required": 43200,
+  "prohibit_foreign_process_kill": true,
+  "diagnostic_agent": "/root/b601_diagnostics",
+  "checkpoint_visible_path": "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/runs",
+  "checkpoint_storage_path": "/data2/yujiegao/b601-pi05/runs",
+  "independent_early_evaluation": {
+    "gpu": 1,
+    "reason": "verify deployment and real action errors early during validation fluctuations",
+    "training_gpus_unchanged": [
+      2,
+      3
+    ],
+    "does_not_add_to_formal_active_seconds": true,
+    "stage": "early_action_eval.py"
+  }
+}

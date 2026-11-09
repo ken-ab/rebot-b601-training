@@ -1,0 +1,7 @@
+remote: 
+remote: Create a pull request for 'server/pi05-final60-results-20261110' on GitHub by visiting:        
+remote:      https://github.com/ken-ab/rebot-b601-training/pull/new/server/pi05-final60-results-20261110        
+remote: 
+To https://github.com/ken-ab/rebot-b601-training.git
+ * [new branch]      server/pi05-final60-results-20261110 -> server/pi05-final60-results-20261110
+{"status": "published_branch_and_draft_pr_verified", "at": "2026-11-10T01:53:44.889492+08:00", "repository": "ken-ab/rebot-b601-training", "branch": "server/pi05-final60-results-20261110", "revision": "679b5dc40c07ac441341e719b8b6e39edf2a4689", "pull_request": "https://github.com/ken-ab/rebot-b601-training/pull/2", "code_manifest_sha256": "28dcd523325d64b6fffd9f641a8f8dfc4478a7a7639e74048037a9ce02733af3", "main_not_modified": true, "training_checkout_not_modified": true, "model_download": {"status": "model_saved_on_server_huggingface_publication_pending", "server_archive": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT.tar.gz", "server_archive_sha256": "258c85c7405d6d8e67241a8acfd93f4020b397fa1ce302e7602e038f8b653657", "server_windows_client_zip": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_WINDOWS_CLIENT.zip", "note": "No Hugging Face upload or target URL is claimed until its remote verification receipt exists."}}

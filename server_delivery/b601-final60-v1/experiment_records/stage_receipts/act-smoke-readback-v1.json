@@ -1,0 +1,20 @@
+{
+  "label": "act-smoke-readback-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/verify_checkpoint.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-act-final60/runs/act-b601-smoke-v2/step_000020",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/SMOKE_READBACK.json"
+  ],
+  "started_at": "2026-11-09T20:06:11.939886+08:00",
+  "start_unix": 1794225971.9396946,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-smoke-readback-v1.log",
+  "runner_pid": 4008521,
+  "status": "passed",
+  "child_pid": 4008632,
+  "returncode": 0,
+  "elapsed_seconds": 6.1352832317352295,
+  "finished_at": "2026-11-09T20:06:18.074992+08:00"
+}

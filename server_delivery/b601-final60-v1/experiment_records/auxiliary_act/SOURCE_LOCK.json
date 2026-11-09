@@ -1,0 +1,18 @@
+{
+  "at": "2026-11-09T20:23:22.701777+08:00",
+  "scope": "ACTtrainingandnativePyTorchdeploymentbranch",
+  "source_files": {
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/run_runtime_rehearsal.py": "623ec22f8a3a3cbfc358b5b292fd9ac041942e00db3cc1740f4b8cb89d77f296",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/act_common.py": "37df225b11ee441b82801b1e13f98f31e7661bfe8bd27d5e8ff2f511799f198e",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/act_runtime.py": "ff0a27b69d10e87609bc5588463aecc86ba6fa48415249d33710cb840c75e416",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/runtime_self_test.py": "573a4eb7e117aeb1a01fab786e93456e601e9244e304b0236c78cecf68d49bd4",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/build_runtime.py": "89f4539ba87742fee6cf011608909889823bcd6b54ea9a0dea390875cf34aa03",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/run_pipeline.py": "02d08ebda7382806a4a6db59edefbc04cc6dfb8d8e099619b4c36838a32f19df",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/finish_delivery.py": "31af2842e88b1f89938af7951b058dc12b9e1919de1dd605f1603ab978d6685a",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/prepare_cache.py": "f4de016c4dc98c0dd5f087b96e927f996e21e257df7305f839c776c76b1ad191",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/verify_checkpoint.py": "ec6bbcf18b44fc3f120c0b3aa77a422730ce750e69932ddbf7746d10cda7bceb",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/verify_runtime_full.py": "88affee016222a16131fb0d471d155d08f9f2980778eba2b5589f00b0d054892",
+    "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/train_act.py": "3a6b659f52c2e60b9e4a388ce67cee2dc39db23e280c2f5f676f4bab88c4cea7"
+  },
+  "training_process_code_unchanged": "act_common.py/train_act.py since formalstart; packaginghelpers may evolve separately"
+}

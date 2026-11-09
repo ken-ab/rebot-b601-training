@@ -1,0 +1,24 @@
+{
+  "label": "early-inference-probe-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "--normalization-checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/early_evaluation/probe_best5000",
+    "--max-chunks",
+    "2"
+  ],
+  "started_at": "2026-11-09T15:38:55.393916+08:00",
+  "start_unix": 1794209935.3937461,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/early-inference-probe-v1.log",
+  "runner_pid": 3949763,
+  "status": "passed",
+  "child_pid": 3949767,
+  "returncode": 0,
+  "elapsed_seconds": 44.96207618713379,
+  "finished_at": "2026-11-09T15:39:40.355839+08:00"
+}

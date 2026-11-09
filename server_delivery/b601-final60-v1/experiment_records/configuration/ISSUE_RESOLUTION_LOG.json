@@ -1,0 +1,123 @@
+[
+  {
+    "id": "environment_tls_eof",
+    "stage": "prepare-v1",
+    "observed": "uv git fetch pinned lerobot failed: gnutls_handshake TLS connection non-properly terminated",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "recommendation": "finite retry with child-only http.version=HTTP/1.1; retain commit and SSL verification",
+    "applied": "run_on_server.sh GIT_CONFIG_COUNT=1 override; prepare-v2 progressing"
+  },
+  {
+    "id": "gcs_composite_checksum",
+    "stage": "base-download-v1",
+    "observed": "Large GCS composite objects omit md5Hash; initial inventory assertion stopped download",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "recommendation": "verify size and CRC32C for all objects, MD5 where present, generation pinned, record SHA256",
+    "applied": "download tool venv google-crc32c 1.9.0; base-download-v2 started"
+  },
+  {
+    "id": "train_logging_handler",
+    "stage": "pre-runtime source audit",
+    "observed": "upstream init_logging indexes handler[0] but B601 direct main invocation may have no handler",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "recommendation": "initialize root logging before upstream main",
+    "applied": "logging.basicConfig(level=logging.INFO)"
+  },
+  {
+    "id": "download_future_exception",
+    "stage": "source audit before runtime",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "pinned _download_fsspec future exceptions were not rethrown",
+    "applied": "one-line future.result() in own pinned OpenPI checkout; preserve upstream diff"
+  },
+  {
+    "id": "longrun_protocol",
+    "stage": "pre-formal design",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "applied": "independent LR decay 10000, maxsteps200000, 12.25h active wall target; fixed validation at safe saves, best preservation, bound resume receipt"
+  },
+  {
+    "id": "wandb_disabled_rebind",
+    "stage": "healthy formal v1 after first updates",
+    "observed": "wandb disabled init rebound module.log, bypassing preinit monitor patch; stdout and checkpoint validation continue correctly",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "resolution": "persistent external console finite/trend watcher for current run; initialize-then-bind delegate fix for future resume; no healthy model restart",
+    "qualification": "console training metrics are printed interval means rounded to 4 decimals, up to100 updates detection latency",
+    "executed_source_snapshot": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/source_versions/formal_v1_before_wandb_hook_fix"
+  },
+  {
+    "id": "deployment_golden_assertion",
+    "at": "2026-11-09T15:48:10.425937+08:00",
+    "stage": "pre-export read-only audit",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "Old generated self-test printed golden difference without enforcing equality",
+    "resolution": "Dedicated self-test template verifies every manifest size/SHA256 and requires np.testing.assert_allclose against the same-noise real-observation golden action, atol1e-4 rtol1e-5; final pipeline will execute this on the delivered model",
+    "training_affected": false
+  },
+  {
+    "id": "flow_action_selection_mismatch",
+    "at": "2026-11-09T16:32:55.906622+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "Three increasing flow-validation losses above best triggered full10000 action readback.10000 flow worse than5000 but actual six-joint and gripperMAE each~12.5percent better",
+    "resolution": "Training unchanged. Supplementary selection protocol written before10000 evaluation, maximum4distinct trained candidates, exact target/mask/source/norm checks andfloat64 recomputation; separate jointMAE/gripMAE Pareto, fixedincumbent preference, labelled alternative completeweights iftradeoff; export params/summary/golden/selftest/receipt bound to same chosenmodel. OriginalflowBEST unchanged.",
+    "verification": "5000 and10000 NPZ independently recomputed by root and diagnosticagent; final selection/export waits original12.25h completion"
+  },
+  {
+    "id": "norm_stats_serialization_newline",
+    "at": "2026-11-09T16:36:01.189165+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "Selector rawSHA guard initially compared originalpreparedstats to nativecheckpointstats and rejected; independent check proves identicalJSON with just finalnewline difference",
+    "resolution": "Originalprepared rawSHA still bound to lockedRUN_PARAMETERS; validate2keys4fields7finitevalues each; require identicalcanonicalJSONSHA without float tolerance; recordbothrawSHA andcanonicalSHA",
+    "verification": "Existingreal5000/10000 selection fixture passed afterfix; finalselectorwillreverify"
+  },
+  {
+    "id": "cross_process_bf16_inference_autotuning",
+    "at": "2026-11-09T16:47:14.463961+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "Strictportablev1selftestfailedmaxabs.1262 despiteweights/code/norm/tokenizer/rawandeffectiveinputsidentical.3repeatsstablewithinprocess,butnative/portablefreshprocessdiffer",
+    "controlled_diagnostic": "FixedonlyinferenceXLAautotune_level=0 anddeterministic_ops=true:twofreshprocesses3calls eachbecamebitwiseidentical(max0),whilenewalgorithmlegitimatelydiffersoldgoldenby.2524",
+    "resolution": "Keepstrictthresholdandoldfailurelogs;configureinferenceflagsbeforeJAX;re-evaluatealllimitedcandidates/basewithsameflagsandgeneratecanonicalgolden;freshportablev2readbackpending",
+    "training_changed": false,
+    "live_formal_XLA_FLAGS": null,
+    "acceptance_evidence": "diagnostics/DETERMINISM_V2_ACCEPTANCE.json",
+    "resolution_verification": {
+      "at": "2026-11-09T17:54:38.007577+08:00",
+      "status": "passed",
+      "canonical_5k_10k_full_eval_receipts": [
+        "repro-candidate-checkpoint10000-v1",
+        "repro-candidate-interim5000-v1"
+      ],
+      "fresh_portable_readback_receipt": "deployment-rehearsal10000-v2",
+      "manifest_files_verified": 31,
+      "golden_max_abs_difference": 4.7671603198296e-07,
+      "strict_atol": 0.0001,
+      "strict_rtol": 1e-05,
+      "threshold_relaxed": false,
+      "training_interrupted": false
+    }
+  },
+  {
+    "id": "act_pinned_config_push_to_hub",
+    "at": "2026-11-09T20:11:56.351495+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "ACTsmoke-v1 failed beforemodelinit:oldACTConfig doesnotaccept modernpush_to_hubkw",
+    "resolution": "Removeunsupportedkw,validatepinnedCPUconfig, freshsmoke-v2real20stepsandfullvalpassed; save_pretrainedlocalonlydoesnotpublish",
+    "verification": "ACT/SMOKE_ACCEPTANCE.json andSMOKE_READBACK.jsonpassed; oldfailurekept"
+  },
+  {
+    "id": "act_cache_venv_symlink",
+    "at": "2026-11-09T20:11:56.351495+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "Cachev1 launcherresolvedvenvpython symlinktoUVglobalinterpreter andlostavpackage",
+    "resolution": "Useexactunresolvedvenv/bin/python, freshcache-v2passedallsplitframes/targets; noglobaldependencychanges",
+    "verification": "ACT/CACHE_TARGETS_AUDIT.json matchespi05 full211chunks/5118rows"
+  },
+  {
+    "id": "pi05_8gb_allocator",
+    "at": "2026-11-09T20:11:56.351495+08:00",
+    "diagnostic_agent": "/root/b601_diagnostics",
+    "observed": "WideBFCpreallocfalseprocess8382MiB; artificialsmallBFClimitrestoreOOMdueallocationlayout, notproofall8GBimpossible",
+    "resolution": "Separateplatformallocatorprofilewithsameweights/noise/strictgoldenpassed10calls; sampledpeak6902MiB,steady6714MiB,hostRSS10697MiB",
+    "scope": "A4500measurementonly, samplingnotexactminimum; user4070/WSLactualacceptancepending; model/trainunchanged"
+  }
+]

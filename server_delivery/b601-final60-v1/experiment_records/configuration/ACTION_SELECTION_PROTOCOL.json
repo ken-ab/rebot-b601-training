@@ -1,0 +1,59 @@
+{
+  "at": "2026-11-09T16:28:08.786891+08:00",
+  "reason": "Three consecutive fixed-80-observation validation losses above best by15% and rising; investigate alignment with true7-axis action error before making deployment choice",
+  "training_changed": false,
+  "candidates": [
+    "flow-best (current5000; final flow-best re-evaluated after longrun)",
+    "fixed checkpoint10000",
+    "final last"
+  ],
+  "candidate_cap": 4,
+  "candidate_cap_explanation": "At most4 distinct checkpoints if eventual flow-best differs from already evaluated5000; no hyperparameter search",
+  "reference": "pure pi05_base without LoRA, same training-only normalization",
+  "protocol": {
+    "stride": 25,
+    "chunks": 211,
+    "valid_action_rows": 5118,
+    "denoise_steps": 10,
+    "seed": 20261109,
+    "normalization_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "padding_rows_excluded": true
+  },
+  "required_comparison": [
+    "target/mask/source exact match",
+    "per-axis MAE/RMSE",
+    "six-joint mean MAE and RMSE",
+    "gripper separately",
+    "episode macro MAE/RMSE"
+  ],
+  "selection": "Retain flow-best. An action candidate may replace primary deployment only if six-joint mean MAE and gripper MAE are both no worse, with improvement in at least one. If meaningful tradeoff, retain clearly labelled alternatives; no post-hoc mixing of different units. Preserve last and original receipts.",
+  "scope": "validation reused for selection; not an independent test and not physical robot success",
+  "future_evaluation": "current10000 read-only now; final best/last after original12.25h completion",
+  "selection_implementation_appendix": {
+    "at": "2026-11-09T16:32:16.810355+08:00",
+    "reason": "Verified10000 actionMAE dominates5000 on both aggregate joint and gripper; final outcomes not observed yet",
+    "primary_preference_among_nondominated": [
+      "checkpoint10000",
+      "final_flow_best",
+      "last",
+      "interim5000"
+    ],
+    "retain_flow_best_receipt": true,
+    "export_alternatives": "Other Pareto candidates get complete params/assets with separate labels and matching evaluation/golden outputs; no combined score"
+  },
+  "inference_numerical_protocol_appendix": {
+    "at": "2026-11-09T16:45:49.841167+08:00",
+    "status": "passed",
+    "scope": "Native/portable layout two freshprocesses on identical GPU1,3fixednoise calls each; no training change",
+    "effective_inputs_hashes_equal": true,
+    "cross_process_max_abs_difference": 0.0,
+    "within_process_max_abs_difference": 0.0,
+    "inference_xla_flags": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true",
+    "old_default_autotune_golden_max_difference": 0.252401980945411,
+    "threshold_relaxed": false,
+    "canonical_protocol": "Re-evaluate ALL bounded action candidates/base with this inference configuration; generate new golden from canonical predictions; verify in another freshprocess",
+    "source_reference": "https://openxla.org/xla/determinism",
+    "training_flags_changed": false,
+    "note": "Old default-autotune results remain archived as interim evidence; do not mix numerical protocols for final model selection"
+  }
+}

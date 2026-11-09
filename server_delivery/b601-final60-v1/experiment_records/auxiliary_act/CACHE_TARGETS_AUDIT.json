@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "chunks": 211,
+  "valid_rows": 5118,
+  "targets_masks_source_exact_match_pi05": true,
+  "cache": "/data2/yujiegao/b601-act-final60/cache_v1"
+}
