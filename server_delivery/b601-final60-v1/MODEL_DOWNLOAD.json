@@ -1,7 +1,16 @@
 {
-  "status": "model_saved_on_server_huggingface_publication_pending",
-  "server_archive": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT.tar.gz",
-  "server_archive_sha256": "258c85c7405d6d8e67241a8acfd93f4020b397fa1ce302e7602e038f8b653657",
-  "server_windows_client_zip": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_WINDOWS_CLIENT.zip",
-  "note": "No Hugging Face upload or target URL is claimed until its remote verification receipt exists."
+  "status": "published_and_verified",
+  "repository": "dahjgfa/b601-pi05-final60",
+  "revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "url": "https://huggingface.co/dahjgfa/b601-pi05-final60/tree/8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "private": true,
+  "publication_manifest_sha256": "63fe36ac3318d8424074818cdc87b33f2a2ee00d80324211f21313dc24af5169",
+  "selected_model": "pi05 final43000 / optimizer43001",
+  "windows_client": {
+    "url": "https://huggingface.co/dahjgfa/b601-pi05-final60/resolve/8c11eb8751d5cc6f688fa51db523da5bd8f2518a/B601_PI05_WINDOWS_CLIENT.zip?download=true",
+    "bytes": 627176,
+    "sha256": "a6571511a2e34e86066525ea787661be23ed65ef61808a71191613f50e90b14b"
+  },
+  "deployment_guide": "docs/server_final60/DOWNLOAD_AND_START_CN.md",
+  "actual_windows_or_robot_execution": false
 }
