@@ -1,0 +1,17 @@
+[
+  {
+    "file": "b601-code-assets.tar.gz",
+    "bytes": 293827142,
+    "sha256": "8297cabf89f2d05e7425fbc963d871c979b09c316b106fe6df779652630fbacf"
+  },
+  {
+    "file": "b601-linux-runtime.tar.zst",
+    "bytes": 3291300404,
+    "sha256": "aa335dfe96dc9b20d9d8745fece448733dea5a8014428e7608294342635fdeff"
+  },
+  {
+    "file": "b601-pi05-checkpoint.tar.zst",
+    "bytes": 6335504821,
+    "sha256": "3f230ffa3d3ea713f1d38478ee139c547d1407e26297a7379a931f2453dcd7ef"
+  }
+]

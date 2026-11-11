@@ -1,5 +1,10 @@
 # B601-RS 抓放训练交接
 
+## 当前 RTC 真机推理与换卡迁移
+
+2026-11-11 的实际运行版本见 [RTC 推理代码与验证](deployment/b601_rtc/README.md)。[本地下载与换卡恢复方案](deployment/b601_rtc/migration/README.md) 固定了当前模型、OpenPI、Linux Python 和依赖版本，提供续传下载、完整包打包及恢复脚本。模型与环境大文件保存在本机及 Hugging Face，GitHub 保存代码与可核对的清单。
+
+
 任务是「拿起蓝色餐巾纸，把它放进黑色框里」。示教用 reBot Arm 102 控制 B601-RS。当前数据版为 `blue-tissue-center-20261109-final-60`，包含 **60 条 episode、33,847 帧**。推荐按整批划分为 50 条训练和 10 条验证。筛选理由和原始条号见 [episodes.csv](episodes.csv)，两端进度记在 [STATUS.md](STATUS.md)。
 
 数据是 LeRobot v3.0，标称 25 fps。俯视和腕部相机都是 640×480。每帧有 7 维状态和动作，顺序是底座、肩、肘、腕俯仰、腕偏航、腕滚转、夹爪。状态是从臂电机侧实测角度，动作是采集适配器输入坐标中的绝对目标。真机推理通过同一个适配器下发动作，由适配器完成关节方向和夹爪比例转换。

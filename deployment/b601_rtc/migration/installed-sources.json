@@ -1,0 +1,31 @@
+{
+  "imports": {
+    "openpi": "/root/b601-deploy/B601_PI05_DEPLOYMENT/openpi/src/openpi/__init__.py",
+    "openpi_client": "/root/b601-deploy/B601_PI05_DEPLOYMENT/openpi/packages/openpi-client/src/openpi_client/__init__.py",
+    "lerobot": "/root/b601-deploy/B601_PI05_DEPLOYMENT/openpi/.venv/lib/python3.11/site-packages/lerobot/__init__.py",
+    "transformers": "/root/b601-deploy/B601_PI05_DEPLOYMENT/openpi/.venv/lib/python3.11/site-packages/transformers/__init__.py"
+  },
+  "sources": {
+    "openpi": {
+      "url": "file:///root/b601-deploy/B601_PI05_DEPLOYMENT/openpi",
+      "dir_info": {
+        "editable": true
+      }
+    },
+    "openpi-client": {
+      "url": "file:///root/b601-deploy/B601_PI05_DEPLOYMENT/openpi/packages/openpi-client",
+      "dir_info": {
+        "editable": true
+      }
+    },
+    "lerobot": {
+      "url": "https://github.com/huggingface/lerobot",
+      "vcs_info": {
+        "vcs": "git",
+        "commit_id": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+        "requested_revision": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5"
+      }
+    },
+    "transformers": {}
+  }
+}
