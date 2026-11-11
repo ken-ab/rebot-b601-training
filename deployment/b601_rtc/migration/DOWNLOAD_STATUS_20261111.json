@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-11",
+  "github_code_commit": "c979c4b661b7fe661176cb0ad96a91d542817a68",
+  "github_plan_commit": "7c9e46b0cf39c5c2b1cd3288adcd4eebfe243721",
+  "local_directory": "D:\\B601-cloud-backups\\20261111-rtc",
+  "model": {
+    "repository": "dahjgfa/b601-pi05-final60",
+    "revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+    "files_verified": 131,
+    "bytes": 6342050562,
+    "failed": []
+  },
+  "linux_dependencies": {
+    "packages": 243,
+    "source_only_packages": [
+      "antlr4-python3-runtime",
+      "evdev"
+    ],
+    "expected_bytes": 3960173158,
+    "failures": []
+  },
+  "portable_package": {
+    "filename": "B601-RTC-portable.zip",
+    "bytes": 10647617955,
+    "sha256": "d75657509674161775183b4d2d92d1af20cfb4880968100ab8662037f5091da3",
+    "environment_mode": "linux_wheel_cache",
+    "zip_crc_passed": true,
+    "files": 395
+  },
+  "original_vm": {
+    "status": "ssh_unreachable",
+    "installed_runtime_archive_complete": false,
+    "received_runtime_bytes": 2500225024,
+    "expected_runtime_bytes": 3291300404,
+    "partial_path": "b601-linux-runtime.tar.zst.partial"
+  },
+  "restored_on_new_gpu": false
+}

@@ -109,7 +109,7 @@ def cache_wheels(versions, destination):
     # Build backends are installed in uv's isolated build environment on the
     # original server, so they do not all appear in its runtime package list.
     build_versions = {"hatchling": "1.27.0", "poetry-core": "2.1.3",
-                      "pathspec": "0.12.1", "editables": "0.5"}
+                      "pathspec": "0.12.1", "editables": "0.5", "wheel": "0.45.1"}
     try:
         with urlopen("https://pypi.org/pypi/trove-classifiers/json", timeout=30) as response:
             build_versions["trove-classifiers"] = json.load(response)["info"]["version"]
