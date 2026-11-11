@@ -1,0 +1,13 @@
+{
+  "start_motor_deg": [
+    5.154,
+    -0.017,
+    1.077,
+    -2.828,
+    -0.501,
+    6.192,
+    15.642
+  ],
+  "units": "motor_deg",
+  "reference_source": "inference-evals/b601-soft-stop-20261111-092711-086005.json:initial_motor_deg"
+}

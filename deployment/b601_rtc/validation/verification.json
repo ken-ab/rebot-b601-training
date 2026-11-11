@@ -1,0 +1,301 @@
+{
+  "unit_tests": {
+    "run": 37,
+    "failures": 0,
+    "errors": 0
+  },
+  "existing_motor_parameters_unchanged": true,
+  "custom_motion_limits": {
+    "max_joint_delta_motor_deg_per_vla_step": 0.3,
+    "start_pose_tolerance_motor_deg": 5.0
+  },
+  "cloud": {
+    "root": "/root/b601-deploy",
+    "model_port": 8002,
+    "jpeg_port": 8001,
+    "startup_gpu_tests_passed": true,
+    "production_path_warmed": true,
+    "installed_hashes_match_local": {
+      "b601_rtc_server.py": "05f2f6ff84b64d10d32970d69611edb318647ebaea960e504ace3c3ed85861ea",
+      "b601_start_server.sh": "5f06e24811591b7c3a96e700aac25173a722a0b9364013b19f44414cfb33e9b9"
+    }
+  },
+  "rpc": {
+    "robot_commands_sent": 0,
+    "source": "recorded RGB and saved start feedback",
+    "metadata": {
+      "robot_type": "seeed_b601_rs_follower",
+      "fps": 25,
+      "action_names": [
+        "shoulder_pan.pos",
+        "shoulder_lift.pos",
+        "elbow_flex.pos",
+        "wrist_flex.pos",
+        "wrist_yaw.pos",
+        "wrist_roll.pos",
+        "gripper.pos"
+      ],
+      "action_space": "absolute_adapter_input",
+      "b601_rtc": "pi05-inference-rtc-v1",
+      "rtc_mask": "exp",
+      "rtc_max_guidance_weight": 5.0,
+      "rtc_algorithm_source": "arxiv:2506.07339",
+      "b601_image_transport": "jpeg-rgb-v1"
+    },
+    "request_count": 12,
+    "baseline_first_call_ms": 311.63,
+    "roundtrip_p50_ms": 382.96,
+    "roundtrip_p95_ms": 417.65,
+    "roundtrip_max_ms": 458.34,
+    "requests": [
+      {
+        "request_id": 1,
+        "roundtrip_ms": 381.26,
+        "observation_tick": 0,
+        "arrival_tick": 10,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 8,
+        "prefix_horizon": 25,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 2,
+        "roundtrip_ms": 458.34,
+        "observation_tick": 11,
+        "arrival_tick": 23,
+        "first_usable_index": 12,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 3,
+        "roundtrip_ms": 383.05,
+        "observation_tick": 24,
+        "arrival_tick": 34,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 12,
+        "prefix_horizon": 12,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 4,
+        "roundtrip_ms": 382.08,
+        "observation_tick": 35,
+        "arrival_tick": 45,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 5,
+        "roundtrip_ms": 376.7,
+        "observation_tick": 46,
+        "arrival_tick": 56,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 6,
+        "roundtrip_ms": 383.07,
+        "observation_tick": 57,
+        "arrival_tick": 67,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 7,
+        "roundtrip_ms": 383.79,
+        "observation_tick": 68,
+        "arrival_tick": 78,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 8,
+        "roundtrip_ms": 382.87,
+        "observation_tick": 79,
+        "arrival_tick": 89,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 9,
+        "roundtrip_ms": 383.33,
+        "observation_tick": 90,
+        "arrival_tick": 100,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 10,
+        "roundtrip_ms": 384.36,
+        "observation_tick": 101,
+        "arrival_tick": 111,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 11,
+        "roundtrip_ms": 381.14,
+        "observation_tick": 112,
+        "arrival_tick": 122,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      },
+      {
+        "request_id": 12,
+        "roundtrip_ms": 380.6,
+        "observation_tick": 123,
+        "arrival_tick": 133,
+        "first_usable_index": 10,
+        "delay_estimate_ticks": 10,
+        "prefix_horizon": 14,
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true
+      }
+    ]
+  },
+  "control_loop": {
+    "robot_commands_sent": 0,
+    "seconds": 5,
+    "control_steps": 125,
+    "control_rate_hz": 25.0,
+    "tick_gap_p50_ms": 40.000000000000036,
+    "tick_gap_p95_ms": 41.085000000000015,
+    "tick_gap_max_ms": 46.30000000000001,
+    "requests": 13,
+    "all_received_chunks_time_aligned": true
+  },
+  "completion_replay": [
+    {
+      "recording": "b601-frames-20261111-120501",
+      "expected_success": true,
+      "initial_success": false,
+      "first_completion": {
+        "seconds": 86.72,
+        "frame": "000316-overhead.jpg",
+        "success": true,
+        "seen_outside": true,
+        "blue_pixels": 5718,
+        "fraction_in_goal": 1.0,
+        "center_px": [
+          350.19954529555787,
+          223.53882476390345
+        ],
+        "tool_pixels": 17,
+        "stable": true,
+        "evidence": "placed_and_tool_withdrawn"
+      }
+    },
+    {
+      "recording": "b601-frames-20261111-121230",
+      "expected_success": false,
+      "initial_success": false,
+      "first_completion": null
+    },
+    {
+      "recording": "b601-frames-20261111-121818",
+      "expected_success": false,
+      "initial_success": false,
+      "first_completion": null
+    },
+    {
+      "recording": "b601-frames-20261111-122456",
+      "expected_success": true,
+      "initial_success": false,
+      "first_completion": {
+        "seconds": 86.68,
+        "frame": "000304-overhead.jpg",
+        "success": true,
+        "seen_outside": true,
+        "blue_pixels": 5932,
+        "fraction_in_goal": 1.0,
+        "center_px": [
+          346.0724881995954,
+          227.43172623061363
+        ],
+        "tool_pixels": 0,
+        "stable": true,
+        "evidence": "placed_and_tool_withdrawn"
+      }
+    }
+  ],
+  "desktop_launcher": "C:/Users/Lenovo/Desktop/B601真机抓放.cmd",
+  "desktop_check_only_passed": true,
+  "ssh_tunnel_alive": true,
+  "backup": "backups/rtc-upgrade-20261111-125644",
+  "runtime_logging": [
+    "raw_actions_adapter",
+    "observation_tick",
+    "arrival_tick",
+    "selected_action_index",
+    "post_limit_targets",
+    "motor_feedback",
+    "gripper_feedback_torque",
+    "homing_steps",
+    "completion_evidence"
+  ]
+}

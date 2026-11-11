@@ -1,0 +1,9 @@
+*.tar*
+*.zip
+.venv/
+__pycache__/
+*.pyc
+hf-model/
+.cache/
+*.token
+.env

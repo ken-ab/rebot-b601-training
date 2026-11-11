@@ -1,0 +1,2 @@
+b601_rtc_server.py adapts get_prefix_weights and inference-time RTC from Physical-Intelligence/real-time-chunking-kinetix (MIT, copyright 2025 Physical Intelligence). Source: https://github.com/Physical-Intelligence/real-time-chunking-kinetix/tree/main/src
+Algorithm: Black et al., Real-Time Execution of Action Chunking Flow Policies, arXiv:2506.07339. OpenPI noise-time convention is reversed. Reference defaults: exp mask; maximum guidance weight 5.

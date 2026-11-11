@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-11",
+  "model_revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "files": [
+    {
+      "path": "windows/b601_policy_episode.py",
+      "sha256": "29dea22fe5de3d3e67c900a706be2e50cabf8d515db809fe6f3d95018127888f"
+    },
+    {
+      "path": "windows/b601_action_timeline.py",
+      "sha256": "e41d400bd2282200f2148f30de6a05b9708bbc5013e622c964f3731f94007718"
+    },
+    {
+      "path": "windows/b601_preflight.py",
+      "sha256": "541e9a7f44a4245832450a44f3bb9ce379aa47c035d7109586679ba9052057fb"
+    },
+    {
+      "path": "windows/b601_stop.py",
+      "sha256": "610b72edca88981b537f648fef8e04944a972bb4ef343ec342c44e070c270624"
+    },
+    {
+      "path": "windows/b601_restore_start.py",
+      "sha256": "39f557fd6d165f756fd5277c8afaf69fc39b63cd267564af2846135ed4ed4107"
+    },
+    {
+      "path": "windows/b601_run_with_frames.py",
+      "sha256": "274a423bc33dd6cdb2101837ce01e8aec83247d0f5ce4fcd481bb7de4121a640"
+    },
+    {
+      "path": "windows/b601_task_completion.py",
+      "sha256": "970b5b0284105d5f9acb23caeab89affc8a79182af7f0b79e3c4d5c3803baf41"
+    },
+    {
+      "path": "windows/b601_rtc_ready.py",
+      "sha256": "fbd514cd57da76c677a235dae96152aeb6552cd395a149f0cba8656d36f1b511"
+    },
+    {
+      "path": "windows/b601_jpeg_transport.py",
+      "sha256": "d1fe67ed47304fb94383caf770fdac0e55cf6b21e02eb38efaa89085206ce74d"
+    },
+    {
+      "path": "windows/b601_start_live.ps1",
+      "sha256": "74d41b1ffc81903910fee64b187ab8c95f13104ad11d738c602b71e51fe328ad"
+    },
+    {
+      "path": "windows/b601-start-live.cmd",
+      "sha256": "4ae1a654a131b66b8af9cd548c5e7beac29f72a07438d085bc9bdc1e8558ad96"
+    },
+    {
+      "path": "windows/b601-pick-place.cmd",
+      "sha256": "59f69c45450c7de253e9c03cbc69df75511756baaf41429be7cda502d2812fac"
+    },
+    {
+      "path": "windows/b601-start-pose.json",
+      "sha256": "0d0706891172594d5a26ded4bff49c04bc0c4b2625be3f092d9ed033517147cf"
+    },
+    {
+      "path": "windows/rebot_pi05.py",
+      "sha256": "9732ef9bc1d17c6860b347b0e2430f626034926c7425290e50cb159fb86ed594"
+    },
+    {
+      "path": "windows/rebot_capture.py",
+      "sha256": "18421f16f2235d14cd69ef375f7d429d4cdebaa0f9332c6c926c358771b9d014"
+    },
+    {
+      "path": "windows/record-smoke.yaml",
+      "sha256": "45b812834e359e418c85b465567ed8a617a84980529ea554042ae35100359072"
+    },
+    {
+      "path": "windows/test_b601_official_stop.py",
+      "sha256": "72308919a9c61920b461262d05d3a00d60b78efd598d5c4ca8001f64f6cf8aaf"
+    },
+    {
+      "path": "windows/test_b601_rtc_execution.py",
+      "sha256": "af3efff9655c25c582946e1a9beae19c996dd99f1934243aa176eb1478ba2328"
+    },
+    {
+      "path": "windows/verify_b601_rtc.py",
+      "sha256": "0a00bc8639f407e7951b2f37cc652d31e1cde1ea5ca986e832134d1d15285b50"
+    },
+    {
+      "path": "linux/b601_rtc_server.py",
+      "sha256": "05f2f6ff84b64d10d32970d69611edb318647ebaea960e504ace3c3ed85861ea"
+    },
+    {
+      "path": "linux/b601_jpeg_transport.py",
+      "sha256": "d1fe67ed47304fb94383caf770fdac0e55cf6b21e02eb38efaa89085206ce74d"
+    },
+    {
+      "path": "linux/start_inference.sh",
+      "sha256": "5f06e24811591b7c3a96e700aac25173a722a0b9364013b19f44414cfb33e9b9"
+    },
+    {
+      "path": "third_party/rtc/LICENSE",
+      "sha256": "2314c19f6a70f084aaecded7a427b688e6e93b9016f6837f2a9a91a9e17ddf3f"
+    },
+    {
+      "path": "third_party/rtc/NOTICE.txt",
+      "sha256": "e437bd198d01060cd9c318531a1a2a820e91c242eef77c6e5ce5e610cd91e46a"
+    },
+    {
+      "path": "validation/verification.json",
+      "sha256": "8914cc738ea0ef283dae9d17501f95e0b914c145724c95dbd30d5e6b6a31a173"
+    },
+    {
+      "path": "validation/completion-replay.json",
+      "sha256": "5e125dc0843e71338a982219b656974ac6fcefbedb87a2092229abe67c82fc45"
+    }
+  ]
+}

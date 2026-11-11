@@ -1,0 +1,54 @@
+[
+  {
+    "recording": "b601-frames-20261111-120501",
+    "expected_success": true,
+    "initial_success": false,
+    "first_completion": {
+      "seconds": 86.72,
+      "frame": "000316-overhead.jpg",
+      "success": true,
+      "seen_outside": true,
+      "blue_pixels": 5718,
+      "fraction_in_goal": 1.0,
+      "center_px": [
+        350.19954529555787,
+        223.53882476390345
+      ],
+      "tool_pixels": 17,
+      "stable": true,
+      "evidence": "placed_and_tool_withdrawn"
+    }
+  },
+  {
+    "recording": "b601-frames-20261111-121230",
+    "expected_success": false,
+    "initial_success": false,
+    "first_completion": null
+  },
+  {
+    "recording": "b601-frames-20261111-121818",
+    "expected_success": false,
+    "initial_success": false,
+    "first_completion": null
+  },
+  {
+    "recording": "b601-frames-20261111-122456",
+    "expected_success": true,
+    "initial_success": false,
+    "first_completion": {
+      "seconds": 86.68,
+      "frame": "000304-overhead.jpg",
+      "success": true,
+      "seen_outside": true,
+      "blue_pixels": 5932,
+      "fraction_in_goal": 1.0,
+      "center_px": [
+        346.0724881995954,
+        227.43172623061363
+      ],
+      "tool_pixels": 0,
+      "stable": true,
+      "evidence": "placed_and_tool_withdrawn"
+    }
+  }
+]
