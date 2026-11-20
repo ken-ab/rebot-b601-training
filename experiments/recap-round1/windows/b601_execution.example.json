@@ -1,0 +1,10 @@
+{
+  "policy_mode": "aligned",
+  "seconds": 120,
+  "gripper_delta_motor_deg_per_step": 1.0,
+  "inference_ssh": {
+    "host": "",
+    "port": 22,
+    "user": "root"
+  }
+}

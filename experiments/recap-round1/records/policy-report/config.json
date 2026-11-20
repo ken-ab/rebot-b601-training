@@ -1,0 +1,23 @@
+{
+  "minimum_or_fixed_optimizer_steps": 3000,
+  "until_epoch": 1795157369,
+  "learning_rate_decay_steps": 30000,
+  "selection": "average of validation joint and gripper MAE ratios to the deployed parent; flow loss breaks ties",
+  "validation_action_anchors": 60,
+  "batch_size": 1,
+  "seed": 601,
+  "parent_checkpoint": "b601-final60 step 43000",
+  "trainable_parameters": 49987584,
+  "leaves": 20,
+  "manifest_and_labels_sha256": "f64114a462ad972887a5ed590646a48e3c68643dee0b022b83c0206e4ba5a00e",
+  "norm_stats_sha256": "73adb6290f10854524740cc9229a15a29431a0ec68e7da39f2f41c76ba3b7493",
+  "train_episodes": 130,
+  "validation_anchors": 80,
+  "test_anchors": 40,
+  "conditioning_dropout": 0.3,
+  "task": "拿起蓝色餐巾纸，把它放进黑色框里",
+  "positive_prompt": "拿起蓝色餐巾纸，把它放进黑色框里 Advantage: positive",
+  "normalization": "parent",
+  "action_horizon": 25,
+  "optimizer_peak_lr": 2e-05
+}

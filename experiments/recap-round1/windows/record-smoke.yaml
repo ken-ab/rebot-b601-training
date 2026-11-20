@@ -1,0 +1,38 @@
+# 完成逐轴跟随检查后使用。此配置用于本地空载试录。
+robot:
+  type: seeed_b601_rs_follower
+  port: can0@1000000
+  can_adapter: socketcan
+  id: follower1
+  cameras:
+    wrist:
+      type: opencv
+      index_or_path: 0
+      backend: 700
+      fourcc: MJPG
+      width: 640
+      height: 480
+      fps: 30
+      rotation: 180
+    overhead:
+      type: opencv
+      index_or_path: 2
+      backend: 700
+      fourcc: MJPG
+      width: 640
+      height: 480
+      fps: 30
+teleop:
+  type: rebot_arm_102_leader
+  port: COM3
+  baudrate: 1000000
+  id: rebot_arm_102_leader
+dataset:
+  repo_id: local/b601_rs_empty_check
+  single_task: Empty-arm teleoperation check.
+  fps: 30
+  episode_time_s: 15
+  reset_time_s: 0
+  num_episodes: 1
+  push_to_hub: false
+display_data: false

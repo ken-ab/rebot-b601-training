@@ -1,0 +1,10 @@
+{
+  "start_epoch": 1795121369,
+  "budget_end_epoch": 1795157369,
+  "effective_end_epoch": 1795157369,
+  "authorized_until": "2026-11-20 14:49:29 +0800",
+  "value_budget_steps": 8000,
+  "policy_minimum_steps": 3000,
+  "policy_parent": "B601 step-label 43000",
+  "timezone": "Asia/Shanghai"
+}

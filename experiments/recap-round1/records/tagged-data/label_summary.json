@@ -1,0 +1,37 @@
+{
+  "lookahead_steps_at_25hz": 50,
+  "threshold": 0.0013461219117425621,
+  "tie_key": 4713664717656763356,
+  "ranking_scope": "eligible demonstration and autonomous training frames; correction frames excluded",
+  "validation_and_test": "same frozen training cutoff",
+  "totals": {
+    "train": {
+      "episodes": 136,
+      "observations": 197135,
+      "pool_frames": 167504,
+      "ranked_positive": 67002,
+      "forced_positive": 22119,
+      "excluded_from_policy": 7512,
+      "policy_chunk_starts": 176676
+    },
+    "val": {
+      "episodes": 22,
+      "observations": 26927,
+      "pool_frames": 21111,
+      "ranked_positive": 9404,
+      "forced_positive": 4233,
+      "excluded_from_policy": 1583,
+      "policy_chunk_starts": 23314
+    },
+    "test": {
+      "episodes": 10,
+      "observations": 18295,
+      "pool_frames": 14062,
+      "ranked_positive": 6243,
+      "forced_positive": 3852,
+      "excluded_from_policy": 381,
+      "policy_chunk_starts": 17047
+    }
+  },
+  "checkpoint_sha256": "e8839938bb574f02bb015d9b5ac5d724204f595d6bf9ada636e6cf4ed78ad406"
+}

@@ -1,0 +1,64 @@
+{
+  "time_bjt": "2026-11-20T15:28:39+08:00",
+  "checkpoint": "/data/b601-recap-round1/evo/policy/checkpoint",
+  "checkpoint_metadata": {
+    "prompt": "拿起蓝色餐巾纸，把它放进黑色框里 Advantage: positive",
+    "checkpoint": {
+      "step": 47000,
+      "validation_flow_loss": 0.00580442375749044,
+      "action_metrics": {
+        "joint_mae": 1.4284217810203943,
+        "gripper_mae": 2.771948636824022,
+        "per_axis_mae": [
+          0.6938580921786908,
+          1.5945644247887665,
+          1.7490929149150383,
+          1.5105465772627915,
+          1.1446294833104238,
+          1.8778391936666554,
+          2.771948636824022
+        ],
+        "episodes": 20,
+        "anchors": 60
+      },
+      "selection_score": 0.645957553393567,
+      "snapshot": "step-47000"
+    }
+  },
+  "container_pid": 49327,
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "gpu_total_mib": 24576,
+  "gpu_used_mib": 6802,
+  "gpu_device_files": [
+    "/dev/nvidia-uvm",
+    "/dev/nvidia5",
+    "/dev/nvidiactl"
+  ],
+  "health_codes": {
+    "8001": 200,
+    "8002": 200
+  },
+  "warmup": {
+    "b601_checkpoint_step": 47000,
+    "b601_checkpoint_snapshot": "step-47000",
+    "b601_advantage_condition": "positive",
+    "b601_default_prompt": "拿起蓝色餐巾纸，把它放进黑色框里 Advantage: positive",
+    "rtc_enabled": false,
+    "reference_check_passed": true,
+    "reference_max_motor_deg": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "reference_motor_atol": 0.15,
+    "denoise_steps": 10,
+    "production_call_ms": [
+      7479.214572347701,
+      231.41505382955074
+    ]
+  }
+}

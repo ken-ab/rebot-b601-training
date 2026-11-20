@@ -1,0 +1,99 @@
+{
+  "time_bjt": "2026-11-20T15:26:38+08:00",
+  "endpoint": "127.0.0.1:8766",
+  "ssh_forward_to": "scyun.cloud / 127.0.0.1:8001",
+  "episode": "new-033",
+  "metadata": {
+    "robot_type": "seeed_b601_rs_follower",
+    "fps": 25,
+    "action_names": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_yaw.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ],
+    "action_space": "absolute_adapter_input",
+    "b601_checkpoint_step": 47000,
+    "b601_checkpoint_snapshot": "step-47000",
+    "b601_advantage_condition": "positive",
+    "b601_default_prompt": "拿起蓝色餐巾纸，把它放进黑色框里 Advantage: positive",
+    "denoise_steps": 10,
+    "rtc_enabled": false,
+    "b601_image_transport": "jpeg-rgb-v1"
+  },
+  "samples": [
+    {
+      "frame": 523,
+      "encoded_image_bytes": 14299,
+      "preprocess_ms": 4.589099997247104,
+      "roundtrip_ms": 362.464000005275,
+      "server_infer_ms": 281.4721195027232,
+      "shape": [
+        25,
+        7
+      ]
+    },
+    {
+      "frame": 524,
+      "encoded_image_bytes": 14272,
+      "preprocess_ms": 0.6419999990612268,
+      "roundtrip_ms": 696.113999998488,
+      "server_infer_ms": 228.24793495237827,
+      "shape": [
+        25,
+        7
+      ]
+    },
+    {
+      "frame": 525,
+      "encoded_image_bytes": 14309,
+      "preprocess_ms": 0.6004000024404377,
+      "roundtrip_ms": 292.3538999966695,
+      "server_infer_ms": 228.67718152701855,
+      "shape": [
+        25,
+        7
+      ]
+    },
+    {
+      "frame": 526,
+      "encoded_image_bytes": 14284,
+      "preprocess_ms": 0.6264999974519014,
+      "roundtrip_ms": 319.5214000006672,
+      "server_infer_ms": 229.98694889247417,
+      "shape": [
+        25,
+        7
+      ]
+    },
+    {
+      "frame": 527,
+      "encoded_image_bytes": 14378,
+      "preprocess_ms": 0.6337000013445504,
+      "roundtrip_ms": 287.6560000004247,
+      "server_infer_ms": 228.65918185561895,
+      "shape": [
+        25,
+        7
+      ]
+    },
+    {
+      "frame": 528,
+      "encoded_image_bytes": 14206,
+      "preprocess_ms": 0.6034000034560449,
+      "roundtrip_ms": 291.9242999996641,
+      "server_infer_ms": 227.37475205212831,
+      "shape": [
+        25,
+        7
+      ]
+    }
+  ],
+  "all_finite": true,
+  "motor_commands_sent": 0,
+  "warm_median_roundtrip_ms": 292.3538999966695,
+  "warm_median_server_infer_ms": 228.65918185561895
+}
