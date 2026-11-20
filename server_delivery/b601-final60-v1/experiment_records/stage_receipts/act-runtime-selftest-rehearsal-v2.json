@@ -1,0 +1,18 @@
+{
+  "label": "act-runtime-selftest-rehearsal-v2",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/data2/yujiegao/b601-act-final60/validation/runtime_rehearsal_v2/self_test.py",
+    "--device",
+    "cpu"
+  ],
+  "started_at": "2026-11-09T20:19:32.926358+08:00",
+  "start_unix": 1794226772.9261835,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-runtime-selftest-rehearsal-v2.log",
+  "runner_pid": 581562,
+  "status": "passed",
+  "child_pid": 581658,
+  "returncode": 0,
+  "elapsed_seconds": 6.8248069286346436,
+  "finished_at": "2026-11-09T20:19:39.751005+08:00"
+}

@@ -1,0 +1,6 @@
+{
+  "selected_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+  "physical_gpu": 1,
+  "purpose": "early deployment and actual-action validation; not another training arm",
+  "qualification": "validation also used for model selection; independent evaluation time is not added to formal active time"
+}

@@ -1,0 +1,22 @@
+{
+  "label": "act-final-full-cuda-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/verify_runtime_full.py",
+    "--bundle",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT",
+    "--device",
+    "cuda",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/diagnostics/runtime_final_cuda_v1"
+  ],
+  "started_at": "2026-11-09T20:46:43.692535+08:00",
+  "start_unix": 1794228403.6923752,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-final-full-cuda-v1.log",
+  "runner_pid": 2168597,
+  "status": "passed",
+  "child_pid": 2168673,
+  "returncode": 0,
+  "elapsed_seconds": 6.8329548835754395,
+  "finished_at": "2026-11-09T20:46:50.525344+08:00"
+}

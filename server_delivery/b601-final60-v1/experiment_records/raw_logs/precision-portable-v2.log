@@ -1,0 +1,17 @@
+INFO:datasets:PyTorch version 2.7.1 available.
+INFO:datasets:Polars version 1.30.0 available.
+INFO:datasets:JAX version 0.5.3 available.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint/assets/rebot-b601-train
+INFO:root:Loading model...
+INFO:2026-11-09 16:43:47,861:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-11-09 16:43:47,864:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x789431cd0090>
+INFO:absl:Restoring checkpoint from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 798.3 MiB/s (total bytes: 6.3 GiB) (time elapsed: 8 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 8.13 seconds from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint/params.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint/assets/rebot-b601-train
+{"layout": "portable", "checkpoint": "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint", "repeat_max_abs_difference": [0.0, 0.0, 0.0], "golden_max_abs_difference": [0.252401980945411, 0.252401980945411, 0.252401980945411], "seconds": [13.054139081039466, 0.3682588869705796, 0.3426806360366754], "device": "[CudaDevice(id=0)]", "environment": {"CUDA_VISIBLE_DEVICES": "GPU-3630f58a-b268-bb35-863e-7565f2e026b9", "XLA_FLAGS": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true", "JAX_ENABLE_X64": null, "XLA_PYTHON_CLIENT_MEM_FRACTION": "0.9"}}

@@ -1,0 +1,180 @@
+{
+  "observed_at": "2026-11-09T21:59:57.835823+08:00",
+  "pi05_stage": {
+    "at": "2026-11-09T13:13:44.425265+08:00",
+    "stage": "formal-longrun-v1",
+    "command": [
+      "bash",
+      "/home/yujiegao/\u684c\u9762/zzk/B601_SERVER_ASSESSMENT_20261109/run_on_server.sh",
+      "train",
+      "--exp-name",
+      "b601-final60-v1",
+      "--base-params",
+      "/data2/yujiegao/b601-pi05/models/pi05_base/params",
+      "--batch-size",
+      "4",
+      "--workers",
+      "2",
+      "--steps",
+      "200000",
+      "--lr-decay-steps",
+      "10000",
+      "--save-interval",
+      "1000",
+      "--long-run-hours",
+      "12.25"
+    ]
+  },
+  "pi05_latest": {
+    "at": "2026-11-09T21:50:42.350129+08:00",
+    "step_label": 30000,
+    "optimizer_step": 30001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/30000",
+    "validation_flow_loss": 0.008844013523776085,
+    "evaluation_seconds": 6.468019822030328,
+    "validation_status": "passed",
+    "active_seconds": 30841.858466795995,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 30001,
+    "evaluation_seconds_this_session": 206.54343652707757,
+    "checkpoint_seconds_this_session": 300.28766501508653
+  },
+  "pi05_best": {
+    "at": "2026-11-09T14:42:25.070327+08:00",
+    "step_label": 5000,
+    "optimizer_step": 5001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/5000",
+    "validation_flow_loss": 0.005921505595324561,
+    "evaluation_seconds": 6.459847864054609,
+    "validation_status": "passed",
+    "active_seconds": 5144.5786328910035,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 5001,
+    "evaluation_seconds_this_session": 45.30782696901588,
+    "checkpoint_seconds_this_session": 50.69621408398962,
+    "preserved_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "selection_metric": "fixed-80-observation validation flow loss"
+  },
+  "pi05_last_log": {
+    "observed_at": "2026-11-09T21:59:06.191347+08:00",
+    "step_label": 30500,
+    "optimizer_step_lower_bound": 30501,
+    "metric_source": "console interval mean, rounded to 4 decimal places",
+    "log_offset": 709402,
+    "grad_norm": 0.0544,
+    "loss": 0.0015,
+    "param_norm": 1804.0508
+  },
+  "pi05_complete": null,
+  "final_acceptance": {
+    "at": "2026-11-09T20:59:51.100036+08:00",
+    "stage": "waiting_actual_main_pipeline_completion"
+  },
+  "act_stage": {
+    "at": "2026-11-09T20:46:09.941875+08:00",
+    "stage": "training_complete_needs_deployment_export",
+    "completion": {
+      "step": 20000,
+      "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_020000",
+      "elapsed_seconds": 2383.524892511021,
+      "normalized_valid_l1": 0.1334612719570285,
+      "mean_joint_1to6_mae": 2.224400873630924,
+      "gripper_mae": 2.25628816301164,
+      "cuda_max_memory_allocated_mib": 1593.95556640625,
+      "cuda_max_memory_reserved_mib": 1970.0,
+      "status": "complete",
+      "at": "2026-11-09T20:46:08.179771+08:00"
+    },
+    "best": {
+      "step": 15000,
+      "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_015000",
+      "elapsed_seconds": 1846.356485139986,
+      "normalized_valid_l1": 0.12667891050365723,
+      "mean_joint_1to6_mae": 2.013706823720011,
+      "gripper_mae": 2.5381137547478074,
+      "cuda_max_memory_allocated_mib": 1593.95556640625,
+      "cuda_max_memory_reserved_mib": 1970.0
+    }
+  },
+  "act_latest": {
+    "step": 20000,
+    "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_020000",
+    "elapsed_seconds": 2383.524892511021,
+    "normalized_valid_l1": 0.1334612719570285,
+    "mean_joint_1to6_mae": 2.224400873630924,
+    "gripper_mae": 2.25628816301164,
+    "cuda_max_memory_allocated_mib": 1593.95556640625,
+    "cuda_max_memory_reserved_mib": 1970.0
+  },
+  "act_best": {
+    "step": 15000,
+    "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_015000",
+    "elapsed_seconds": 1846.356485139986,
+    "normalized_valid_l1": 0.12667891050365723,
+    "mean_joint_1to6_mae": 2.013706823720011,
+    "gripper_mae": 2.5381137547478074,
+    "cuda_max_memory_allocated_mib": 1593.95556640625,
+    "cuda_max_memory_reserved_mib": 1970.0
+  },
+  "act_last_log": {
+    "step": 20000,
+    "interval_updates": 100,
+    "loss": 0.07167023278772831,
+    "grad_norm_before_clipping": 7.391248826980591,
+    "l1_loss": 0.06401924297213554,
+    "kld_loss": 0.0007650989666581154,
+    "elapsed_seconds": 2375.4298728433723
+  },
+  "act_delivery": {
+    "at": "2026-11-09T20:47:03.325230+08:00",
+    "stage": "act_delivery_complete_main_pi05_separate",
+    "delivery": {
+      "status": "complete",
+      "bundle": "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT",
+      "archive": "/home/yujiegao/\u684c\u9762/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT.tar.gz",
+      "archive_bytes": 192293479,
+      "archive_sha256": "5df0e2ccb64783f83f45b4726021a6816fbfed5139808bde26e684d11c940aab",
+      "selected": {
+        "step": 15000,
+        "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_015000",
+        "elapsed_seconds": 1846.356485139986,
+        "normalized_valid_l1": 0.12667891050365723,
+        "mean_joint_1to6_mae": 2.013706823720011,
+        "gripper_mae": 2.5381137547478074,
+        "cuda_max_memory_allocated_mib": 1593.95556640625,
+        "cuda_max_memory_reserved_mib": 1970.0
+      },
+      "training_completion": {
+        "step": 20000,
+        "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_020000",
+        "elapsed_seconds": 2383.524892511021,
+        "normalized_valid_l1": 0.1334612719570285,
+        "mean_joint_1to6_mae": 2.224400873630924,
+        "gripper_mae": 2.25628816301164,
+        "cuda_max_memory_allocated_mib": 1593.95556640625,
+        "cuda_max_memory_reserved_mib": 1970.0,
+        "status": "complete",
+        "at": "2026-11-09T20:46:08.179771+08:00"
+      },
+      "cpu_and_gpu_full5118_readback_passed": true,
+      "manifest_files": 27,
+      "windows_machine_executed_here": false,
+      "robot_execution_tested": false,
+      "main_pi05_longrun_still_requires_its_own12h_completion_and_delivery": true
+    }
+  },
+  "act_training_log_age_seconds": 4431.443412065506,
+  "pi05_live_active_hours_estimate": 8.721484407252735,
+  "services": "MainPID=3811258\nExecMainStatus=0\nId=b601-pipeline-20261109.service\nActiveState=active\n\nMainPID=0\nExecMainStatus=0\nId=b601-act-pipeline-20261109.service\nActiveState=inactive\n\nMainPID=0\nExecMainStatus=0\nId=b601-act-delivery-20261109.service\nActiveState=inactive\n\nMainPID=2930749\nExecMainStatus=0\nId=b601-final-acceptance-20261109.service\nActiveState=active",
+  "pi05_training_process": {
+    "pid": 4009515,
+    "live": true,
+    "observation": "PID     ELAPSED %CPU   RSS\n4009515    08:46:13  197 15089104"
+  },
+  "gpus": [
+    "0, 404 MiB, 0 %, 25",
+    "1, 18 MiB, 0 %, 25",
+    "2, 18440 MiB, 99 %, 70",
+    "3, 18437 MiB, 100 %, 75"
+  ]
+}

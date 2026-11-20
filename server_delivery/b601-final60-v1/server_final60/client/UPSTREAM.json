@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/Physical-Intelligence/openpi",
+  "revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "component": "Unchangedopenpi_clientWebSocket+PILimage_tools subset; originalsourcehashes retained",
+  "at": "2026-11-09T22:23:46.090860+08:00",
+  "files": {
+    "websocket_client_policy.py": "36557cb0b91ccf31cd4fb4b508306850d76ed0feb4028dac5182d0f5a5d88005",
+    "msgpack_numpy.py": "c04568948fcee52b691e3be4b6cffb759f7e79ad67530fcd5d23095a0d13c057",
+    "base_policy.py": "88e98e0f06293f3c4767db675061664c4bba12f87242ba1e64377d1b8de8069e",
+    "__init__.py": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "image_tools.py": "d48b4bd7f44e79fe6db8a8e07c9161144fa250be686e1245014a8b47e6171977"
+  },
+  "dependencies": "requirements_minimal.txt matches actual tested server-side client versions; no JAX/Torch dependency",
+  "windows_execution_verified": false
+}

@@ -1,0 +1,176 @@
+{
+  "captured_at": "2026-11-09T11:59:57.657381+08:00",
+  "repo": "/home/yujiegao/桌面/zzk/rebot-b601-training",
+  "repo_commit": "bd7f604a2fadf3ddaf6617f6a25e474d3ceda2bd",
+  "gpu": {
+    "returncode": 0,
+    "stdout": "index, uuid, name, memory.total [MiB], memory.used [MiB], memory.free [MiB], utilization.gpu [%], driver_version, compute_cap\n0, GPU-efb40841-e424-a63a-3f88-0d5f66cbf337, NVIDIA RTX A4500, 20470 MiB, 404 MiB, 19640 MiB, 0 %, 580.76.05, 8.6\n1, GPU-3630f58a-b268-bb35-863e-7565f2e026b9, NVIDIA RTX A4500, 20470 MiB, 18 MiB, 20026 MiB, 0 %, 580.76.05, 8.6\n2, GPU-a2df82e1-ad48-ea47-fa69-5ee02ec32b0e, NVIDIA RTX A4500, 20470 MiB, 18 MiB, 20025 MiB, 0 %, 580.76.05, 8.6\n3, GPU-8d91782a-1f41-2aa0-ef48-585ded17365d, NVIDIA RTX A4500, 20470 MiB, 18 MiB, 20026 MiB, 0 %, 580.76.05, 8.6\n",
+    "stderr": ""
+  },
+  "gpu_processes": {
+    "returncode": 0,
+    "stdout": "gpu_uuid, pid, process_name, used_gpu_memory [MiB]\nGPU-efb40841-e424-a63a-3f88-0d5f66cbf337, 3609, /usr/libexec/gnome-remote-desktop-daemon, 185 MiB\nGPU-efb40841-e424-a63a-3f88-0d5f66cbf337, 5376, /usr/bin/sunshine, 182 MiB\n",
+    "stderr": ""
+  },
+  "gpu_topology": {
+    "returncode": 0,
+    "stdout": "\t\u001b[4mGPU0\tGPU1\tGPU2\tGPU3\tCPU Affinity\tNUMA Affinity\tGPU NUMA ID\u001b[0m\nGPU0\t X \tNODE\tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU1\tNODE\t X \tSYS\tSYS\t0-31,64-95\t0\t\tN/A\nGPU2\tSYS\tSYS\t X \tNODE\t32-63,96-127\t1\t\tN/A\nGPU3\tSYS\tSYS\tNODE\t X \t32-63,96-127\t1\t\tN/A\n\nLegend:\n\n  X    = Self\n  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)\n  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node\n  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)\n  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)\n  PIX  = Connection traversing at most a single PCIe bridge\n  NV#  = Connection traversing a bonded set of # NVLinks\n",
+    "stderr": ""
+  },
+  "memory": {
+    "returncode": 0,
+    "stdout": "               total        used        free      shared  buff/cache   available\n内存：540715876352 13869260800 470719242240   278691840 56127373312 523201216512\n交换： 2046816256           0  2046816256\n",
+    "stderr": ""
+  },
+  "disk": {
+    "returncode": 0,
+    "stdout": "文件系统                  类型        1B的块          已用          可用 已用% 挂载点\n/dev/mapper/vgubuntu-root ext4 3737173909504 1299053592576 2248205799424   37% /\n/dev/nvme2n1p1            ext4 3779301580800     321089536 3586925985792    1% /data2\n/dev/nvme3n1p1            ext4 3779301580800  144447782912 3442799292416    5% /data3\n",
+    "stderr": ""
+  },
+  "cpu": {
+    "returncode": 0,
+    "stdout": "{\n   \"lscpu\": [\n      {\n         \"field\": \"架构：\",\n         \"data\": \"x86_64\"\n      },{\n         \"field\": \"CPU 运行模式：\",\n         \"data\": \"32-bit, 64-bit\"\n      },{\n         \"field\": \"Address sizes:\",\n         \"data\": \"46 bits physical, 57 bits virtual\"\n      },{\n         \"field\": \"字节序：\",\n         \"data\": \"Little Endian\"\n      },{\n         \"field\": \"CPU:\",\n         \"data\": \"128\"\n      },{\n         \"field\": \"在线 CPU 列表：\",\n         \"data\": \"0-127\"\n      },{\n         \"field\": \"厂商 ID：\",\n         \"data\": \"GenuineIntel\"\n      },{\n         \"field\": \"型号名称：\",\n         \"data\": \"INTEL(R) XEON(R) GOLD 6530\"\n      },{\n         \"field\": \"CPU 系列：\",\n         \"data\": \"6\"\n      },{\n         \"field\": \"型号：\",\n         \"data\": \"207\"\n      },{\n         \"field\": \"每个核的线程数：\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"每个座的核数：\",\n         \"data\": \"32\"\n      },{\n         \"field\": \"座：\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"步进：\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"BogoMIPS：\",\n         \"data\": \"4200.00\"\n      },{\n         \"field\": \"标记：\",\n         \"data\": \"fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb cat_l3 cat_l2 cdp_l3 intel_ppin cdp_l2 ssbd mba ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid cqm rdt_a avx512f avx512dq rdseed adx smap avx512ifma clflushopt clwb intel_pt avx512cd sha_ni avx512bw avx512vl xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local split_lock_detect user_shstk avx_vnni avx512_bf16 wbnoinvd dtherm ida arat pln pts vnmi avx512vbmi umip pku ospke waitpkg avx512_vbmi2 gfni vaes vpclmulqdq avx512_vnni avx512_bitalg tme avx512_vpopcntdq la57 rdpid bus_lock_detect cldemote movdiri movdir64b enqcmd fsrm md_clear serialize tsxldtrk pconfig arch_lbr ibt amx_bf16 avx512_fp16 amx_tile amx_int8 flush_l1d arch_capabilities ibpb_exit_to_user\"\n      },{\n         \"field\": \"虚拟化：\",\n         \"data\": \"VT-x\"\n      },{\n         \"field\": \"L1d 缓存：\",\n         \"data\": \"3 MiB (64 instances)\"\n      },{\n         \"field\": \"L1i 缓存：\",\n         \"data\": \"2 MiB (64 instances)\"\n      },{\n         \"field\": \"L2 缓存：\",\n         \"data\": \"128 MiB (64 instances)\"\n      },{\n         \"field\": \"L3 缓存：\",\n         \"data\": \"320 MiB (2 instances)\"\n      },{\n         \"field\": \"NUMA 节点：\",\n         \"data\": \"2\"\n      },{\n         \"field\": \"NUMA 节点0 CPU：\",\n         \"data\": \"0-31,64-95\"\n      },{\n         \"field\": \"NUMA 节点1 CPU：\",\n         \"data\": \"32-63,96-127\"\n      },{\n         \"field\": \"Vulnerability Gather data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Indirect target selection:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Itlb multihit:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability L1tf:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Meltdown:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Mmio stale data:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Reg file data sampling:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Retbleed:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec rstack overflow:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Spec store bypass:\",\n         \"data\": \"Mitigation; Speculative Store Bypass disabled via prctl\"\n      },{\n         \"field\": \"Vulnerability Spectre v1:\",\n         \"data\": \"Mitigation; usercopy/swapgs barriers and __user pointer sanitization\"\n      },{\n         \"field\": \"Vulnerability Spectre v2:\",\n         \"data\": \"Mitigation; Enhanced / Automatic IBRS; IBPB conditional; PBRSB-eIBRS SW sequence; BHI BHI_DIS_S\"\n      },{\n         \"field\": \"Vulnerability Srbds:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsa:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Tsx async abort:\",\n         \"data\": \"Not affected\"\n      },{\n         \"field\": \"Vulnerability Vmscape:\",\n         \"data\": \"Mitigation; IBPB before exit to userspace\"\n      }\n   ]\n}\n",
+    "stderr": ""
+  },
+  "tools": {
+    "git": "/usr/bin/git",
+    "gh": "/home/yujiegao/.local/bin/gh",
+    "uv": null,
+    "flock": "/usr/bin/flock",
+    "tar": "/usr/bin/tar",
+    "sha256sum": "/usr/bin/sha256sum",
+    "ffmpeg": "/usr/bin/ffmpeg",
+    "nvcc": null
+  },
+  "local_python311": {
+    "returncode": 0,
+    "stdout": "Python 3.11.15\n",
+    "stderr": ""
+  },
+  "training_started": false,
+  "full_dataset_archive_downloaded": false,
+  "model_weights_downloaded": false,
+  "release": {
+    "tag": "final-60",
+    "asset_id": 726002059,
+    "name": "blue-tissue-center-20261109-final-60.tar.gz",
+    "size_bytes": 601619657,
+    "sha256": "cf8e129b5e1bbffe32bcdf85b90d35696ef08024a5a858c744738262bf0ab36f",
+    "payload_range_probe": {
+      "status": 206,
+      "bytes_read": 1024,
+      "gzip_magic": "1f8b"
+    },
+    "archive_sha256_verified_locally": false
+  },
+  "entry_check": {
+    "command": "bash openpi_b601/run_pi05.sh check",
+    "returncode": 2,
+    "stderr": "Install uv in the server environment first (https://docs.astral.sh/uv/getting-started/installation/)."
+  },
+  "upstream_openpi_revision": "215abfb217dbac7d5f1273282331b9b1866c0479",
+  "upstream_lerobot_revision": "0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "base_params_inventory": {
+    "objects": [
+      {
+        "name": "checkpoints/pi05_base/params/_CHECKPOINT_METADATA",
+        "size": "258"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/_METADATA",
+        "size": "21402"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/_sharding",
+        "size": "11420"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/array_metadatas/process_0",
+        "size": "8856"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/commit_success.txt",
+        "size": "0"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/d/1c4302d2d2000b5f3eb4fa1350fdef9a",
+        "size": "2132"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/manifest.ocdbt",
+        "size": "117"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/0832cad6c37f82d4eedd897dcbb8da9d",
+        "size": "2240590484"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/247d4b7c814d8b1a23fa8a20f36a88f7",
+        "size": "34945019"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/35a545f74995e511808d4f94dfbef3b6",
+        "size": "70041571"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/73bbae8a4deba6498bf07d96b215a574",
+        "size": "2935855"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/7bc9d3296d23a6fb83a6b3778ac6e964",
+        "size": "2240315383"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/7d78f38c5d8be1eea31406644dde9bd6",
+        "size": "133821"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/828bee85475e37c61e1cc19e32d1c5ef",
+        "size": "929"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/8c5d7070ea57bdce2f0a19f95b8a21b4",
+        "size": "3077149148"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/b4349aaadb7dfa45c3a53fc67c04b8f6",
+        "size": "1120156687"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/caf01a82962cbd4651563d2ac1063e0b",
+        "size": "27445152"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/deefd3c43390a50472cbcd317b0fff58",
+        "size": "2393670849"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/d/ec484cf8f02dcf59e1892180f0862e40",
+        "size": "1234292390"
+      },
+      {
+        "name": "checkpoints/pi05_base/params/ocdbt.process_0/manifest.ocdbt",
+        "size": "458"
+      }
+    ],
+    "total_bytes": 12441721931,
+    "complete_listing": true
+  },
+  "tracked_split_counts": {
+    "train": {
+      "episodes": 50,
+      "frames": 28729
+    },
+    "val": {
+      "episodes": 10,
+      "frames": 5118
+    }
+  },
+  "source_hashes": {
+    "splits.json": "60a943c9db68cb086f219a4cc56a9472d54772760ed1502d79b0b6ecae35226b",
+    "DATASET.sha256": "15bafcd2fafa70bb4486a3cabf764f5b0cd21ffdc37693b5ec0d37c765156711",
+    "openpi_b601/train_pi05.py": "6d7d18b52491b0a5c195924f052631dd444a4fedb25a281de8b746238237ddd3",
+    "openpi_b601/run_pi05.sh": "0c9f2e82607b1dfa3efb3d22e66ea0b4e969dcc4ace2fd613fc8ff092855f1b1",
+    "openpi_b601/prepare_dataset.py": "a886982ea168301277eb5fd3d4b99f6afc800141cea93d064ff68e34e961c326"
+  }
+}

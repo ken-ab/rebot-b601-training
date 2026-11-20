@@ -1,0 +1,1 @@
+{"model": "primary", "optimizer_step": 43001, "manifest_files_verified": 131, "shape": [25, 7], "all_finite": true, "golden_matches": true, "atol": 0.0001, "rtol": 1e-05, "max_abs_difference_from_server": 4.6810184528567333e-07, "first_call_wall_seconds_including_jit": 12.165745404025074}

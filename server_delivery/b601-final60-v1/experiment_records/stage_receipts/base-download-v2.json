@@ -1,0 +1,16 @@
+{
+  "label": "base-download-v2",
+  "command": [
+    "/data2/yujiegao/b601-pi05/tools/download-venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/download_base.py"
+  ],
+  "started_at": "2026-11-09T12:36:33.693307+08:00",
+  "start_unix": 1794198993.6931138,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/base-download-v2.log",
+  "runner_pid": 3780915,
+  "status": "passed",
+  "child_pid": 3780918,
+  "returncode": 0,
+  "elapsed_seconds": 1331.2462866306305,
+  "finished_at": "2026-11-09T12:58:44.939415+08:00"
+}

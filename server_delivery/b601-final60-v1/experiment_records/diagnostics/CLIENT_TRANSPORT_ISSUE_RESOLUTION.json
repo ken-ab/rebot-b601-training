@@ -1,0 +1,62 @@
+{
+  "status": "resolved",
+  "at": "2026-11-09T22:32:58.461070+08:00",
+  "failed_stage": "websocket-compact-rehearsal-v1",
+  "key_error": "websockets.exceptions.InvalidMessage: did not receive a valid HTTP response, before any inference request",
+  "cause": "websockets15 auto-selected environment HTTP proxy for localhost; health HTTP direct worked; same installed/vendor source. Diagnosticagent verified actualroute decision.",
+  "fix": "LocalB601client subclass usesconnect(proxy=None), boundedhandshake/recv; timeout discardsconnection and neverautoretries. Upstreamvendor and globalproxyconfiguration preserved.",
+  "passing_stages": [
+    "client-preprocess-equivalence-v1",
+    "client-direct-timeout-acceptance-v1",
+    "websocket-compact-rehearsal-v2"
+  ],
+  "compact_rpc_report": {
+    "status": "passed",
+    "bundle": "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2",
+    "model_metadata": {
+      "robot_type": "seeed_b601_rs_follower",
+      "fps": 25,
+      "action_names": [
+        "shoulder_pan.pos",
+        "shoulder_lift.pos",
+        "elbow_flex.pos",
+        "wrist_flex.pos",
+        "wrist_yaw.pos",
+        "wrist_roll.pos",
+        "gripper.pos"
+      ],
+      "action_space": "absolute_adapter_input"
+    },
+    "shape": [
+      3,
+      25,
+      7
+    ],
+    "all_finite": true,
+    "max_abs_network_vs_direct": 0.0,
+    "roundtrip_wall_seconds": [
+      13.570201838039793,
+      0.32092340500093997,
+      0.31346415396546945
+    ],
+    "synchronous_server_infer_ms": [
+      13567.367882002145,
+      318.19522398291156,
+      310.5860189534724
+    ],
+    "first_call_includes_jit": true,
+    "rng": "Three matching default-policy PRNG key0 calls in separate freshserver/directprocesses",
+    "host": "127.0.0.1",
+    "port": 41455,
+    "own_test_server_stopped": true,
+    "client_preprocessed_rgb224_uint8": true,
+    "provided_client_smoke_cli_passed": true,
+    "client_execution_scope": "ServerLinux only; not Windows target execution",
+    "client_preprocessing_seconds": 0.05138152203289792,
+    "wire_image_bytes": 301056,
+    "robot_connected_or_actuated": false,
+    "scope": "interim production-protocol acceptance; no physicalrobot inferenceexecution"
+  },
+  "no_robot_or_windows_execution": true,
+  "docs": "https://websockets.readthedocs.io/en/15.0/topics/proxies.html"
+}

@@ -1,0 +1,22 @@
+{
+  "label": "act-smoke-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/train_act.py",
+    "--name",
+    "act-b601-smoke-v1",
+    "--steps",
+    "20",
+    "--batch-size",
+    "8"
+  ],
+  "started_at": "2026-11-09T20:03:27.155637+08:00",
+  "start_unix": 1794225807.155445,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-smoke-v1.log",
+  "runner_pid": 3849270,
+  "status": "failed",
+  "child_pid": 3849333,
+  "returncode": 1,
+  "elapsed_seconds": 5.285014629364014,
+  "finished_at": "2026-11-09T20:03:32.440474+08:00"
+}

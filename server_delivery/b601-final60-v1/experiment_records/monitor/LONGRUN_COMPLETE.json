@@ -1,0 +1,14 @@
+{
+  "at": "2026-11-10T01:33:04.185736+08:00",
+  "step_label": 43000,
+  "optimizer_step": 43001,
+  "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+  "validation_flow_loss": 0.009592428291216492,
+  "evaluation_seconds": 6.455908895004541,
+  "validation_status": "passed",
+  "active_seconds": 44183.69403996901,
+  "target_active_seconds": 44100.0,
+  "dispatches_this_session": 43001,
+  "evaluation_seconds_this_session": 290.4377594542457,
+  "checkpoint_seconds_this_session": 434.25893244904
+}

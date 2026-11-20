@@ -1,0 +1,54 @@
+{
+  "at": "2026-11-09T16:36:01.189165+08:00",
+  "diagnostic_agent": "/root/b601_diagnostics",
+  "trigger": "9001/10001/11001 fixed-subset flow losses all above best by15percent and increasing",
+  "flow_best": {
+    "at": "2026-11-09T14:42:25.070327+08:00",
+    "step_label": 5000,
+    "optimizer_step": 5001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/5000",
+    "validation_flow_loss": 0.005921505595324561,
+    "evaluation_seconds": 6.459847864054609,
+    "validation_status": "passed",
+    "active_seconds": 5144.5786328910035,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 5001,
+    "evaluation_seconds_this_session": 45.30782696901588,
+    "checkpoint_seconds_this_session": 50.69621408398962,
+    "preserved_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "selection_metric": "fixed-80-observation validation flow loss"
+  },
+  "flow_latest": {
+    "at": "2026-11-09T16:25:24.552491+08:00",
+    "step_label": 11000,
+    "optimizer_step": 11001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/11000",
+    "validation_flow_loss": 0.007203881745226681,
+    "evaluation_seconds": 6.462640042009298,
+    "validation_status": "passed",
+    "active_seconds": 11324.060824465996,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 11001,
+    "evaluation_seconds_this_session": 84.11267527902965,
+    "checkpoint_seconds_this_session": 112.15655848709866
+  },
+  "actual_action_evaluation": {
+    "best5000": {
+      "mean_joint_1to6_mae": 2.3574297428131104,
+      "gripper_mae": 2.106322765350342
+    },
+    "checkpoint10000": {
+      "mean_joint_1to6_mae": 2.0617337226867676,
+      "gripper_mae": 1.8450804948806763
+    },
+    "joint_mae_improvement_percent": 12.543153026205989,
+    "gripper_mae_improvement_percent": 12.402765367548662,
+    "source_masks_targets_exact_match": true,
+    "train_normalization_semantically_identical": true,
+    "agent_independently_recomputed": true,
+    "episode_caveat": "10/10 joint meanMAE improve; gripper8/10improve, source19/55slightly worse"
+  },
+  "conclusion": "The padded32-dimension fixed80-observation flow loss has diverged from full5118-row true7-axis action quality. This is not evidence that actual robot action modeling deteriorated at10k. Choose deployment using bounded documented action-validation supplement, while preserving originalflowBEST.",
+  "action": "Continue original12.25h formal recipe unchanged; finalcandidate comparison/readback at completion; no further checkpoint action search beyond bounded protocol",
+  "scope": "offline demonstration agreement on validationusedselection; no physicalrobot task evidence"
+}

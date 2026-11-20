@@ -1,0 +1,17 @@
+{
+  "label": "prepare-v2",
+  "command": [
+    "/bin/bash",
+    "/home/yujiegao/桌面/zzk/B601_SERVER_ASSESSMENT_20261109/run_on_server.sh",
+    "check"
+  ],
+  "started_at": "2026-11-09T12:33:56.552953+08:00",
+  "start_unix": 1794198836.5527608,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/prepare-v2.log",
+  "runner_pid": 3773825,
+  "status": "passed",
+  "child_pid": 3773831,
+  "returncode": 0,
+  "elapsed_seconds": 1502.8180267810822,
+  "finished_at": "2026-11-09T12:58:59.370803+08:00"
+}

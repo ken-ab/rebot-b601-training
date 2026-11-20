@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "at": "2026-11-10T00:41:03.335471+08:00",
+  "case_count": 7,
+  "checks": [
+    {
+      "case": "huggingface_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_fine_grained_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "private_key",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "credential_url",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "ordinary_text_allowed",
+      "status": "passed"
+    },
+    {
+      "case": "credential_file_path_rejected",
+      "status": "passed"
+    }
+  ],
+  "actual_token_used_or_read": false,
+  "source_sha256": "f513f85d5121ad82a91b3c55ae6ccd346110744127f81f105ffc38ded2e58535"
+}

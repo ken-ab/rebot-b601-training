@@ -1,0 +1,20 @@
+{
+  "label": "precision-portable-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/probe_inference_precision.py",
+    "--layout",
+    "portable",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/precision_portable_v1"
+  ],
+  "started_at": "2026-11-09T16:40:07.783981+08:00",
+  "start_unix": 1794213607.7837975,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/precision-portable-v1.log",
+  "runner_pid": 3459015,
+  "status": "passed",
+  "child_pid": 3459091,
+  "returncode": 0,
+  "elapsed_seconds": 44.65902304649353,
+  "finished_at": "2026-11-09T16:40:52.442835+08:00"
+}

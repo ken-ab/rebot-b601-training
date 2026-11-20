@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "at": "2026-11-10T00:54:51.720332+08:00",
+  "source_sha256": "13f95145034f7aa60419c4472d760b9633e50bd1d20b232f06d57496e0d3842f",
+  "checks": [
+    {
+      "case": "huggingface_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "github_fine_grained_token",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "private_key",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "credential_url",
+      "status": "passed",
+      "synthetic_only": true
+    },
+    {
+      "case": "ordinary_text_allowed",
+      "status": "passed"
+    },
+    {
+      "case": "credential_path_rejected",
+      "status": "passed"
+    },
+    {
+      "case": "notice_scanned",
+      "status": "passed"
+    },
+    {
+      "case": "current_publication_tools_have_no_credential_pattern_findings",
+      "status": "passed"
+    }
+  ],
+  "case_count": 9,
+  "actual_token_used_or_read": false,
+  "scope": "Synthetic credential detection and current publication tools only; full payload gets separate actual post-acceptance scan."
+}

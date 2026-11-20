@@ -1,0 +1,16 @@
+{
+  "label": "deployment-inference-readback-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT/self_test.py"
+  ],
+  "started_at": "2026-11-10T01:42:40.033359+08:00",
+  "start_unix": 1794246160.0331883,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/deployment-inference-readback-v1.log",
+  "runner_pid": 2330510,
+  "status": "passed",
+  "child_pid": 2330516,
+  "returncode": 0,
+  "elapsed_seconds": 33.127230167388916,
+  "finished_at": "2026-11-10T01:43:13.160430+08:00"
+}

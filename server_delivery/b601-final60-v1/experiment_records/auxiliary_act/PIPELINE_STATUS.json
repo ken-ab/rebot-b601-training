@@ -1,0 +1,26 @@
+{
+  "at": "2026-11-09T20:46:09.941875+08:00",
+  "stage": "training_complete_needs_deployment_export",
+  "completion": {
+    "step": 20000,
+    "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_020000",
+    "elapsed_seconds": 2383.524892511021,
+    "normalized_valid_l1": 0.1334612719570285,
+    "mean_joint_1to6_mae": 2.224400873630924,
+    "gripper_mae": 2.25628816301164,
+    "cuda_max_memory_allocated_mib": 1593.95556640625,
+    "cuda_max_memory_reserved_mib": 1970.0,
+    "status": "complete",
+    "at": "2026-11-09T20:46:08.179771+08:00"
+  },
+  "best": {
+    "step": 15000,
+    "checkpoint": "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_015000",
+    "elapsed_seconds": 1846.356485139986,
+    "normalized_valid_l1": 0.12667891050365723,
+    "mean_joint_1to6_mae": 2.013706823720011,
+    "gripper_mae": 2.5381137547478074,
+    "cuda_max_memory_allocated_mib": 1593.95556640625,
+    "cuda_max_memory_reserved_mib": 1970.0
+  }
+}

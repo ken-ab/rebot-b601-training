@@ -1,0 +1,18 @@
+{
+  "base": {
+    "chunks": 211,
+    "evaluated_action_rows": 5118,
+    "mean_joint_1to6_mae": 20.981164932250977,
+    "gripper_mae": 11.64371109008789
+  },
+  "best5000": {
+    "chunks": 211,
+    "evaluated_action_rows": 5118,
+    "mean_joint_1to6_mae": 2.3574297428131104,
+    "gripper_mae": 2.106322765350342
+  },
+  "joint_mae_reduction_percent": 88.76406648331803,
+  "gripper_mae_reduction_percent": 81.91021102246842,
+  "scope": "Interim validation demonstration agreement; original final-60 50/10 split; not untouched test or physical grasp success.",
+  "at": "2026-11-09T15:47:31.976231+08:00"
+}

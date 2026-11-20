@@ -1,0 +1,19 @@
+{
+  "action_space": "absolute_adapter_input",
+  "joint_names": ["shoulder_pan.pos", "shoulder_lift.pos", "elbow_flex.pos", "wrist_flex.pos", "wrist_yaw.pos", "wrist_roll.pos", "gripper.pos"],
+  "control_hz": 25,
+  "limits": {
+    "lower": [null, null, null, null, null, null, null],
+    "upper": [null, null, null, null, null, null, null],
+    "max_velocity": [null, null, null, null, null, null, null]
+  },
+  "max_observation_age_seconds": null,
+  "calibration_reference": null,
+  "local_checks": {
+    "usb_device_and_calibration_confirmed": false,
+    "joint_order_and_units_confirmed": false,
+    "hardware_limits_confirmed": false,
+    "camera_views_confirmed": false,
+    "physical_stop_verified": false
+  }
+}

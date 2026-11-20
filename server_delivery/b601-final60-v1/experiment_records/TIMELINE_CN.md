@@ -1,0 +1,72 @@
+# 全部程序阶段与退出结果
+
+命令完整保存在对应receipt和TIMELINE.csv；时间为带时区的原始记录。
+
+| 阶段 | 开始 | 耗时秒 | 状态/退出码 | 日志 |
+| --- | --- | ---: | --- | --- |
+| prepare-v1 | 2026-11-09T12:32:12.115201+08:00 | 45.44271111488342 | failed / 1 | [log](raw_logs/prepare-v1.log) / [receipt](stage_receipts/prepare-v1.json) |
+| prepare-v2 | 2026-11-09T12:33:56.552953+08:00 | 1502.8180267810822 | passed / 0 | [log](raw_logs/prepare-v2.log) / [receipt](stage_receipts/prepare-v2.json) |
+| base-download-v1 | 2026-11-09T12:34:59.848229+08:00 | 1.1864817142486572 | failed / 1 | [log](raw_logs/base-download-v1.log) / [receipt](stage_receipts/base-download-v1.json) |
+| base-download-v2 | 2026-11-09T12:36:33.693307+08:00 | 1331.2462866306305 | passed / 0 | [log](raw_logs/base-download-v2.log) / [receipt](stage_receipts/base-download-v2.json) |
+| full-data-audit-v1 | 2026-11-09T12:59:02.708443+08:00 | 44.01682734489441 | passed / 0 | [log](raw_logs/full-data-audit-v1.log) / [receipt](stage_receipts/full-data-audit-v1.json) |
+| jax-gpu-collective-v1 | 2026-11-09T12:59:46.816536+08:00 | 4.249284744262695 | passed / 0 | [log](raw_logs/jax-gpu-collective-v1.log) / [receipt](stage_receipts/jax-gpu-collective-v1.json) |
+| smoke-b2-v1 | 2026-11-09T12:59:51.152156+08:00 | 190.61656761169434 | passed / 0 | [log](raw_logs/smoke-b2-v1.log) / [receipt](stage_receipts/smoke-b2-v1.json) |
+| smoke-b2-v1-readback | 2026-11-09T13:03:01.859839+08:00 | 21.930052995681763 | passed / 0 | [log](raw_logs/smoke-b2-v1-readback.log) / [receipt](stage_receipts/smoke-b2-v1-readback.json) |
+| smoke-b4-v1 | 2026-11-09T13:03:23.875079+08:00 | 204.57852411270142 | passed / 0 | [log](raw_logs/smoke-b4-v1.log) / [receipt](stage_receipts/smoke-b4-v1.json) |
+| smoke-b4-v1-readback | 2026-11-09T13:06:48.541282+08:00 | 21.641035556793213 | passed / 0 | [log](raw_logs/smoke-b4-v1-readback.log) / [receipt](stage_receipts/smoke-b4-v1-readback.json) |
+| hook-probe-v1 | 2026-11-09T13:07:10.266983+08:00 | 218.24596786499023 | passed / 0 | [log](raw_logs/hook-probe-v1.log) / [receipt](stage_receipts/hook-probe-v1.json) |
+| hook-resume-v1 | 2026-11-09T13:10:48.600196+08:00 | 175.80962538719177 | passed / 0 | [log](raw_logs/hook-resume-v1.log) / [receipt](stage_receipts/hook-resume-v1.json) |
+| formal-longrun-v1 | 2026-11-09T13:13:44.495489+08:00 | 44365.9454164505 | passed / 0 | [log](raw_logs/formal-longrun-v1.log) / [receipt](stage_receipts/formal-longrun-v1.json) |
+| early-inference-probe-v1 | 2026-11-09T15:38:55.393916+08:00 | 44.96207618713379 | passed / 0 | [log](raw_logs/early-inference-probe-v1.log) / [receipt](stage_receipts/early-inference-probe-v1.json) |
+| early-eval-best5000-v1 | 2026-11-09T15:39:40.466650+08:00 | 120.15299773216248 | passed / 0 | [log](raw_logs/early-eval-best5000-v1.log) / [receipt](stage_receipts/early-eval-best5000-v1.json) |
+| early-eval-base-v1 | 2026-11-09T15:41:40.745608+08:00 | 115.17367219924927 | passed / 0 | [log](raw_logs/early-eval-base-v1.log) / [receipt](stage_receipts/early-eval-base-v1.json) |
+| early-eval-checkpoint10000-v1 | 2026-11-09T16:28:08.893932+08:00 | 118.654212474823 | passed / 0 | [log](raw_logs/early-eval-checkpoint10000-v1.log) / [receipt](stage_receipts/early-eval-checkpoint10000-v1.json) |
+| deployment-rehearsal10000-v1 | 2026-11-09T16:35:33.985545+08:00 | 65.7556791305542 | failed / 1 | [log](raw_logs/deployment-rehearsal10000-v1.log) / [receipt](stage_receipts/deployment-rehearsal10000-v1.json) |
+| precision-native-v1 | 2026-11-09T16:39:22.945655+08:00 | 44.75300121307373 | passed / 0 | [log](raw_logs/precision-native-v1.log) / [receipt](stage_receipts/precision-native-v1.json) |
+| precision-portable-v1 | 2026-11-09T16:40:07.783981+08:00 | 44.65902304649353 | passed / 0 | [log](raw_logs/precision-portable-v1.log) / [receipt](stage_receipts/precision-portable-v1.json) |
+| precision-native-v2 | 2026-11-09T16:43:06.614418+08:00 | 33.47557258605957 | passed / 0 | [log](raw_logs/precision-native-v2.log) / [receipt](stage_receipts/precision-native-v2.json) |
+| precision-portable-v2 | 2026-11-09T16:43:40.177523+08:00 | 33.645809173583984 | passed / 0 | [log](raw_logs/precision-portable-v2.log) / [receipt](stage_receipts/precision-portable-v2.json) |
+| repro-candidate-checkpoint10000-v1 | 2026-11-09T16:46:24.087726+08:00 | 134.67561984062195 | passed / 0 | [log](raw_logs/repro-candidate-checkpoint10000-v1.log) / [receipt](stage_receipts/repro-candidate-checkpoint10000-v1.json) |
+| repro-candidate-interim5000-v1 | 2026-11-09T16:48:38.850488+08:00 | 135.0306601524353 | passed / 0 | [log](raw_logs/repro-candidate-interim5000-v1.log) / [receipt](stage_receipts/repro-candidate-interim5000-v1.json) |
+| deployment-rehearsal10000-v2 | 2026-11-09T16:50:53.965883+08:00 | 54.627750873565674 | passed / 0 | [log](raw_logs/deployment-rehearsal10000-v2.log) / [receipt](stage_receipts/deployment-rehearsal10000-v2.json) |
+| websocket-rehearsal-v1 | 2026-11-09T17:56:20.877985+08:00 | 72.69329977035522 | passed / 0 | [log](raw_logs/websocket-rehearsal-v1.log) / [receipt](stage_receipts/websocket-rehearsal-v1.json) |
+| inference-memory-profile-v1 | 2026-11-09T19:50:52.703148+08:00 | 36.650179624557495 | passed / 0 | [log](raw_logs/inference-memory-profile-v1.log) / [receipt](stage_receipts/inference-memory-profile-v1.json) |
+| act-cache-v1 | 2026-11-09T19:53:17.531000+08:00 | 0.09251856803894043 | failed / 1 | [log](raw_logs/act-cache-v1.log) / [receipt](stage_receipts/act-cache-v1.json) |
+| inference-pool-7424-v1 | 2026-11-09T19:53:17.564261+08:00 | 28.22342610359192 | failed / 1 | [log](raw_logs/inference-pool-7424-v1.log) / [receipt](stage_receipts/inference-pool-7424-v1.json) |
+| act-cache-v2 | 2026-11-09T19:55:18.447016+08:00 | 213.76268649101257 | passed / 0 | [log](raw_logs/act-cache-v2.log) / [receipt](stage_receipts/act-cache-v2.json) |
+| inference-platform-memory-v1 | 2026-11-09T19:57:24.031669+08:00 | 38.65248084068298 | passed / 0 | [log](raw_logs/inference-platform-memory-v1.log) / [receipt](stage_receipts/inference-platform-memory-v1.json) |
+| act-smoke-v1 | 2026-11-09T20:03:27.155637+08:00 | 5.285014629364014 | failed / 1 | [log](raw_logs/act-smoke-v1.log) / [receipt](stage_receipts/act-smoke-v1.json) |
+| act-smoke-v2 | 2026-11-09T20:04:12.562215+08:00 | 117.57879948616028 | passed / 0 | [log](raw_logs/act-smoke-v2.log) / [receipt](stage_receipts/act-smoke-v2.json) |
+| act-smoke-readback-v1 | 2026-11-09T20:06:11.939886+08:00 | 6.1352832317352295 | passed / 0 | [log](raw_logs/act-smoke-readback-v1.log) / [receipt](stage_receipts/act-smoke-readback-v1.json) |
+| act-formal-training-v1 | 2026-11-09T20:06:18.160902+08:00 | 2391.7645692825317 | passed / 0 | [log](raw_logs/act-formal-training-v1.log) / [receipt](stage_receipts/act-formal-training-v1.json) |
+| act-runtime-build-rehearsal-v1 | 2026-11-09T20:16:48.816869+08:00 | 3.267606258392334 | passed / 0 | [log](raw_logs/act-runtime-build-rehearsal-v1.log) / [receipt](stage_receipts/act-runtime-build-rehearsal-v1.json) |
+| act-runtime-selftest-rehearsal-v1 | 2026-11-09T20:17:40.152405+08:00 | 0.039307594299316406 | failed / 1 | [log](raw_logs/act-runtime-selftest-rehearsal-v1.log) / [receipt](stage_receipts/act-runtime-selftest-rehearsal-v1.json) |
+| act-runtime-selftest-rehearsal-v2 | 2026-11-09T20:19:32.926358+08:00 | 6.8248069286346436 | passed / 0 | [log](raw_logs/act-runtime-selftest-rehearsal-v2.log) / [receipt](stage_receipts/act-runtime-selftest-rehearsal-v2.json) |
+| act-runtime-full-rehearsal-v2 | 2026-11-09T20:19:39.838010+08:00 | 11.350194692611694 | passed / 0 | [log](raw_logs/act-runtime-full-rehearsal-v2.log) / [receipt](stage_receipts/act-runtime-full-rehearsal-v2.json) |
+| act-final-export-v1 | 2026-11-09T20:46:14.246293+08:00 | 3.189384937286377 | passed / 0 | [log](raw_logs/act-final-export-v1.log) / [receipt](stage_receipts/act-final-export-v1.json) |
+| act-final-selftest-cpu-v1 | 2026-11-09T20:46:17.494547+08:00 | 6.59100079536438 | passed / 0 | [log](raw_logs/act-final-selftest-cpu-v1.log) / [receipt](stage_receipts/act-final-selftest-cpu-v1.json) |
+| act-final-full-cpu-v1 | 2026-11-09T20:46:24.172910+08:00 | 12.007164001464844 | passed / 0 | [log](raw_logs/act-final-full-cpu-v1.log) / [receipt](stage_receipts/act-final-full-cpu-v1.json) |
+| act-final-selftest-cuda-v1 | 2026-11-09T20:46:36.266178+08:00 | 7.351026296615601 | passed / 0 | [log](raw_logs/act-final-selftest-cuda-v1.log) / [receipt](stage_receipts/act-final-selftest-cuda-v1.json) |
+| act-final-full-cuda-v1 | 2026-11-09T20:46:43.692535+08:00 | 6.8329548835754395 | passed / 0 | [log](raw_logs/act-final-full-cuda-v1.log) / [receipt](stage_receipts/act-final-full-cuda-v1.json) |
+| optimizer-readback-rehearsal26000-v1 | 2026-11-09T20:51:30.867034+08:00 | 0.04051566123962402 | failed / 2 | [log](raw_logs/optimizer-readback-rehearsal26000-v1.log) / [receipt](stage_receipts/optimizer-readback-rehearsal26000-v1.json) |
+| optimizer-readback-rehearsal26000-v2 | 2026-11-09T20:51:51.065458+08:00 | 4.819579839706421 | passed / 0 | [log](raw_logs/optimizer-readback-rehearsal26000-v2.log) / [receipt](stage_receipts/optimizer-readback-rehearsal26000-v2.json) |
+| client-preprocess-equivalence-v1 | 2026-11-09T22:24:35.010439+08:00 | 50.208224296569824 | passed / 0 | [log](raw_logs/client-preprocess-equivalence-v1.log) / [receipt](stage_receipts/client-preprocess-equivalence-v1.json) |
+| websocket-compact-rehearsal-v1 | 2026-11-09T22:26:37.438775+08:00 | 19.55154299736023 | failed / 1 | [log](raw_logs/websocket-compact-rehearsal-v1.log) / [receipt](stage_receipts/websocket-compact-rehearsal-v1.json) |
+| websocket-compact-rehearsal-v2 | 2026-11-09T22:30:09.965415+08:00 | 69.15515375137329 | passed / 0 | [log](raw_logs/websocket-compact-rehearsal-v2.log) / [receipt](stage_receipts/websocket-compact-rehearsal-v2.json) |
+| client-direct-timeout-acceptance-v1 | 2026-11-09T22:30:54.044841+08:00 | 0.5184266567230225 | passed / 0 | [log](raw_logs/client-direct-timeout-acceptance-v1.log) / [receipt](stage_receipts/client-direct-timeout-acceptance-v1.json) |
+| action-guard-acceptance-v1 | 2026-11-10T00:21:16.418717+08:00 | 0.354724645614624 | passed / 0 | [log](raw_logs/action-guard-acceptance-v1.log) / [receipt](stage_receipts/action-guard-acceptance-v1.json) |
+| action-guard-acceptance-v2 | 2026-11-10T00:25:43.557563+08:00 | 0.35578465461730957 | passed / 0 | [log](raw_logs/action-guard-acceptance-v2.log) / [receipt](stage_receipts/action-guard-acceptance-v2.json) |
+| full-eval-base-v1 | 2026-11-10T01:33:10.531052+08:00 | 131.45097541809082 | passed / 0 | [log](raw_logs/full-eval-base-v1.log) / [receipt](stage_receipts/full-eval-base-v1.json) |
+| full-eval-best-v1 | 2026-11-10T01:35:22.071873+08:00 | 134.63456964492798 | passed / 0 | [log](raw_logs/full-eval-best-v1.log) / [receipt](stage_receipts/full-eval-best-v1.json) |
+| full-eval-last-v1 | 2026-11-10T01:37:36.795924+08:00 | 135.3853030204773 | passed / 0 | [log](raw_logs/full-eval-last-v1.log) / [receipt](stage_receipts/full-eval-last-v1.json) |
+| deployment-export-v1 | 2026-11-10T01:39:52.270135+08:00 | 167.67968034744263 | passed / 0 | [log](raw_logs/deployment-export-v1.log) / [receipt](stage_receipts/deployment-export-v1.json) |
+| deployment-inference-readback-v1 | 2026-11-10T01:42:40.033359+08:00 | 33.127230167388916 | passed / 0 | [log](raw_logs/deployment-inference-readback-v1.log) / [receipt](stage_receipts/deployment-inference-readback-v1.json) |
+| final-params-43001-readback-v1 | 2026-11-10T01:43:23.143092+08:00 | 18.795708894729614 | passed / 0 | [log](raw_logs/final-params-43001-readback-v1.log) / [receipt](stage_receipts/final-params-43001-readback-v1.json) |
+| final-optimizer-readback-v1 | 2026-11-10T01:43:42.017827+08:00 | 3.967529058456421 | passed / 0 | [log](raw_logs/final-optimizer-readback-v1.log) / [receipt](stage_receipts/final-optimizer-readback-v1.json) |
+| websocket-final-v1 | 2026-11-10T01:43:46.069967+08:00 | 67.79393029212952 | passed / 0 | [log](raw_logs/websocket-final-v1.log) / [receipt](stage_receipts/websocket-final-v1.json) |
+| final-low-memory-profile-v1 | 2026-11-10T01:44:53.950297+08:00 | 38.25299072265625 | passed / 0 | [log](raw_logs/final-low-memory-profile-v1.log) / [receipt](stage_receipts/final-low-memory-profile-v1.json) |
+| independent-final-delivery-audit-v1 | 2026-11-10T01:45:32.290440+08:00 | 44.31388735771179 | passed / 0 | [log](raw_logs/independent-final-delivery-audit-v1.log) / [receipt](stage_receipts/independent-final-delivery-audit-v1.json) |
+| publication-preparation-v1 | 2026-11-10T01:50:05.038933+08:00 | 16.19165563583374 | passed / 0 | [log](raw_logs/publication-preparation-v1.log) / [receipt](stage_receipts/publication-preparation-v1.json) |
+| github-publication-v1 | 2026-11-10T01:53:35.926808+08:00 | 8.984202146530151 | passed / 0 | [log](raw_logs/github-publication-v1.log) / [receipt](stage_receipts/github-publication-v1.json) |
+| hf-publication-v1 | 2026-11-10T02:04:20.726726+08:00 | 313.2629165649414 | passed / 0 | [log](raw_logs/hf-publication-v1.log) / [receipt](stage_receipts/hf-publication-v1.json) |
+| github-model-link-v1 | 2026-11-10T02:17:04.778607+08:00 | 8.182425260543823 | passed / 0 | [log](raw_logs/github-model-link-v1.log) / [receipt](stage_receipts/github-model-link-v1.json) |

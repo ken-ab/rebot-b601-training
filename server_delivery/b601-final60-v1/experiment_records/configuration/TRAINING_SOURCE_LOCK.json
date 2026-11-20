@@ -1,0 +1,29 @@
+{
+  "recorded_at": "2026-11-09T13:06:01.537232+08:00",
+  "files": {
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/serve_b601.py": "595645597b1645a5e6595d793c08e7846d6dc9743c5c5979102f28347a0b311f",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py": "3722277fb91a67656f7d256f0897538e5881292ad7152ba8061fb7a0ffa7a847",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/b601_data.py": "974680fa22688d25ecce955738bc02253b0002527b176edba952d3225e245927",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/longrun_monitor.py": "0223392f1b79dffddd38a38a1545744730ed2e260c555f502b6cc3ddc91f4cbc",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/prepare_dataset.py": "a886982ea168301277eb5fd3d4b99f6afc800141cea93d064ff68e34e961c326",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/train_pi05.py": "49c383e08c5a123e56fee39aec1f7af4c29e6735b261e3b5a544a034c8ad130d",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/b601_policy.py": "cf62e41712a14d7833dd216dc048bea6576e504a15888c1b952b23c5f251aada",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/run_pi05.sh": "0c9f2e82607b1dfa3efb3d22e66ea0b4e969dcc4ace2fd613fc8ff092855f1b1",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/splits.json": "60a943c9db68cb086f219a4cc56a9472d54772760ed1502d79b0b6ecae35226b",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/DATASET.sha256": "15bafcd2fafa70bb4486a3cabf764f5b0cd21ffdc37693b5ec0d37c765156711",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/scripts/train.py": "22f98a06aaa6e68e0f725d727ab95398238d1cae8a46bb94e829f330758a9baf",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/pi0.py": "24b32d7c6ed5e409459afa8ca5af96a4dae09c2dcdf48e828907e411f4f12342",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/pi0_config.py": "d321858c30b398126035ea2b6da09e1c422eeeebb5ebf8df631daf9dc77647fa",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/gemma.py": "7e42ada4ae7e9995f0ef3e33a0c224758323c2015e2d9d72ec15726a8a001d2a",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/models/lora.py": "ced28716950c34d84a1a6d0b03b1d9550000732721df884818080b6e78cb3289",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/training/sharding.py": "c67c4112a126ab097571c8a882fd1ee3f106b15b6e608e7205ac7f29b44ca985",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/training/config.py": "c34231f888dba5dc981d808765b3d98775ab845b04313bf53fcecd567c520b0d",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/training/optimizer.py": "cfb5d6f6aec61fbe961287b4015c652260628a0ed4682a0dbdc271b8e65431fa",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/training/data_loader.py": "4d0b055ac28527c1ab1f0ba7496057722c7c748c88564a8de2ff4fac650e97c9",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/training/checkpoints.py": "3cc32682ec3609e9075dabd991488edb9d7f6c045443f58963d733f99c468dbd",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/shared/download.py": "7c3fabfda187df0fa187d051c6af772c7ac40de2a83095719109673da0c29ae3",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/src/openpi/transforms.py": "a1b94e9e72849a18834778f229c6bb389a495eb7fbe0aa800edea728b9424ff4",
+    "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/.openpi/uv.lock": "793488b5a55bb87200db90a61fd0af51922b686d94e1da4f4c587ab119b37d74"
+  },
+  "stage": "before monitored probe and formal long run"
+}

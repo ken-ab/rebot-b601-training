@@ -1,0 +1,22 @@
+{
+  "label": "act-final-full-cpu-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/verify_runtime_full.py",
+    "--bundle",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT",
+    "--device",
+    "cpu",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/diagnostics/runtime_final_cpu_v1"
+  ],
+  "started_at": "2026-11-09T20:46:24.172910+08:00",
+  "start_unix": 1794228384.1727216,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-final-full-cpu-v1.log",
+  "runner_pid": 2149839,
+  "status": "passed",
+  "child_pid": 2149840,
+  "returncode": 0,
+  "elapsed_seconds": 12.007164001464844,
+  "finished_at": "2026-11-09T20:46:36.179899+08:00"
+}

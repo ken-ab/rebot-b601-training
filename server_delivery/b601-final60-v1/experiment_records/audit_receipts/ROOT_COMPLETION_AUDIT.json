@@ -1,0 +1,51 @@
+{
+  "status": "server_training_evaluation_delivery_passed_publication_pending",
+  "at": "2026-11-10T01:49:40.125633+08:00",
+  "actual_active_hours": 12.273248344435835,
+  "optimizer_updates": 43001,
+  "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+  "primary_is_final43000": true,
+  "native_checkpoint_files_sha256_matched_to_audited_bundle": 22,
+  "smokes_independently_reparsed": {
+    "2": {
+      "finite_loss_and_gradient_rows": 20,
+      "first_loss": 0.035,
+      "last_loss": 0.0312
+    },
+    "4": {
+      "finite_loss_and_gradient_rows": 20,
+      "first_loss": 0.0358,
+      "last_loss": 0.0477
+    }
+  },
+  "required_stage_receipt_hashes": {
+    "prepare-v2": "19988a5dda9af56ab42247c97eac5a93e6389951585f9b78307fc02a9762b5d2",
+    "base-download-v2": "7296305e4ad945458f0824c430c90e922f1ed83774433cd9901bf6fdaf70c527",
+    "full-data-audit-v1": "4d363ab657d3aef9ef9711c004f5bc2f78f9ccfab280e5d248e23d93b24bf6b8",
+    "jax-gpu-collective-v1": "bab182c9401d6afc4ce3d017369c1affc2b8c8d12395469396b9de500f1b7f18",
+    "smoke-b2-v1": "01fc37772d22e3d8643795cac8d99e695979b6f09664615ccd949e0cc8eb3c00",
+    "smoke-b2-v1-readback": "66fe72a9fa33ca1140e8feaa5f0fe0d2ddcd1b4401a38ccd52bd8df0743ba188",
+    "smoke-b4-v1": "a9222019610542c236a7a5753e98beb0e60a57357e6c7d248fe98b532a488c00",
+    "smoke-b4-v1-readback": "726b89d8b90be9c35ebdb816ffa7f23a8bcd8659b70e4d608fa29a9272dc80e5",
+    "hook-probe-v1": "e5d5f3e29d4f4851a4776def057f3c2fab4e3587cda3f16506ecc4229aa7e98e",
+    "hook-resume-v1": "96bcb2e125dd9892620ba0c3d2299664eb2c7cf852e660a9a5246b7646bb5a4e",
+    "formal-longrun-v1": "4d7c70cc9e2f2932b569315b1060da6e58679476cf32e4dc3bd09f18b581aab2",
+    "full-eval-base-v1": "e4bde14ab88eeaf1eda59cbbe0b702c7784a099c1d36e46a46d642f2fd0f8ebf",
+    "full-eval-best-v1": "4f6d6fcfa640f2264a8e219b5fd0fbfcc24d5092a6e92e15be6792ed467503c1",
+    "full-eval-last-v1": "028c98f81e33e4c4d9e1f9bdfa6ab3960b487103c79978c557561b1f9bb2fb14",
+    "deployment-export-v1": "8787eabcecc9b9ab1be9aa58d40dfd39fff544dc3bb9ae56deb3b9f3aeca1770",
+    "deployment-inference-readback-v1": "74d71014a44283d9d6e63d4e93b796bccf5555ff810e5224d1da847d8c99bde0",
+    "final-params-43001-readback-v1": "3de2e36a80ce24a63d3e8a72be4d26d70cfc16306048d6d7a808db5976e46309",
+    "final-optimizer-readback-v1": "691031c8ea0f4c8faffa0ddf73c000f09dc8af44c8a56b78054f7772b9c4aea9",
+    "websocket-final-v1": "92208aa777e7054cde27eb2230cedf9d8e95b4576cbf2edbeeaf3810af7f48e2",
+    "final-low-memory-profile-v1": "04b128a8f9079d5400c4f56093645984495d9cfb6d97f8bb4cff3bae2348bd4e",
+    "independent-final-delivery-audit-v1": "9aeb5a4da461447755bd5f2cd881636c2fa30c1e71ebccf6cbfdbed8d8de4356"
+  },
+  "independent_final_audit_sha256": "ef7342929e5e0aedfe2dcb097f390f29a308d3dcbbfbaef59fe389eaf3c06b03",
+  "final_report_sha256": "33ba348fc150c5abbdb3a481cb0f8be754fda7aabeb1c751f48b24cd0c312dd2",
+  "main_and_acceptance_services": "ExecMainStatus=0\nId=b601-pipeline-20261109.service\nActiveState=inactive\n\nExecMainStatus=0\nId=b601-final-acceptance-20261109.service\nActiveState=inactive\n",
+  "archive_bytes": 6340963541,
+  "archive_sha256": "258c85c7405d6d8e67241a8acfd93f4020b397fa1ce302e7602e038f8b653657",
+  "actual_windows_or_physical_robot_execution": false,
+  "huggingface_upload_pending_user_terminal_authorization": true
+}

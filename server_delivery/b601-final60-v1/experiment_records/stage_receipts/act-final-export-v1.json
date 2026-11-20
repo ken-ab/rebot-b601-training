@@ -1,0 +1,22 @@
+{
+  "label": "act-final-export-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/build_runtime.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-act-final60/runs/act-b601-final60-v1/step_015000",
+    "--bundle",
+    "/home/yujiegao/桌面/zzk/B601_ACT_20261109/B601_ACT_DEPLOYMENT",
+    "--scope",
+    "final"
+  ],
+  "started_at": "2026-11-09T20:46:14.246293+08:00",
+  "start_unix": 1794228374.246114,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/act-final-export-v1.log",
+  "runner_pid": 2140201,
+  "status": "passed",
+  "child_pid": 2140306,
+  "returncode": 0,
+  "elapsed_seconds": 3.189384937286377,
+  "finished_at": "2026-11-09T20:46:17.435514+08:00"
+}

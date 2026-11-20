@@ -1,0 +1,17 @@
+INFO:datasets:PyTorch version 2.7.1 available.
+INFO:datasets:Polars version 1.30.0 available.
+INFO:datasets:JAX version 0.5.3 available.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000/assets/rebot-b601-train
+INFO:root:Loading model...
+INFO:2026-11-09 16:39:30,960:jax._src.xla_bridge:925: Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:jax._src.xla_bridge:Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+INFO:2026-11-09 16:39:30,962:jax._src.xla_bridge:925: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+INFO:absl:orbax-checkpoint version: 0.11.13
+INFO:absl:Created BasePyTreeCheckpointHandler: use_ocdbt=True, use_zarr3=False, pytree_metadata_options=PyTreeMetadataOptions(support_rich_types=False), array_metadata_store=<orbax.checkpoint._src.metadata.array_metadata_store.Store object at 0x7f72e40c4dd0>
+INFO:absl:Restoring checkpoint from /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000/params.
+INFO:absl:[thread=MainThread] Failed to get flag value for EXPERIMENTAL_ORBAX_USE_DISTRIBUTED_PROCESS_ID.
+INFO:absl:[process=0] /jax/checkpoint/read/bytes_per_sec: 770.9 MiB/s (total bytes: 6.3 GiB) (time elapsed: 8 seconds) (per-host)
+INFO:absl:Finished restoring checkpoint in 8.42 seconds from /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000/params.
+INFO:root:Loaded norm stats from /data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000/assets/rebot-b601-train
+{"layout": "native", "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000", "repeat_max_abs_difference": [0.0, 0.0, 0.0], "golden_max_abs_difference": [0.12620111028939895, 0.12620111028939895, 0.12620111028939895], "seconds": [23.38713450898649, 0.2436877759755589, 0.22067358897766098], "device": "[CudaDevice(id=0)]", "environment": {"CUDA_VISIBLE_DEVICES": "GPU-3630f58a-b268-bb35-863e-7565f2e026b9", "XLA_FLAGS": null, "JAX_ENABLE_X64": null, "XLA_PYTHON_CLIENT_MEM_FRACTION": "0.9"}}

@@ -1,0 +1,7 @@
+{
+  "first_dispatch_completed_at": "2026-11-09T13:16:40.491957+08:00",
+  "pid": 4009515,
+  "previous_active_seconds": 0.0,
+  "target_active_seconds": 44100.0,
+  "definition": "Local monitoring hooks around the unchanged pinned OpenPI training loop.\n\nThe wall clock starts after the first successful training dispatch, excluding\nsetup and initial JIT compilation. Saving and periodic validation count as\nactive experiment time. Checkpoint receipts preserve that definition on resume.\n"
+}

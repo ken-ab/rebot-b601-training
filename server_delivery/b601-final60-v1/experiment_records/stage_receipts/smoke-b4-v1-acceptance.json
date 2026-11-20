@@ -1,0 +1,29 @@
+{
+  "experiment": "b601-final60-smoke-fsdp2-b4",
+  "steps": 20,
+  "losses": [
+    0.0358,
+    0.0453,
+    0.0206,
+    0.0334,
+    0.0588,
+    0.1312,
+    0.0448,
+    0.0559,
+    0.0379,
+    0.0302,
+    0.0371,
+    0.0271,
+    0.0401,
+    0.099,
+    0.0348,
+    0.027,
+    0.0678,
+    0.0658,
+    0.0367,
+    0.0477
+  ],
+  "first_loss": 0.0358,
+  "last_loss": 0.0477,
+  "checkpoint": "/home/yujiegao/\u684c\u9762/zzk/rebot-b601-training/openpi_b601/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b4/19"
+}

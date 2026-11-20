@@ -1,0 +1,20 @@
+{
+  "label": "repro-candidate-checkpoint10000-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/10000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/evaluation/checkpoint10000"
+  ],
+  "started_at": "2026-11-09T16:46:24.087726+08:00",
+  "start_unix": 1794213984.0875297,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/repro-candidate-checkpoint10000-v1.log",
+  "runner_pid": 3818011,
+  "status": "passed",
+  "child_pid": 3818107,
+  "returncode": 0,
+  "elapsed_seconds": 134.67561984062195,
+  "finished_at": "2026-11-09T16:48:38.763166+08:00"
+}

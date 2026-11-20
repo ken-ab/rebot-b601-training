@@ -1,0 +1,67 @@
+{
+  "status": "complete",
+  "at": "2026-11-10T02:22:08.277381+08:00",
+  "requirements": {
+    "authorized_private_repository_and_final60_data": {
+      "status": "passed",
+      "evidence": "prepare-v2, DATA_ACCEPTANCE.json, full-data-audit-v1; fixed50/10 and28729/5118frames"
+    },
+    "two_real20step_smokes_and_saved_checkpoints": {
+      "status": "passed",
+      "evidence": "ROOT_COMPLETION_AUDIT.smokes_independently_reparsed;20finite loss+grad rows perbatch2/4;71finiteparams/20LoRA readback"
+    },
+    "actual12hplus_longrun": {
+      "status": "passed",
+      "active_seconds": 44183.69403996901,
+      "optimizer_updates": 43001,
+      "checkpoint_label": 43000,
+      "evidence": "checkpoint-bound completion clock crosschecked to firstdispatch wallclock"
+    },
+    "diagnostic_agent_and_reproducible_fixes": {
+      "status": "passed",
+      "agent": "/root/b601_diagnostics",
+      "evidence": "ISSUE_RESOLUTION_LOG.json, source_versions/, client transport resolution, publication/access/GUI receipts and collaboration records"
+    },
+    "offline_evaluation_and_correct_metrics": {
+      "status": "passed",
+      "action_rows": 5118,
+      "windows": 211,
+      "evidence": "INDEPENDENT_FINAL_AUDIT float64 recomputation and equal target/mask/source bindings; train-only stats; limited validation reuse disclosed"
+    },
+    "recoverable_training_checkpoint": {
+      "status": "passed",
+      "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+      "evidence": "actual hook restore10-to-save20;final105optimizerarrays+71paramsfinite;counts43001;DataLoader reset limitation disclosed"
+    },
+    "complete_deployable_parameters_and_protocol": {
+      "status": "passed",
+      "evidence": "native22files SHA match auditedbundle;131manifestfiles;strictgolden+actualWebSocket/direct bitwiseagreement;10lowmemorygoldens"
+    },
+    "both_deployment_routes_and_risk_boundaries": {
+      "status": "passed_for_server_handoff",
+      "evidence": "WindowsclientZIP20files;36softwareguardcases/defaultcannotarm;WSL/server guides;actualWindows/USB/camera/physicalclosedloop remainslocal"
+    },
+    "private_model_publication_verified": {
+      "status": "passed",
+      "repository": "dahjgfa/b601-pi05-final60",
+      "revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+      "files_verified": 138,
+      "evidence": "HF_PUBLICATION_RECEIPT and supplemental private revision/inventory/LFS hash check"
+    },
+    "github_methods_hardware_results_and_download_link": {
+      "status": "passed",
+      "pull_request": "https://github.com/ken-ab/rebot-b601-training/pull/2",
+      "github_revision": "1afb50b3278104ba112d4e2e8ac7bf154e934156",
+      "evidence": "62remote blob hashes match commit;onlydocumentation/linkupdate;main unchanged"
+    }
+  },
+  "hf_url": "https://huggingface.co/dahjgfa/b601-pi05-final60/tree/8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "github_pull_request": "https://github.com/ken-ab/rebot-b601-training/pull/2",
+  "download_guide_url": "https://github.com/ken-ab/rebot-b601-training/blob/1afb50b3278104ba112d4e2e8ac7bf154e934156/server_delivery/b601-final60-v1/docs/server_final60/DOWNLOAD_AND_START_CN.md",
+  "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+  "model_archive": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT.tar.gz",
+  "windows_client_zip": "/home/yujiegao/\u684c\u9762/zzk/B601_LONGRUN_20261109/B601_PI05_WINDOWS_CLIENT.zip",
+  "original_training_and_results_preserved": true,
+  "actual_windows_or_physical_robot_execution": false,
+  "scope": "Server finetuning, offline evaluation, deployable-parameter handoff and authorized private publication complete; physical endpoint validation is documented local followup"
+}

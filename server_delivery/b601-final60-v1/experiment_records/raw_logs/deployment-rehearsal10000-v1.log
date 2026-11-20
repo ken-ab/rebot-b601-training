@@ -1,0 +1,33 @@
+/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/torchvision/io/_video_deprecation_warning.py:5: UserWarning: The video decoding and encoding capabilities of torchvision are deprecated from version 0.22 and will be removed in version 0.24. We recommend that you migrate to TorchCodec, where we'll consolidate the future decoding/encoding capabilities of PyTorch: https://github.com/pytorch/torchcodec
+  warnings.warn(
+Rehearsal bundle ready; code directory intentionally has no prepared/ dataset or repository checkout
+Traceback (most recent call last):
+  File "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/self_test.py", line 70, in <module>
+    main()
+  File "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/self_test.py", line 60, in main
+    np.testing.assert_allclose(actions, expected, atol=args.atol, rtol=args.rtol,
+  File "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 1504, in assert_allclose
+    assert_array_compare(compare, actual, desired, err_msg=str(err_msg),
+  File "/home/yujiegao/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 81, in inner
+    return func(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/lib/python3.11/site-packages/numpy/testing/_private/utils.py", line 797, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Not equal to tolerance rtol=1e-05, atol=0.0001
+Delivered inference differs from the server reference; inspect before deployment
+Mismatched elements: 127 / 175 (72.6%)
+Max absolute difference: 0.12620087
+Max relative difference: 17.4317511
+ x: array([[  1.326742,  -1.560095,  -2.483752,   5.108022,   3.036219,
+         10.031894,   0.5892  ],
+       [  1.118379,  -0.393022,  -2.965166,   4.801171,   3.209795,...
+ y: array([[ 1.309333e+00, -1.465444e+00, -2.536486e+00,  5.075207e+00,
+         3.056665e+00,  1.004424e+01,  6.221585e-01],
+       [ 1.127084e+00, -5.192229e-01, -2.938799e+00,  4.823047e+00,...
+Traceback (most recent call last):
+  File "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/rehearse_deployment.py", line 52, in <module>
+    subprocess.run([sys.executable, str(BUNDLE / 'self_test.py')], check=True)
+  File "/home/yujiegao/.local/share/uv/python/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python', '/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/self_test.py']' returned non-zero exit status 1.

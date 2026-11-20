@@ -1,0 +1,18 @@
+{
+  "label": "inference-pool-7424-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/profile_inference_memory.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/inference_pool_7424_v1"
+  ],
+  "started_at": "2026-11-09T19:53:17.564261+08:00",
+  "start_unix": 1794225197.5640914,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/inference-pool-7424-v1.log",
+  "runner_pid": 2231104,
+  "status": "failed",
+  "child_pid": 2231196,
+  "returncode": 1,
+  "elapsed_seconds": 28.22342610359192,
+  "finished_at": "2026-11-09T19:53:45.787533+08:00"
+}

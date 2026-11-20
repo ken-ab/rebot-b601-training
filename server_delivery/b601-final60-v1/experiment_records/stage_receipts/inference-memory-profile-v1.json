@@ -1,0 +1,18 @@
+{
+  "label": "inference-memory-profile-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/profile_inference_memory.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/inference_memory_v1"
+  ],
+  "started_at": "2026-11-09T19:50:52.703148+08:00",
+  "start_unix": 1794225052.7029579,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/inference-memory-profile-v1.log",
+  "runner_pid": 2093110,
+  "status": "passed",
+  "child_pid": 2093112,
+  "returncode": 0,
+  "elapsed_seconds": 36.650179624557495,
+  "finished_at": "2026-11-09T19:51:29.353152+08:00"
+}

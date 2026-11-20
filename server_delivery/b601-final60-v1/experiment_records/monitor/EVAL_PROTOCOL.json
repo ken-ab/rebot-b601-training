@@ -1,0 +1,503 @@
+{
+  "split": "validation; used for model selection",
+  "source_episode_indices": [
+    17,
+    18,
+    19,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+  ],
+  "observations": [
+    {
+      "index": 0,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 0
+    },
+    {
+      "index": 104,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 104
+    },
+    {
+      "index": 209,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 209
+    },
+    {
+      "index": 314,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 314
+    },
+    {
+      "index": 419,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 419
+    },
+    {
+      "index": 524,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 524
+    },
+    {
+      "index": 629,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 629
+    },
+    {
+      "index": 734,
+      "local_episode": 0,
+      "source_episode": 17,
+      "frame": 734
+    },
+    {
+      "index": 735,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 0
+    },
+    {
+      "index": 839,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 104
+    },
+    {
+      "index": 944,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 209
+    },
+    {
+      "index": 1049,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 314
+    },
+    {
+      "index": 1154,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 419
+    },
+    {
+      "index": 1259,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 524
+    },
+    {
+      "index": 1364,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 629
+    },
+    {
+      "index": 1469,
+      "local_episode": 1,
+      "source_episode": 18,
+      "frame": 734
+    },
+    {
+      "index": 1470,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 0
+    },
+    {
+      "index": 1569,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 99
+    },
+    {
+      "index": 1668,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 198
+    },
+    {
+      "index": 1767,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 297
+    },
+    {
+      "index": 1867,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 397
+    },
+    {
+      "index": 1966,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 496
+    },
+    {
+      "index": 2065,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 595
+    },
+    {
+      "index": 2165,
+      "local_episode": 2,
+      "source_episode": 19,
+      "frame": 695
+    },
+    {
+      "index": 2166,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 0
+    },
+    {
+      "index": 2224,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 58
+    },
+    {
+      "index": 2283,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 117
+    },
+    {
+      "index": 2341,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 175
+    },
+    {
+      "index": 2400,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 234
+    },
+    {
+      "index": 2458,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 292
+    },
+    {
+      "index": 2517,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 351
+    },
+    {
+      "index": 2576,
+      "local_episode": 3,
+      "source_episode": 53,
+      "frame": 410
+    },
+    {
+      "index": 2577,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 0
+    },
+    {
+      "index": 2641,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 64
+    },
+    {
+      "index": 2705,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 128
+    },
+    {
+      "index": 2769,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 192
+    },
+    {
+      "index": 2834,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 257
+    },
+    {
+      "index": 2898,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 321
+    },
+    {
+      "index": 2962,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 385
+    },
+    {
+      "index": 3027,
+      "local_episode": 4,
+      "source_episode": 54,
+      "frame": 450
+    },
+    {
+      "index": 3028,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 0
+    },
+    {
+      "index": 3089,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 61
+    },
+    {
+      "index": 3150,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 122
+    },
+    {
+      "index": 3212,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 184
+    },
+    {
+      "index": 3273,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 245
+    },
+    {
+      "index": 3335,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 307
+    },
+    {
+      "index": 3396,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 368
+    },
+    {
+      "index": 3458,
+      "local_episode": 5,
+      "source_episode": 55,
+      "frame": 430
+    },
+    {
+      "index": 3459,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 0
+    },
+    {
+      "index": 3521,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 62
+    },
+    {
+      "index": 3583,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 124
+    },
+    {
+      "index": 3645,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 186
+    },
+    {
+      "index": 3707,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 248
+    },
+    {
+      "index": 3769,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 310
+    },
+    {
+      "index": 3831,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 372
+    },
+    {
+      "index": 3894,
+      "local_episode": 6,
+      "source_episode": 56,
+      "frame": 435
+    },
+    {
+      "index": 3895,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 0
+    },
+    {
+      "index": 3950,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 55
+    },
+    {
+      "index": 4006,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 111
+    },
+    {
+      "index": 4062,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 167
+    },
+    {
+      "index": 4117,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 222
+    },
+    {
+      "index": 4173,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 278
+    },
+    {
+      "index": 4229,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 334
+    },
+    {
+      "index": 4285,
+      "local_episode": 7,
+      "source_episode": 57,
+      "frame": 390
+    },
+    {
+      "index": 4286,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 0
+    },
+    {
+      "index": 4343,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 57
+    },
+    {
+      "index": 4400,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 114
+    },
+    {
+      "index": 4457,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 171
+    },
+    {
+      "index": 4514,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 228
+    },
+    {
+      "index": 4571,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 285
+    },
+    {
+      "index": 4628,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 342
+    },
+    {
+      "index": 4686,
+      "local_episode": 8,
+      "source_episode": 58,
+      "frame": 400
+    },
+    {
+      "index": 4687,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 0
+    },
+    {
+      "index": 4748,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 61
+    },
+    {
+      "index": 4809,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 122
+    },
+    {
+      "index": 4871,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 184
+    },
+    {
+      "index": 4932,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 245
+    },
+    {
+      "index": 4994,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 307
+    },
+    {
+      "index": 5055,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 368
+    },
+    {
+      "index": 5117,
+      "local_episode": 9,
+      "source_episode": 59,
+      "frame": 430
+    }
+  ],
+  "normalization_source": "rebot-b601-train",
+  "rng_seed": 20261109,
+  "train": false,
+  "metric": "normalized padded-dimension flow matching loss; not joint-angle error",
+  "action_horizon": 25,
+  "batch_size": 4
+}

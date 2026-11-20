@@ -1,0 +1,1 @@
+{"checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-smoke-fsdp2-b4/19", "parameter_arrays": 71, "lora_arrays": 20, "parameter_count": 3403421456, "restored_parameter_bytes": 7740757056, "all_parameters_finite": true, "norm_stats_sha256": "73adb6290f10854524740cc9229a15a29431a0ec68e7da39f2f41c76ba3b7493", "elapsed_seconds": 13.357655980973504}

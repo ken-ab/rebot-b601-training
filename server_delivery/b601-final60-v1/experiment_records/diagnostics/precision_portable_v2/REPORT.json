@@ -1,0 +1,91 @@
+{
+  "layout": "portable",
+  "checkpoint": "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v1/checkpoint",
+  "inputs": {
+    "['image']['base_0_rgb']": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "5025d65ed0fa98c8fc389a23d8eacb23296d21fd606db2e23e40e8d6880d6bd9"
+    },
+    "['image']['left_wrist_0_rgb']": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "dcaefd7a7ba19b1389251dd700fed5a0d23096eb4edc5b249379e27effaec98e"
+    },
+    "['image']['right_wrist_0_rgb']": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "sha256": "0a3f0ee9e3cbab26f89ed53b7b20e22cb985b650fd4c52ef57e4aeb27560d773"
+    },
+    "['image_mask']['base_0_rgb']": {
+      "shape": [],
+      "dtype": "bool",
+      "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    "['image_mask']['left_wrist_0_rgb']": {
+      "shape": [],
+      "dtype": "bool",
+      "sha256": "4bf5122f344554c53bde2ebb8cd2b7e3d1600ad631c385a5d7cce23c7785459a"
+    },
+    "['image_mask']['right_wrist_0_rgb']": {
+      "shape": [],
+      "dtype": "bool",
+      "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+    },
+    "['state']": {
+      "shape": [
+        32
+      ],
+      "dtype": "float64",
+      "sha256": "06b98a3d0a0eb9533adfbff205f2cebf3047a36515e9777d07dc532443bbd3b0"
+    },
+    "['tokenized_prompt']": {
+      "shape": [
+        200
+      ],
+      "dtype": "int64",
+      "sha256": "942ba2ee041c513ee1e6bb80aa303d9564d6cbcb703df29d9b8b783a6c30327f"
+    },
+    "['tokenized_prompt_mask']": {
+      "shape": [
+        200
+      ],
+      "dtype": "bool",
+      "sha256": "e9de0e3433fae96e01f48d80caafc9bdf6f226a61b35814719bf30042bc91967"
+    }
+  },
+  "repeat_max_abs_difference": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "golden_max_abs_difference": [
+    0.252401980945411,
+    0.252401980945411,
+    0.252401980945411
+  ],
+  "seconds": [
+    13.054139081039466,
+    0.3682588869705796,
+    0.3426806360366754
+  ],
+  "device": "[CudaDevice(id=0)]",
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "GPU-3630f58a-b268-bb35-863e-7565f2e026b9",
+    "XLA_FLAGS": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true",
+    "JAX_ENABLE_X64": null,
+    "XLA_PYTHON_CLIENT_MEM_FRACTION": "0.9"
+  }
+}

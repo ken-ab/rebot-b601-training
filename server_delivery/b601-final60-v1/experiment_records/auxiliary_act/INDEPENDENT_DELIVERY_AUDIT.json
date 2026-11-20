@@ -1,0 +1,440 @@
+{
+  "status": "passed",
+  "at": "2026-11-09T20:48:05.551741+08:00",
+  "archive_sha256": "5df0e2ccb64783f83f45b4726021a6816fbfed5139808bde26e684d11c940aab",
+  "archive_bytes": 192293479,
+  "manifest_files": 27,
+  "archive_regular_files": 28,
+  "selected_step": 15000,
+  "actual_final_step": 20000,
+  "all_archive_member_hashes_match_manifest": true,
+  "full_metrics_recomputed_float64": true,
+  "selected_metrics": {
+    "policy": "ACT",
+    "evaluated_action_rows": 5118,
+    "chunks": 211,
+    "horizon": 25,
+    "target_free_zero_latent": true,
+    "targets_masks_source_match_pi05": true,
+    "normalized_valid_l1": 0.12667891050365723,
+    "per_axis_mae": [
+      1.3508973449442045,
+      2.8992568177752265,
+      2.68980012032385,
+      2.3684474414220134,
+      1.0890259195863219,
+      1.6848132982684483,
+      2.5381137547478074
+    ],
+    "per_axis_rmse": [
+      1.9493262221428445,
+      4.37298893679174,
+      4.0984764269334475,
+      3.643490545108094,
+      1.6394360580534826,
+      2.4422036033352486,
+      4.288486614150727
+    ],
+    "mean_joint_1to6_mae": 2.013706823720011,
+    "gripper_mae": 2.5381137547478074,
+    "macro_episode_per_axis_mae": [
+      1.3114121566447468,
+      2.892749385842319,
+      2.687823361740643,
+      2.375147442389803,
+      1.1248057154221507,
+      1.7047798682210007,
+      2.571631970544698
+    ],
+    "macro_episode_per_axis_rmse": [
+      1.8178259815756888,
+      4.358008785104021,
+      4.073990025410726,
+      3.527386756972747,
+      1.6703946137568226,
+      2.45454293319482,
+      4.240919409291462
+    ],
+    "episodes": [
+      {
+        "source_episode": 17,
+        "rows": 735,
+        "per_axis_mae": [
+          1.2161599427512308,
+          3.4364938205906324,
+          3.073622497581706,
+          2.3639423897832024,
+          1.1157901129755032,
+          1.4333192230259277,
+          2.08663146203878
+        ],
+        "per_axis_rmse": [
+          1.6860028423749616,
+          5.186814510673635,
+          4.354117685797227,
+          3.663989671352327,
+          1.4240226113227779,
+          1.946938643103481,
+          2.755483108375078
+        ]
+      },
+      {
+        "source_episode": 18,
+        "rows": 735,
+        "per_axis_mae": [
+          2.115096840323234,
+          2.7853286303529123,
+          2.5197157689503262,
+          2.881291988877212,
+          0.9509541391515407,
+          1.7951852976414218,
+          2.5983509792762547
+        ],
+        "per_axis_rmse": [
+          2.963041046651092,
+          3.668028511859224,
+          3.8183686268767567,
+          4.483313833981742,
+          1.2758179047701999,
+          2.4640391518319706,
+          3.929009362368171
+        ]
+      },
+      {
+        "source_episode": 19,
+        "rows": 696,
+        "per_axis_mae": [
+          1.2216802513997616,
+          2.5878942512061403,
+          2.500527437048397,
+          1.6928426003747288,
+          0.6842280187826048,
+          1.48643024988344,
+          2.4166658418788307
+        ],
+        "per_axis_rmse": [
+          1.716038683657034,
+          3.9698486684161916,
+          3.8217406626244697,
+          2.5115431709443974,
+          0.9593250035776734,
+          2.2171578846694127,
+          3.9417163383665907
+        ]
+      },
+      {
+        "source_episode": 53,
+        "rows": 411,
+        "per_axis_mae": [
+          1.32223397604396,
+          3.330481003960844,
+          2.1610913949581247,
+          1.464302999984899,
+          0.9480221712476871,
+          1.6208060908555042,
+          3.5435223109530707
+        ],
+        "per_axis_rmse": [
+          1.7991907206115234,
+          5.242165216249121,
+          3.6738306117373263,
+          2.0086149950599603,
+          1.4289408018508485,
+          2.7270753767266864,
+          6.636439831094971
+        ]
+      },
+      {
+        "source_episode": 54,
+        "rows": 451,
+        "per_axis_mae": [
+          1.220053515597319,
+          2.8415297372906805,
+          2.2478484967331136,
+          1.7799581513882607,
+          1.262795882493654,
+          1.7911854301829164,
+          1.8119011781696734
+        ],
+        "per_axis_rmse": [
+          1.685059810617573,
+          4.082679503113608,
+          3.0127261770597884,
+          2.4729879303141766,
+          2.1900299486998316,
+          2.3593935756393916,
+          3.0353889090340984
+        ]
+      },
+      {
+        "source_episode": 55,
+        "rows": 431,
+        "per_axis_mae": [
+          1.4811908366102422,
+          2.4413470430883066,
+          2.614427181241684,
+          2.466364552943239,
+          1.1747796931887464,
+          1.7498445314487006,
+          3.5724223180049535
+        ],
+        "per_axis_rmse": [
+          2.4722992429730795,
+          4.2284889629922375,
+          3.8340894543831765,
+          3.4935646662939543,
+          1.8456005586136686,
+          2.6087305580381224,
+          4.994821352067162
+        ]
+      },
+      {
+        "source_episode": 56,
+        "rows": 436,
+        "per_axis_mae": [
+          1.093464203996994,
+          2.6730910197173783,
+          3.3295170417345994,
+          2.7942239579599386,
+          1.2838952812118405,
+          1.9259123469472206,
+          3.013020761516116
+        ],
+        "per_axis_rmse": [
+          1.3810357913945988,
+          3.9305581182048,
+          4.8119941179312695,
+          4.326601062452204,
+          1.82382085201511,
+          2.37570110572259,
+          5.905485500481437
+        ]
+      },
+      {
+        "source_episode": 57,
+        "rows": 391,
+        "per_axis_mae": [
+          1.0410739244402523,
+          3.178265308022804,
+          2.520273142610974,
+          2.258640193154135,
+          1.411456093201628,
+          1.2834019505292595,
+          2.086947413661596
+        ],
+        "per_axis_rmse": [
+          1.2498666683322595,
+          4.9360131877815565,
+          4.4963723309067865,
+          3.4355525955807793,
+          2.1427731359304247,
+          1.812636536123947,
+          3.3795622530283516
+        ]
+      },
+      {
+        "source_episode": 58,
+        "rows": 401,
+        "per_axis_mae": [
+          1.2173955741145663,
+          2.767842623583991,
+          3.290269288933485,
+          2.942154226865285,
+          1.3381787184532965,
+          2.0599077498897946,
+          1.8424497037159833
+        ],
+        "per_axis_rmse": [
+          1.5821261862101865,
+          4.13914873291334,
+          5.509904314195974,
+          4.278904249795483,
+          1.8773234226228221,
+          2.887627234087138,
+          2.9801246690841525
+        ]
+      },
+      {
+        "source_episode": 59,
+        "rows": 431,
+        "per_axis_mae": [
+          1.1857725011699092,
+          2.8852204206094942,
+          2.6209413676140203,
+          3.1077533625671316,
+          1.077957043515004,
+          1.9018058118058192,
+          2.744407736231722
+        ],
+        "per_axis_rmse": [
+          1.643598822934582,
+          4.196342438836494,
+          3.4067562725944827,
+          4.598795393952448,
+          1.7362918981648698,
+          3.1461292660054627,
+          4.851162769014596
+        ]
+      }
+    ],
+    "axis_names": [
+      "shoulder_pan.pos",
+      "shoulder_lift.pos",
+      "elbow_flex.pos",
+      "wrist_flex.pos",
+      "wrist_yaw.pos",
+      "wrist_roll.pos",
+      "gripper.pos"
+    ],
+    "units": "absolute_adapter_input",
+    "scope": "Validationusedselection, notindependenttest orphysicalgrasp success"
+  },
+  "selftests": {
+    "cpu": {
+      "self_test": {
+        "status": "passed",
+        "system": "Linux",
+        "device": "cpu",
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true,
+        "manifest_files_verified": 14,
+        "golden_atol": 0.001,
+        "golden_rtol": 0.0001,
+        "max_abs_difference_from_training_gpu": 5.340576171875e-05,
+        "first_call_seconds": 0.11042134900344536,
+        "warm_median_seconds": 0.09756367802037857,
+        "warm_p95_seconds": 0.11555563872971103,
+        "cuda_peak_allocated_mib": null,
+        "cuda_peak_reserved_mib": null,
+        "torch_version": "2.7.1+cu126",
+        "metadata": {
+          "robot_type": "seeed_b601_rs_follower",
+          "policy": "ACT",
+          "fps": 25,
+          "action_horizon": 25,
+          "action_names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_yaw.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "action_space": "absolute_adapter_input",
+          "language_conditioned": false,
+          "device": "cpu"
+        },
+        "robot_commands_sent": false
+      },
+      "full_readback": {
+        "status": "passed",
+        "device": "cpu",
+        "chunks": 211,
+        "valid_action_rows": 5118,
+        "max_abs_prediction_difference_from_training_gpu": 5.340576171875e-05,
+        "per_axis_mae": [
+          1.3508973001300832,
+          2.8992566455995585,
+          2.6898002380890254,
+          2.3684479258990008,
+          1.0890259346796434,
+          1.6848133971203874,
+          2.5381139319545825
+        ],
+        "per_axis_rmse": [
+          1.9493262523124348,
+          4.37298912709939,
+          4.098476658269334,
+          3.6434911703755715,
+          1.639436023782435,
+          2.4422034779394988,
+          4.288486968283387
+        ],
+        "mean_joint_1to6_mae": 2.0137069069196163,
+        "gripper_mae": 2.5381139319545825,
+        "elapsed_seconds": 7.004461690026801,
+        "without_jax_lerobot_transformers_imports": true,
+        "target_free_zero_latent": true,
+        "scope": "Standalonepackage math/readback agreement; notphysicalrobot success"
+      }
+    },
+    "cuda": {
+      "self_test": {
+        "status": "passed",
+        "system": "Linux",
+        "device": "cuda",
+        "shape": [
+          25,
+          7
+        ],
+        "all_finite": true,
+        "manifest_files_verified": 14,
+        "golden_atol": 0.001,
+        "golden_rtol": 0.0001,
+        "max_abs_difference_from_training_gpu": 1.52587890625e-05,
+        "first_call_seconds": 0.6070432459819131,
+        "warm_median_seconds": 0.036036476492881775,
+        "warm_p95_seconds": 0.06297487908741456,
+        "cuda_peak_allocated_mib": 258.2734375,
+        "cuda_peak_reserved_mib": 300.0,
+        "torch_version": "2.7.1+cu126",
+        "metadata": {
+          "robot_type": "seeed_b601_rs_follower",
+          "policy": "ACT",
+          "fps": 25,
+          "action_horizon": 25,
+          "action_names": [
+            "shoulder_pan.pos",
+            "shoulder_lift.pos",
+            "elbow_flex.pos",
+            "wrist_flex.pos",
+            "wrist_yaw.pos",
+            "wrist_roll.pos",
+            "gripper.pos"
+          ],
+          "action_space": "absolute_adapter_input",
+          "language_conditioned": false,
+          "device": "cuda"
+        },
+        "robot_commands_sent": false
+      },
+      "full_readback": {
+        "status": "passed",
+        "device": "cuda",
+        "chunks": 211,
+        "valid_action_rows": 5118,
+        "max_abs_prediction_difference_from_training_gpu": 0.0,
+        "per_axis_mae": [
+          1.3508973449442045,
+          2.8992568177752265,
+          2.68980012032385,
+          2.3684474414220134,
+          1.0890259195863219,
+          1.6848132982684483,
+          2.5381137547478074
+        ],
+        "per_axis_rmse": [
+          1.9493262221428445,
+          4.37298893679174,
+          4.0984764269334475,
+          3.643490545108094,
+          1.6394360580534826,
+          2.4422036033352486,
+          4.288486614150727
+        ],
+        "mean_joint_1to6_mae": 2.013706823720011,
+        "gripper_mae": 2.5381137547478074,
+        "elapsed_seconds": 1.1105624819756486,
+        "without_jax_lerobot_transformers_imports": true,
+        "target_free_zero_latent": true,
+        "scope": "Standalonepackage math/readback agreement; notphysicalrobot success"
+      }
+    }
+  },
+  "actual_windows_and_robot_execution": false,
+  "main_pi05_status": "Separate12.25h objective still requires its own completion"
+}

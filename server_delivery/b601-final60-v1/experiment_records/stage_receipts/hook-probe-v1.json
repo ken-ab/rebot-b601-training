@@ -1,0 +1,33 @@
+{
+  "label": "hook-probe-v1",
+  "command": [
+    "bash",
+    "/home/yujiegao/桌面/zzk/B601_SERVER_ASSESSMENT_20261109/run_on_server.sh",
+    "train",
+    "--batch-size",
+    "4",
+    "--workers",
+    "0",
+    "--steps",
+    "21",
+    "--lr-decay-steps",
+    "10000",
+    "--save-interval",
+    "10",
+    "--long-run-hours",
+    "0.001",
+    "--exp-name",
+    "b601-final60-hook-probe",
+    "--base-params",
+    "/data2/yujiegao/b601-pi05/models/pi05_base/params"
+  ],
+  "started_at": "2026-11-09T13:07:10.266983+08:00",
+  "start_unix": 1794200830.266805,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/hook-probe-v1.log",
+  "runner_pid": 3933906,
+  "status": "passed",
+  "child_pid": 3933913,
+  "returncode": 0,
+  "elapsed_seconds": 218.24596786499023,
+  "finished_at": "2026-11-09T13:10:48.512788+08:00"
+}

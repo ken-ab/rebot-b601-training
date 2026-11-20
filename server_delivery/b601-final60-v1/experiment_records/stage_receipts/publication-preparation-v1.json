@@ -1,0 +1,16 @@
+{
+  "label": "publication-preparation-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/prepare_publication.py"
+  ],
+  "started_at": "2026-11-10T01:50:05.038933+08:00",
+  "start_unix": 1794246605.038772,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/publication-preparation-v1.log",
+  "runner_pid": 2358498,
+  "status": "passed",
+  "child_pid": 2358504,
+  "returncode": 0,
+  "elapsed_seconds": 16.19165563583374,
+  "finished_at": "2026-11-10T01:50:21.230446+08:00"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "independent-final-delivery-audit-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/audit_final_delivery.py"
+  ],
+  "started_at": "2026-11-10T01:45:32.290440+08:00",
+  "start_unix": 1794246332.2902648,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/independent-final-delivery-audit-v1.log",
+  "runner_pid": 2342962,
+  "status": "passed",
+  "child_pid": 2342965,
+  "returncode": 0,
+  "elapsed_seconds": 44.31388735771179,
+  "finished_at": "2026-11-10T01:46:16.604168+08:00"
+}

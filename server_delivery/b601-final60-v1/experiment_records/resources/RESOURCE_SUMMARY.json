@@ -1,0 +1,103 @@
+{
+  "raw_rows": 168944,
+  "recording_first_at": "2026-11-09T12:42:38.269349+08:00",
+  "recording_last_at": "2026-11-10T01:43:12.640478+08:00",
+  "nominal_sampler_sleep_seconds": 1,
+  "timing_note": "actual period includes nvidia-smi query time; sampled max is not exact physical peak",
+  "formal_first_dispatch_at": "2026-11-09T13:16:40.491957+08:00",
+  "formal_completed_at": "2026-11-10T01:33:04.185736+08:00",
+  "gpus": {
+    "0": {
+      "formal_samples": 39843,
+      "median_period_seconds": 1.1097984313964844,
+      "max_gap_seconds": 1.3103551864624023,
+      "statistics": {
+        "memory_used_MiB": {
+          "mean": 404.0005521672565,
+          "max": 426.0
+        },
+        "gpu_utilization_percent": {
+          "mean": 0.00695228772933765,
+          "max": 5.0
+        },
+        "temperature_C": {
+          "mean": 25.47217829982682,
+          "max": 27.0
+        },
+        "power_W": {
+          "mean": 5.738379640087343,
+          "max": 48.0
+        }
+      }
+    },
+    "1": {
+      "formal_samples": 39843,
+      "median_period_seconds": 1.1097984313964844,
+      "max_gap_seconds": 1.310314655303955,
+      "statistics": {
+        "memory_used_MiB": {
+          "mean": 507.7550134277037,
+          "max": 18281.0
+        },
+        "gpu_utilization_percent": {
+          "mean": 3.330773285144191,
+          "max": 100.0
+        },
+        "temperature_C": {
+          "mean": 28.16946515071656,
+          "max": 73.0
+        },
+        "power_W": {
+          "mean": 18.08357151820897,
+          "max": 192.37
+        }
+      }
+    },
+    "2": {
+      "formal_samples": 39843,
+      "median_period_seconds": 1.1097978353500366,
+      "max_gap_seconds": 1.310302734375,
+      "statistics": {
+        "memory_used_MiB": {
+          "mean": 18439.907336294957,
+          "max": 18440.0
+        },
+        "gpu_utilization_percent": {
+          "mean": 98.13169189067088,
+          "max": 100.0
+        },
+        "temperature_C": {
+          "mean": 69.93017594056673,
+          "max": 71.0
+        },
+        "power_W": {
+          "mean": 195.1604949426499,
+          "max": 200.35
+        }
+      }
+    },
+    "3": {
+      "formal_samples": 39843,
+      "median_period_seconds": 1.1097975969314575,
+      "max_gap_seconds": 1.3102962970733643,
+      "statistics": {
+        "memory_used_MiB": {
+          "mean": 18436.95366814748,
+          "max": 18437.0
+        },
+        "gpu_utilization_percent": {
+          "mean": 98.08807067740884,
+          "max": 100.0
+        },
+        "temperature_C": {
+          "mean": 74.70095123359185,
+          "max": 76.0
+        },
+        "power_W": {
+          "mean": 195.3340273071807,
+          "max": 200.44
+        }
+      }
+    }
+  }
+}

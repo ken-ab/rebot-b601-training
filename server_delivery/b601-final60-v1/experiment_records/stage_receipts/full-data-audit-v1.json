@@ -1,0 +1,16 @@
+{
+  "label": "full-data-audit-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/audit_prepared_data.py"
+  ],
+  "started_at": "2026-11-09T12:59:02.708443+08:00",
+  "start_unix": 1794200342.708257,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/full-data-audit-v1.log",
+  "runner_pid": 3839826,
+  "status": "passed",
+  "child_pid": 3839833,
+  "returncode": 0,
+  "elapsed_seconds": 44.01682734489441,
+  "finished_at": "2026-11-09T12:59:46.725101+08:00"
+}

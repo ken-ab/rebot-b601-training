@@ -1,0 +1,22 @@
+{
+  "label": "full-eval-best-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/evaluate_b601.py",
+    "--checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/evaluation/best",
+    "--normalization-checkpoint",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000"
+  ],
+  "started_at": "2026-11-10T01:35:22.071873+08:00",
+  "start_unix": 1794245722.0716846,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/full-eval-best-v1.log",
+  "runner_pid": 2222674,
+  "status": "passed",
+  "child_pid": 2222680,
+  "returncode": 0,
+  "elapsed_seconds": 134.63456964492798,
+  "finished_at": "2026-11-10T01:37:36.706270+08:00"
+}

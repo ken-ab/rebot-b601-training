@@ -1,0 +1,28 @@
+{
+  "syntax_checked": "/home/yujiegao/桌面/zzk/B601_SERVER_ASSESSMENT_20261109/proposed/openpi_b601/train_pi05.py",
+  "patch_apply_check": "passed against bd7f604a2fadf3ddaf6617f6a25e474d3ceda2bd; patch not applied",
+  "shell_syntax": "passed",
+  "runtime_validation": "not performed",
+  "files": {
+    "SERVER_PLAN_CN.md": {
+      "bytes": 15217,
+      "sha256": "2c8d8b6dcbd128b7a16a0b0bd6f0c1cbd95b8e77154dccaf49f90e35d50210a2"
+    },
+    "PREFLIGHT_EVIDENCE.json": {
+      "bytes": 12727,
+      "sha256": "4efe5f8e49d071f633b09c980319ded9a818e0057e78f420faff67b1e2e06532"
+    },
+    "b601_server_adaptation.patch": {
+      "bytes": 3205,
+      "sha256": "9b9e48a732d4f823a20c2c5b670a062ae71ffbcb435fc3ff7aa5c11d8e7a6a4e"
+    },
+    "run_on_server.sh": {
+      "bytes": 1890,
+      "sha256": "9ed12c73d20fcab974ef4beea262913db9a706e1c983998476d422c7322d4655"
+    },
+    "proposed/openpi_b601/train_pi05.py": {
+      "bytes": 8124,
+      "sha256": "3d2352930e32f81817305f495fa8c8b387b764284d081a7f9623cf961f910afd"
+    }
+  }
+}

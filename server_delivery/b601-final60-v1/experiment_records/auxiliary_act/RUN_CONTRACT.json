@@ -1,0 +1,32 @@
+{
+  "at": "2026-11-09T19:56:21.256059+08:00",
+  "purpose": "Independent ACT practicallocaldeployment candidate for userWindowsRTX4070Laptop8188MiB; originalpi05 remains running to12.25h",
+  "source_model": "PinnedLeRobotACT commit0cf864870cf29f4738d3ade893e6fd13fbd7cdb5",
+  "protocol": {
+    "source_split": "Original50train/10valunchanged",
+    "train_frames": 28729,
+    "val_frames": 5118,
+    "cameras": [
+      "overhead",
+      "wrist"
+    ],
+    "state_dim": 7,
+    "action_dim": 7,
+    "fps": 25,
+    "chunk_size": 25,
+    "image": "RGB224letterbox",
+    "stats": "train-onlystate/actionmeanstd, fixedImageNetimage stats",
+    "seed": 42,
+    "planned_batch": 8,
+    "planned_initial_steps": 20000,
+    "planned_lr": 1e-05,
+    "planned_backbone_lr": 1e-05,
+    "planned_weight_decay": 0.0001,
+    "kl_weight": 10,
+    "validation": "No action/action_is_pad inmodelinput; zero-latent deployment prediction; all5118validrowsstride25, comparetarget/mask/sourceexactwithpi05; no groundtruthposterior leakage"
+  },
+  "current_state": "CPUcachepreparingasact-cache-v2; no ACTtrainingresultyet",
+  "deployment": "PreferpureTorchmodel+state_dict/minimalruntimefornativeWinCUDA; verifyload/golden/memory/latency, notfullLeRobot/JAXenvironment",
+  "training_gpu": "physicalGPU1, onlyaftermemorycaptesthasendedandfreshavailabilityverified",
+  "original_experiment_protocol_untouched": true
+}

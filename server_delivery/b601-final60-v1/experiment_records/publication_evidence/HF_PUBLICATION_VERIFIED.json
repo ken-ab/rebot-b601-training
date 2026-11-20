@@ -1,0 +1,11 @@
+{
+  "status": "private_revision_file_inventory_and_lfs_hashes_verified",
+  "at": "2026-11-10T02:12:38.068005+08:00",
+  "repository": "dahjgfa/b601-pi05-final60",
+  "revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "private": true,
+  "expected_snapshot_files_present": 138,
+  "lfs_content_hashes_crosschecked": 16,
+  "uploader_full138_file_sha256_receipt_sha256": "69333057b015659846fb15d66e381c9374474cf93a710d55f0c1e33bd044df82",
+  "credentials_in_output": false
+}

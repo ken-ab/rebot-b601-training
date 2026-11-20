@@ -1,0 +1,18 @@
+{
+  "label": "client-preprocess-equivalence-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_client_preprocessing.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/CLIENT_PREPROCESS_EQUIVALENCE.json"
+  ],
+  "started_at": "2026-11-09T22:24:35.010439+08:00",
+  "start_unix": 1794234275.0102868,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/client-preprocess-equivalence-v1.log",
+  "runner_pid": 3716043,
+  "status": "passed",
+  "child_pid": 3716097,
+  "returncode": 0,
+  "elapsed_seconds": 50.208224296569824,
+  "finished_at": "2026-11-09T22:25:25.218526+08:00"
+}

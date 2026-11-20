@@ -1,0 +1,82 @@
+{
+  "at": "2026-11-10T01:43:13.174858+08:00",
+  "stage": "complete",
+  "completion": {
+    "at": "2026-11-10T01:33:04.185736+08:00",
+    "step_label": 43000,
+    "optimizer_step": 43001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+    "validation_flow_loss": 0.009592428291216492,
+    "evaluation_seconds": 6.455908895004541,
+    "validation_status": "passed",
+    "active_seconds": 44183.69403996901,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 43001,
+    "evaluation_seconds_this_session": 290.4377594542457,
+    "checkpoint_seconds_this_session": 434.25893244904
+  },
+  "best_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1_monitor/best_candidates/step_000005000",
+  "last_checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+  "delivery": {
+    "bundle": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT",
+    "archive": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_DEPLOYMENT.tar.gz",
+    "archive_bytes": 6340963541,
+    "archive_sha256": "258c85c7405d6d8e67241a8acfd93f4020b397fa1ce302e7602e038f8b653657",
+    "manifest_files": 131,
+    "all_evaluation_metrics_recomputed": true,
+    "selected": {
+      "label": "last",
+      "optimizer_step": 43001,
+      "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+      "evaluation_directory": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/evaluation/last",
+      "per_axis_mae_float64": [
+        1.1375669441285976,
+        2.549535065589836,
+        2.6410891592587027,
+        2.510780051863658,
+        1.1241146448214487,
+        1.5247761463109897,
+        1.820183409435435
+      ],
+      "norm_stats_raw_sha256": "73adb6290f10854524740cc9229a15a29431a0ec68e7da39f2f41c76ba3b7493",
+      "per_axis_rmse_float64": [
+        1.730147633135727,
+        3.9825846747671263,
+        4.082769502233405,
+        3.787679787044266,
+        1.6770946527529864,
+        2.312905483694855,
+        3.8237528670639382
+      ],
+      "mean_joint_1to6_mae": 1.9146436686622053,
+      "gripper_mae": 1.820183409435435,
+      "mean_joint_1to6_axis_rmse": 2.9288636222713937,
+      "gripper_rmse": 3.8237528670639382,
+      "macro_episode_per_axis_mae": [
+        1.1060525811675928,
+        2.6573605700448946,
+        2.718199884302505,
+        2.5871726294504875,
+        1.1506985613011704,
+        1.5412152248560382,
+        1.8810782541156488
+      ],
+      "macro_episode_per_axis_rmse": [
+        1.628424446099973,
+        4.0405377220375644,
+        4.117805562915881,
+        3.7833948480879847,
+        1.704328193552924,
+        2.3111380495659994,
+        3.798255139780798
+      ]
+    },
+    "delivered_model_labels": [
+      "primary"
+    ],
+    "windows_client_archive": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/B601_PI05_WINDOWS_CLIENT.zip",
+    "windows_client_bytes": 627176,
+    "windows_client_sha256": "a6571511a2e34e86066525ea787661be23ed65ef61808a71191613f50e90b14b",
+    "windows_client_manifest_files": 20
+  }
+}

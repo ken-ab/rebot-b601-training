@@ -1,0 +1,16 @@
+{
+  "label": "hf-publication-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/publish_hf.py"
+  ],
+  "started_at": "2026-11-10T02:04:20.726726+08:00",
+  "start_unix": 1794247460.7265277,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/hf-publication-v1.log",
+  "runner_pid": 2397366,
+  "status": "passed",
+  "child_pid": 2397368,
+  "returncode": 0,
+  "elapsed_seconds": 313.2629165649414,
+  "finished_at": "2026-11-10T02:09:33.989458+08:00"
+}

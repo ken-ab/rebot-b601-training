@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-11-09T13:15:10.264028+08:00",
+  "validation_flow_loss": 0.061490926146507266,
+  "evaluation_seconds": 12.993142104009166,
+  "optimizer_step": 0,
+  "base": "CheckpointWeightLoader(params_path='/data2/yujiegao/b601-pi05/models/pi05_base/params')",
+  "baseline_kind": "base weights plus randomly initialized LoRA A and B; not a pure-base control"
+}

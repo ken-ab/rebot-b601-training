@@ -1,0 +1,16 @@
+{
+  "label": "jax-gpu-collective-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/check_jax_gpu.py"
+  ],
+  "started_at": "2026-11-09T12:59:46.816536+08:00",
+  "start_unix": 1794200386.816344,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/jax-gpu-collective-v1.log",
+  "runner_pid": 3874707,
+  "status": "passed",
+  "child_pid": 3874711,
+  "returncode": 0,
+  "elapsed_seconds": 4.249284744262695,
+  "finished_at": "2026-11-09T12:59:51.065644+08:00"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "needs_local_setup",
+  "system": "Linux",
+  "issues": [
+    "Provide calibrated seven-axis lower",
+    "Provide calibrated seven-axis upper",
+    "Provide calibrated seven-axis max_velocity",
+    "Set an explicit finite positive observation-age limit",
+    "Record the actual local calibration reference",
+    "Local verification pending: usb_device_and_calibration_confirmed",
+    "Local verification pending: joint_order_and_units_confirmed",
+    "Local verification pending: hardware_limits_confirmed",
+    "Local verification pending: camera_views_confirmed",
+    "Local verification pending: physical_stop_verified"
+  ],
+  "hardware_verified_by_this_script": false,
+  "robot_commands_sent": false,
+  "scope": "Configuration/attestation check; field completion alone does not prove physical safety"
+}

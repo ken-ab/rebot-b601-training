@@ -1,0 +1,19 @@
+{
+  "label": "optimizer-readback-rehearsal26000-v2",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_optimizer_checkpoint.py",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/26000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/optimizer_rehearsal26000_v2.json"
+  ],
+  "started_at": "2026-11-09T20:51:51.065458+08:00",
+  "start_unix": 1794228711.0653107,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/optimizer-readback-rehearsal26000-v2.log",
+  "runner_pid": 2472321,
+  "status": "passed",
+  "child_pid": 2472537,
+  "returncode": 0,
+  "elapsed_seconds": 4.819579839706421,
+  "finished_at": "2026-11-09T20:51:55.884908+08:00"
+}

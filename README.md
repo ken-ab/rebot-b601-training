@@ -110,3 +110,18 @@ lerobot-train \
 ~~~
 
 俯视相机对应基座视角，腕部对应单个腕相机槽位。短跑通过后记录 checkpoint、软件版本、训练参数、峰值显存和输出目录，再开始正式微调。先在留出的完整 episode 上比对预测动作与示教，并用现场抓放成功率做后续评估。[LeRobot π0.5](https://huggingface.co/docs/lerobot/pi05) · [基础权重配置](https://huggingface.co/lerobot/pi05_base/blob/main/config.json) · [数据拆分文档](https://huggingface.co/docs/lerobot/using_dataset_tools)
+
+
+## 本服务器 final-60 微调结果与部署交接
+
+本次 π₀.₅ 长跑、完整离线评估、实际硬件、方法与部署检查见
+[服务器交付报告](server_delivery/b601-final60-v1/docs/server_final60/FINAL_REPORT_CN.md)。
+权重下载与发布状态见 [MODEL_DOWNLOAD.json](server_delivery/b601-final60-v1/MODEL_DOWNLOAD.json)。
+软件和离线验收已在报告中逐项区分；Windows/WSL 与现场机械臂闭环验证仍需在目标机执行。
+
+
+## 服务器详细实验记录
+
+[完整服务器实验记录与原始日志](server_delivery/b601-final60-v1/experiment_records/README.md)包含实际命令、67份原始日志、73份阶段回执、完整训练/验证曲线、GPU采样、数据校验、失败与修复过程、源码版本及模型交付审计。
+
+[Loss趋势复核](server_delivery/b601-final60-v1/experiment_records/loss_audit/LOSS_AUDIT_CN.md)区分训练loss、固定验证flow与真实动作误差。

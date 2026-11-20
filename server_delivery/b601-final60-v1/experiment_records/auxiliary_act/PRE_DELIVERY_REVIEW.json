@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-09T20:42:22.680459+08:00",
+  "scope": "read-only diagnostic agent review before actual final export",
+  "reviewed": [
+    "finish_delivery.py",
+    "build_runtime.py",
+    "runtime_self_test.py",
+    "act_runtime.py"
+  ],
+  "findings": {
+    "blocking_source_issue_found": false,
+    "final_export_requires_actual_complete_20000": true,
+    "primary_is_original_normalized_best": true,
+    "weights_config_evaluation_golden_bound_to_same_checkpoint": true,
+    "no_action_targets_in_deployment_inputs": true,
+    "runtime_no_jax_lerobot_hf": true,
+    "windows_cuda_install_instructions_present": true
+  },
+  "selection_analysis": {
+    "original_criterion_retained": true,
+    "no_supplemental_candidate_added": true,
+    "reason": "Later original-normalized BEST at15000 improves both six-joint and gripper MAE over previously discussed13000; no need for posthoc alternate export. Normalized L1 and raw joint/gripper metrics differ because per-axis normalization weights differ, not an arithmetic error."
+  },
+  "limits": [
+    "Actual final20k completion and CPU/GPU readback still pending at review time",
+    "No Windows4070 or physical robot execution on this server"
+  ]
+}

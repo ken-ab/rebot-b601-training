@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-09T19:00:26.477765+08:00",
+  "classification": "verified_wait",
+  "live_service": "MainPID=3811258\nExecMainStatus=0\nActiveState=active",
+  "latest_committed_validation": {
+    "at": "2026-11-09T18:59:43.194591+08:00",
+    "step_label": 20000,
+    "optimizer_step": 20001,
+    "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/20000",
+    "validation_flow_loss": 0.008668474934529513,
+    "evaluation_seconds": 6.468018555024173,
+    "validation_status": "passed",
+    "active_seconds": 20582.70291082101,
+    "target_active_seconds": 44100.0,
+    "dispatches_this_session": 20001,
+    "evaluation_seconds_this_session": 142.27439277805388,
+    "checkpoint_seconds_this_session": 203.58430488803424
+  },
+  "training_goal_complete": false,
+  "reason": "Still below44100active seconds; preserve originalgoal and continue live monitoring"
+}

@@ -1,0 +1,70 @@
+{
+  "status": "passed",
+  "checkpoint": "/data2/yujiegao/b601-pi05/validation/deployment_rehearsal10000_v2/checkpoint",
+  "device": "cuda:0",
+  "preallocate": "false",
+  "memory_fraction": "0.95",
+  "jax_memory_stats_bytes": {
+    "num_allocs": 677,
+    "bytes_in_use": 7031649280,
+    "peak_bytes_in_use": 7227633664,
+    "largest_alloc_size": 2415919104,
+    "bytes_limit": 19965715819,
+    "bytes_reserved": 0,
+    "peak_bytes_reserved": 0,
+    "largest_free_block_bytes": 0,
+    "pool_bytes": 8587837440,
+    "peak_pool_bytes": 8587837440
+  },
+  "process_residency_mib": [
+    [
+      8378
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ],
+    [
+      8382
+    ]
+  ],
+  "max_observed_process_residency_mib": 8382,
+  "host_peak_rss_mib": 10514.203125,
+  "seconds_per_call": [
+    13.10220498801209,
+    0.3849615890067071,
+    0.37669348903000355,
+    0.3685705339885317,
+    0.3728205249644816,
+    0.3796579309855588,
+    0.374854625959415,
+    0.3797992059844546,
+    0.37420619500335306,
+    0.37756543897558004
+  ],
+  "user_total_vram_mib": 8188,
+  "scope": "LinuxA4500 measured process residency/pool stats; not RTX4070Laptop/WSL verification or exact minimumVRAM"
+}

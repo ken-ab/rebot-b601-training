@@ -1,0 +1,708 @@
+{
+  "status": "published_and_verified",
+  "repository": "dahjgfa/b601-pi05-final60",
+  "revision": "8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "url": "https://huggingface.co/dahjgfa/b601-pi05-final60/tree/8c11eb8751d5cc6f688fa51db523da5bd8f2518a",
+  "private": true,
+  "account": "dahjgfa",
+  "commits": [
+    "a9fd90b623826dad8669afd2bc922379868a79f3",
+    "9719f23dd30bef618f84f43f0c97891306f3fd5c",
+    "9c99efe2d391d156267716e20e827e9da65d9077",
+    "8c11eb8751d5cc6f688fa51db523da5bd8f2518a"
+  ],
+  "files_verified": [
+    {
+      "file": "self_test.py",
+      "bytes": 3326,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "example_observation.npz",
+      "bytes": 609385,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "B601_PI05_WINDOWS_CLIENT.sha256",
+      "bytes": 95,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "DEPLOYMENT_READINESS_CN.md",
+      "bytes": 4959,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "B601_PI05_WINDOWS_CLIENT.zip",
+      "bytes": 627176,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "DEPLOYMENT_SELECTION.json",
+      "bytes": 9114,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "LICENSE_GEMMA.txt",
+      "bytes": 8431,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5426,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "PUBLICATION_PLAN_CN.md",
+      "bytes": 3837,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "self_test_low_memory.sh",
+      "bytes": 341,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "LICENSE",
+      "bytes": 11356,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "INDEPENDENT_FINAL_AUDIT.json",
+      "bytes": 25377,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "TRAINING_SUMMARY.json",
+      "bytes": 40410,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "NOTICE",
+      "bytes": 1539,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "WINDOWS_WSL2_DEPLOYMENT_CN.md",
+      "bytes": 6346,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "FINAL_REPORT_CN.md",
+      "bytes": 8685,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "MANIFEST.json",
+      "bytes": 20673,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "install_openpi.sh",
+      "bytes": 808,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "serve_low_memory.sh",
+      "bytes": 379,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "PI05_INFERENCE_ARCHITECTURE_CN.md",
+      "bytes": 6902,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "README_CN.md",
+      "bytes": 3190,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "serve.sh",
+      "bytes": 231,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/ACTION_SELECTION_PROTOCOL.json",
+      "bytes": 3211,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/SESSION_START.json",
+      "bytes": 492,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/DATA_ACCEPTANCE.json",
+      "bytes": 3123,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/LATEST.json",
+      "bytes": 529,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/smoke-b4-v1-orbax-readback.json",
+      "bytes": 386,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/ACTION_SELECTION_RESULT.json",
+      "bytes": 7471,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/ISSUE_RESOLUTION_LOG.json",
+      "bytes": 7628,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/VALIDATION_METRICS.jsonl",
+      "bytes": 21723,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/QUALITY_REVIEW_6001.json",
+      "bytes": 1627,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/JAX_GPU_ACCEPTANCE.json",
+      "bytes": 228,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/deployment-rehearsal10000-v2.json",
+      "bytes": 630,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/deployment_selection.py",
+      "bytes": 6311,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/websocket-rehearsal-v1.json",
+      "bytes": 793,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/TRAINING_SOURCE_LOCK.json",
+      "bytes": 3912,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/smoke-b2-v1-acceptance.json",
+      "bytes": 500,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/LR_SCHEDULE_CHECK.json",
+      "bytes": 327,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/RUN_CONTRACT.json",
+      "bytes": 1152,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/CLIENT_TRANSPORT_ACCEPTANCE.json",
+      "bytes": 603,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/BEST.json",
+      "bytes": 725,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/RUN_PARAMETERS.json",
+      "bytes": 1366,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/smoke-b2-v1-orbax-readback.json",
+      "bytes": 386,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/LONGRUN_COMPLETE.json",
+      "bytes": 529,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/CLIENT_PREPROCESS_EQUIVALENCE.json",
+      "bytes": 37030,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/BASELINE_FLOW.json",
+      "bytes": 371,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/WEBSOCKET_REHEARSAL_REPORT.json",
+      "bytes": 1083,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/CONSOLE_TRAIN_METRICS.jsonl",
+      "bytes": 113855,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/DETERMINISM_V2_ACCEPTANCE.json",
+      "bytes": 783,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/INFERENCE_SOURCE_LOCK.json",
+      "bytes": 5125,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/action-selector-canonical-candidates-check.json",
+      "bytes": 313,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/smoke-b4-v1-acceptance.json",
+      "bytes": 502,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/QUALITY_REVIEW_11001.json",
+      "bytes": 2767,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/EVAL_PROTOCOL.json",
+      "bytes": 8927,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/ENVIRONMENT.json",
+      "bytes": 643,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/ACTION_GUARD_ACCEPTANCE.json",
+      "bytes": 2096,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "receipts/CLIENT_TRANSPORT_ISSUE_RESOLUTION.json",
+      "bytes": 2337,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "code/serve_b601.py",
+      "bytes": 874,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "code/evaluate_b601.py",
+      "bytes": 6520,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "code/b601_data.py",
+      "bytes": 2267,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "code/train_pi05.py",
+      "bytes": 9353,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "code/b601_policy.py",
+      "bytes": 2765,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/inference_source_lock_before_windows_target.json",
+      "bytes": 1612,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/action_guard_v1_before_review.py",
+      "bytes": 9450,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/inference_source_lock_before_websocket_receipt.json",
+      "bytes": 1458,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/profile_memory_before_platform.py",
+      "bytes": 2413,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_pi05_inference_priority_INFERENCE_SOURCE_LOCK.json",
+      "bytes": 1766,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_pi05_inference_priority_FINAL_ACCEPTANCE_SOURCE_LOCK.json",
+      "bytes": 1227,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/inference_source_lock_initial_v2.json",
+      "bytes": 1458,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/guard_self_test_v1.py",
+      "bytes": 7005,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/pre_action_selection_export/deployment_self_test.py",
+      "bytes": 2733,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/pre_action_selection_export/export_delivery.py",
+      "bytes": 9200,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/serve_b601.py",
+      "bytes": 874,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/evaluate_b601.py",
+      "bytes": 6289,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/b601_data.py",
+      "bytes": 2267,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/longrun_monitor.py",
+      "bytes": 14615,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/prepare_dataset.py",
+      "bytes": 10537,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/train_pi05.py",
+      "bytes": 9353,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/formal_v1_before_wandb_hook_fix/b601_policy.py",
+      "bytes": 1803,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/source_locks_before_deployment_guard/FINAL_ACCEPTANCE_SOURCE_LOCK.json",
+      "bytes": 1424,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/source_locks_before_deployment_guard/INFERENCE_SOURCE_LOCK.json",
+      "bytes": 3821,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_client_presizing/verify_websocket_deployment.py",
+      "bytes": 5332,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_client_presizing/client_smoke.py",
+      "bytes": 2522,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_client_presizing/UPSTREAM.json",
+      "bytes": 783,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "executed_training_source_versions/before_client_presizing/requirements_minimal.txt",
+      "bytes": 74,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/B601_MODIFICATIONS.md",
+      "bytes": 477,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/assets/rebot-b601-train/norm_stats.json",
+      "bytes": 1737,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/_METADATA",
+      "bytes": 33008,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/_sharding",
+      "bytes": 19574,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/manifest.ocdbt",
+      "bytes": 118,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/array_metadatas/process_0",
+      "bytes": 12804,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/d/c4259b245d2a03b19a7e3585d685fff4",
+      "bytes": 4270,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/manifest.ocdbt",
+      "bytes": 651,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/295fbb884264e9b568a0fcbe0ef6558e",
+      "bytes": 1433,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/806e591c5d339df4e03aab59f365e29f",
+      "bytes": 1183,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/6beb1b20cf5063345561975e258aa134",
+      "bytes": 580,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/2dbbf5508bdd1ed9c87eebc30323d2a0",
+      "bytes": 1021229358,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/6e3419bc6b162e971674d349e93a62ba",
+      "bytes": 779,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/411dc80879e7cc879a8415c13d64c1b8",
+      "bytes": 1496700748,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/d593037f01833d8f82e8d16c2ce0bae5",
+      "bytes": 945627694,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/309716415a03b576fa0a53660380de2b",
+      "bytes": 219,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/ec276f41d0140cc25d39937c48b6bbfb",
+      "bytes": 2720435214,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/5bed66c8be3abfbc5d108b9195393269",
+      "bytes": 5853,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/e53b1b455bfe158f3447b70c9586561f",
+      "bytes": 480,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/2e4207cff467b37e2fa05913ae2f8076",
+      "bytes": 1104,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/4b840edfa2697db94f8ed076fe52b1ac",
+      "bytes": 125362707,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/6e6807da638c02eacc4a5d2ef4d0676b",
+      "bytes": 25560224,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "checkpoint/params/ocdbt.process_0/d/5a3f18d7643eb75ab7ae5486242d1ee4",
+      "bytes": 407702,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "cache/openpi/big_vision/paligemma_tokenizer.model",
+      "bytes": 4264023,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "client/deployment_check.py",
+      "bytes": 857,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/UPSTREAM_LICENSE",
+      "bytes": 11356,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/guard_self_test.py",
+      "bytes": 8508,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/action_guard.py",
+      "bytes": 10824,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/b601_observation.py",
+      "bytes": 1814,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/client_smoke.py",
+      "bytes": 3341,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/b601_websocket_client.py",
+      "bytes": 2313,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/UPSTREAM.json",
+      "bytes": 913,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/requirements_minimal.txt",
+      "bytes": 89,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/robot_deployment_template.json",
+      "bytes": 716,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/README_CN.md",
+      "bytes": 3322,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/openpi_client_src/openpi_client/image_tools.py",
+      "bytes": 2426,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/openpi_client_src/openpi_client/websocket_client_policy.py",
+      "bytes": 2131,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/openpi_client_src/openpi_client/msgpack_numpy.py",
+      "bytes": 1944,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/openpi_client_src/openpi_client/base_policy.py",
+      "bytes": 271,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "client/openpi_client_src/openpi_client/__init__.py",
+      "bytes": 22,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/candidates/checkpoint10000/METRICS.json",
+      "bytes": 7416,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/candidates/checkpoint10000/predictions.npz",
+      "bytes": 202147,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "evaluation/candidates/flow_best/METRICS.json",
+      "bytes": 7438,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/candidates/flow_best/predictions.npz",
+      "bytes": 202067,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "evaluation/candidates/last/METRICS.json",
+      "bytes": 7439,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/candidates/last/predictions.npz",
+      "bytes": 202148,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "evaluation/last/METRICS.json",
+      "bytes": 7439,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/last/predictions.npz",
+      "bytes": 202148,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "evaluation/base/METRICS.json",
+      "bytes": 7356,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/base/predictions.npz",
+      "bytes": 202839,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "evaluation/best/METRICS.json",
+      "bytes": 7438,
+      "method": "downloaded_and_sha256_checked"
+    },
+    {
+      "file": "evaluation/best/predictions.npz",
+      "bytes": 202067,
+      "method": "remote_content_addressed_sha256"
+    },
+    {
+      "file": "PUBLICATION_MANIFEST.json",
+      "bytes": 21480,
+      "method": "downloaded_and_sha256_checked"
+    }
+  ],
+  "publication_manifest_sha256": "63fe36ac3318d8424074818cdc87b33f2a2ee00d80324211f21313dc24af5169",
+  "real_robot_or_windows_execution": false
+}

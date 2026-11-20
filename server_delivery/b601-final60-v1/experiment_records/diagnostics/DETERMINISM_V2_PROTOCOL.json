@@ -1,0 +1,8 @@
+{
+  "at": "2026-11-09T16:43:06.441062+08:00",
+  "purpose": "test fixed default GPU kernel config and deterministic runtime; no golden tolerance relaxation",
+  "expected_flags": "--xla_gpu_autotune_level=0 --xla_gpu_deterministic_ops=true",
+  "local_flag_names_verified": true,
+  "training_flags_changed": false,
+  "candidate_cause": "compilation-time autotuning or runtime numerical nondeterminism; to be checked in2fresh sequential processes"
+}

@@ -1,0 +1,16 @@
+{
+  "label": "github-publication-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/publish_github.py"
+  ],
+  "started_at": "2026-11-10T01:53:35.926808+08:00",
+  "start_unix": 1794246815.9266467,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/github-publication-v1.log",
+  "runner_pid": 2368064,
+  "status": "passed",
+  "child_pid": 2368070,
+  "returncode": 0,
+  "elapsed_seconds": 8.984202146530151,
+  "finished_at": "2026-11-10T01:53:44.910864+08:00"
+}

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "at": "2026-11-09T20:51:55.329988+08:00",
+  "checkpoint": "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/26000",
+  "restored_step": 26001,
+  "optimizer_and_schedule_counts": {
+    "['opt_state'][1][0]['count']": 26001,
+    "['opt_state'][1][2]['count']": 26001
+  },
+  "restored_arrays": 105,
+  "restored_bytes": 3735656588,
+  "moment_arrays": {
+    "mu": 51,
+    "nu": 51
+  },
+  "all_arrays_finite": true,
+  "second_moments_nonnegative": true,
+  "checkpoint_counter_matches": true,
+  "elapsed_seconds": 3.5168348209699616,
+  "scope": "Saved optimizer/model step readback; not an exact DataLoader-position resume claim"
+}

@@ -1,0 +1,23 @@
+{
+  "label": "inference-platform-memory-v1",
+  "command": [
+    "/usr/bin/env",
+    "-u",
+    "XLA_PYTHON_CLIENT_MEM_FRACTION",
+    "-u",
+    "XLA_CLIENT_MEM_FRACTION",
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/profile_inference_memory.py",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/inference_platform_memory_v1"
+  ],
+  "started_at": "2026-11-09T19:57:24.031669+08:00",
+  "start_unix": 1794225444.031487,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/inference-platform-memory-v1.log",
+  "runner_pid": 3076780,
+  "status": "passed",
+  "child_pid": 3077313,
+  "returncode": 0,
+  "elapsed_seconds": 38.65248084068298,
+  "finished_at": "2026-11-09T19:58:02.683989+08:00"
+}

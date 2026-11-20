@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "at": "2026-11-09T16:39:47.494237+08:00",
+  "scope": "Temporary real5000/10000 fixture only, not final12h or finalcandidate outcomes",
+  "selected": "checkpoint10000",
+  "optimizer_step": 10001,
+  "candidates": 2,
+  "norm_shape_finite_and_canonical_exact": true,
+  "micro_and_macro_metrics_recomputed_float64": true,
+  "target_mask_source_match": true
+}

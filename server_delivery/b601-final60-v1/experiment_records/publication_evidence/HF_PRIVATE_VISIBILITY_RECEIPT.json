@@ -1,0 +1,13 @@
+{
+  "status": "private_repository_verified_before_model_upload",
+  "at": "2026-11-10T02:03:14.398742+08:00",
+  "repository": "dahjgfa/b601-pi05-final60",
+  "account": "dahjgfa",
+  "before_private": false,
+  "after_private": true,
+  "existing_files_preserved": [
+    ".gitattributes",
+    "README.md"
+  ],
+  "model_upload_started": false
+}

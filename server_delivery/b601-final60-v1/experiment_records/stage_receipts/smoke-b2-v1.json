@@ -1,0 +1,23 @@
+{
+  "label": "smoke-b2-v1",
+  "command": [
+    "bash",
+    "/home/yujiegao/桌面/zzk/B601_SERVER_ASSESSMENT_20261109/run_on_server.sh",
+    "smoke",
+    "--batch-size",
+    "2",
+    "--exp-name",
+    "b601-final60-smoke-fsdp2-b2",
+    "--base-params",
+    "/data2/yujiegao/b601-pi05/models/pi05_base/params"
+  ],
+  "started_at": "2026-11-09T12:59:51.152156+08:00",
+  "start_unix": 1794200391.15198,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/smoke-b2-v1.log",
+  "runner_pid": 3875402,
+  "status": "passed",
+  "child_pid": 3875404,
+  "returncode": 0,
+  "elapsed_seconds": 190.61656761169434,
+  "finished_at": "2026-11-09T13:03:01.768614+08:00"
+}

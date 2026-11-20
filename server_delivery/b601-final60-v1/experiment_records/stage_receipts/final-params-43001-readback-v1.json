@@ -1,0 +1,19 @@
+{
+  "label": "final-params-43001-readback-v1",
+  "command": [
+    "/home/yujiegao/桌面/zzk/rebot-b601-training/openpi_b601/.openpi/.venv/bin/python",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/verify_checkpoint.py",
+    "/data2/yujiegao/b601-pi05/runs/pi05_b601_lora/b601-final60-v1/43000",
+    "--output",
+    "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/diagnostics/final_params_43001.json"
+  ],
+  "started_at": "2026-11-10T01:43:23.143092+08:00",
+  "start_unix": 1794246203.1429143,
+  "log": "/home/yujiegao/桌面/zzk/B601_LONGRUN_20261109/logs/final-params-43001-readback-v1.log",
+  "runner_pid": 2333238,
+  "status": "passed",
+  "child_pid": 2333244,
+  "returncode": 0,
+  "elapsed_seconds": 18.795708894729614,
+  "finished_at": "2026-11-10T01:43:41.938631+08:00"
+}
